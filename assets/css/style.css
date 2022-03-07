@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+
+body {
+    font-weight: 300;
+    font-family: 'Bai Jamjuree', sans-serif;
+    background: linear-gradient(0deg, rgba(253,187,45,1) 0%, rgba(34,193,195,1) 100%);
+}
+
+/* generic styles */
+
+
+/* header */
+.header {
+    display: none;
+}
+
+#smaller-nav {
+    display: none;
+}
+
+.head-bg {
+    display: block;
+}
+
+.header-is-wrapped {
+    background-color: transparent;
+    height: 7.5rem;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 2;
+    top: 0px;
+}
+
+.header-content {
+    padding: 0px 3rem;
+}
+
+.head-bg img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-top: 7px;
+}
+
+/* navigation list */
+#menu {
+    font-size: 150%;
+    letter-spacing: 2px;
+    text-align: right;
+
+}
+
+#menu li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+#menu a  {
+    text-decoration: none;
+    color: #fff;
+}
+
+a.left{
+    position: relative;
+}
+
+a.left:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  margin-top: 20px;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+a.left:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+/* SECTION 1 */
+.section-one {
+    height: 100vh;
+
+}
+
+.first-sect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tickets {
+    text-decoration: none;
+    border: 3px solid #1F1E20;
+    border-radius: 25px;
+    background: none;
+    transition: all .5s;
+    color: #1F1E20;
+    margin: 2rem 0;
+}
+
+/* SECTION 2 */
+.section-two {
+    height: 100vh;    
+}
+
+/* SECTION 3 */
+.section-three {
+    height: 100vh;    
+}
+
+/* SECTION 4 */
+.section-four {
+    height: 100vh;    
+}
