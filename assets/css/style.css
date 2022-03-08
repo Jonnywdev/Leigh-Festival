@@ -65,7 +65,7 @@ body {
 
 #menu a  {
     text-decoration: none;
-    color: #fff;
+    color: #000;
 }
 
 a.left{
@@ -80,7 +80,7 @@ a.left:before {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #fff;
+  background-color: #000;
   visibility: hidden;
   transition: all 0.3s ease-in-out;
 }
@@ -92,7 +92,8 @@ a.left:hover:before {
 
 /* SECTION 1 */
 .section-one {
-    height: 100vh;
+    height: 140vh;
+    overflow: hidden;
 }
 
 .first-sect {
@@ -150,5 +151,35 @@ a.left:hover:before {
 /* SECTION 2 */
 .section-two {
     height: 300vh;
-    background: linear-gradient(0deg, rgba(244,179,0,1) 0%, rgba(62,109,3,1) 100%);
+    background: linear-gradient(0deg, rgba(244,179,0,1) 20%, rgba(89,156,5,1) 100%);
+}
+
+.event-sponsors {
+    background: #fff;
+    position: relative;
+}
+
+.sponsors-wrapped {
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.heading-wrapped {
+    padding: 1rem 3rem;
+}
+
+.heading-wrapped h1 {
+    font-size: 3rem;
+    text-align: center;
+
+}
+
+.sponsors-info {
+    text-align: center;
+}
+
+.sponsor {
+    width: 45%;
 }
