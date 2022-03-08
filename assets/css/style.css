@@ -8,7 +8,6 @@
 body {
     font-weight: 300;
     font-family: 'Bai Jamjuree', sans-serif;
-    background: linear-gradient(0deg, rgba(253,187,45,1) 0%, rgba(34,193,195,1) 100%);
 }
 
 /* generic styles */
@@ -94,7 +93,6 @@ a.left:hover:before {
 /* SECTION 1 */
 .section-one {
     height: 100vh;
-
 }
 
 .first-sect {
@@ -102,6 +100,10 @@ a.left:hover:before {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.hero-img {
+    width: 100%;
 }
 
 .tickets {
@@ -112,19 +114,41 @@ a.left:hover:before {
     transition: all .5s;
     color: #1F1E20;
     margin: 2rem 0;
+    position: absolute;
+    right: 10rem;
+    bottom: 7rem;
+    text-transform: capitalize;
+}
+
+.tickets:hover {
+    background: #000;
+    color: #fff;
+}
+
+.tickets h5 {
+    padding: 1rem 2rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.cloud {
+    width: 25%;
+    height: auto;
+    position: absolute;
+}
+
+.right-cloud {
+    top: 10rem;
+    right: 0;;
+}
+
+.left-cloud {
+    top: 15rem;
+    left: 0;;
 }
 
 /* SECTION 2 */
 .section-two {
-    height: 100vh;    
-}
-
-/* SECTION 3 */
-.section-three {
-    height: 100vh;    
-}
-
-/* SECTION 4 */
-.section-four {
-    height: 100vh;    
+    height: 300vh;
+    background: linear-gradient(0deg, rgba(244,179,0,1) 0%, rgba(62,109,3,1) 100%);
 }
