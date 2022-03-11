@@ -165,6 +165,10 @@ a.left:hover:before {
 }
 
 /* SECTION 2 */
+.section-two {
+    margin: 0 3rem;
+}
+
 .event-sponsors {
     background: #fff;
     position: relative;
@@ -178,7 +182,7 @@ a.left:hover:before {
 }
 
 .heading-wrapped {
-    padding: 1rem 3rem;
+    padding: 1rem 0;
 }
 
 .heading-wrapped h1 {
@@ -198,29 +202,53 @@ a.left:hover:before {
 /* section 3 -- whats happening */
 
 .section-three {
-    height: 100vh;
     background: #fff;
+    margin: 0 3rem;
 }
 
 .content-para {
     padding-bottom: 1rem;
-    margin: 0 3rem;
 }
 
 .content-wrapped {
     column-count: 4;
-    margin: 0 3rem;
 }
 
 .box {
     width: 100%;
-    border-bottom: 5px solid #000;
+    /* border-bottom: 5px solid #000; */
     display: flex;
     flex-direction: column;
 }
 
 .box h1 {
     text-transform: capitalize;
+}
+
+.box img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+hr {
+    border-top: 3px solid #000;
+    width: 100%;
+    margin: 1rem 0;
+    border-bottom: none;
+}
+
+.box h2 {
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-align: left;
+    padding-bottom: .5rem;
+}
+
+.box h3 { 
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: left;
+    padding-bottom: .5rem;
 }
 
 .tickets-btn {
@@ -238,21 +266,17 @@ a.left:hover:before {
 }
 
 .tickets-btn h5 {
-    padding: .5rem 0;
+    padding: 1rem 0;
+    font-weight: 500;
+    font-size: 1.25rem;
 }
 
-.thursday {
-
+.tickets-btn:hover {
+    background: #000;
+    color: #fff;
 }
 
-.friday {
-    
-}
-
-.saturday {
-    
-}
-
-.sunday{
-    
+/* section-4 -- map */
+.section-four {
+    height: 100vh;
 }
