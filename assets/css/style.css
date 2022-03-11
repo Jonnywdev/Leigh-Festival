@@ -92,8 +92,9 @@ a.left:hover:before {
 
 /* SECTION 1 */
 .section-one {
-    height: 140vh;
+    height: 100vh;
     overflow: hidden;
+    background: #29abe2;
 }
 
 .first-sect {
@@ -102,9 +103,17 @@ a.left:hover:before {
     justify-content: center;
     align-items: center;
 }
+.top-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    top: 7.5rem;
+}
 
 .hero-img {
-    width: 100%;
+    width: 60%;
 }
 
 .tickets {
@@ -115,10 +124,10 @@ a.left:hover:before {
     transition: all .5s;
     color: #1F1E20;
     margin: 2rem 0;
-    position: absolute;
-    right: 10rem;
-    bottom: 7rem;
+    cursor: pointer;
     text-transform: capitalize;
+    height: 100%;
+    z-index: 2;
 }
 
 .tickets:hover {
@@ -144,16 +153,18 @@ a.left:hover:before {
 }
 
 .left-cloud {
-    top: 15rem;
-    left: 0;;
+    top: 7rem;
+    left: -20px;
+}
+
+.bottom-img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
 }
 
 /* SECTION 2 */
-.section-two {
-    height: 300vh;
-    background: linear-gradient(0deg, rgba(244,179,0,1) 20%, rgba(89,156,5,1) 100%);
-}
-
 .event-sponsors {
     background: #fff;
     position: relative;
@@ -172,14 +183,76 @@ a.left:hover:before {
 
 .heading-wrapped h1 {
     font-size: 3rem;
-    text-align: center;
-
+    text-align: left;
+    text-transform: capitalize;
 }
 
 .sponsors-info {
-    text-align: center;
+    text-align: left;
 }
 
 .sponsor {
     width: 45%;
+}
+
+/* section 3 -- whats happening */
+
+.section-three {
+    height: 100vh;
+    background: #fff;
+}
+
+.content-para {
+    padding-bottom: 1rem;
+    margin: 0 3rem;
+}
+
+.content-wrapped {
+    column-count: 4;
+    margin: 0 3rem;
+}
+
+.box {
+    width: 100%;
+    border-bottom: 5px solid #000;
+    display: flex;
+    flex-direction: column;
+}
+
+.box h1 {
+    text-transform: capitalize;
+}
+
+.tickets-btn {
+    text-decoration: none;
+    border: 3px solid #1F1E20;
+    border-radius: 25px;
+    background: none;
+    transition: all .5s;
+    color: #1F1E20;
+    margin: 2rem 0;
+    cursor: pointer;
+    text-transform: capitalize;
+    z-index: 2;
+    text-align: center;
+}
+
+.tickets-btn h5 {
+    padding: .5rem 0;
+}
+
+.thursday {
+
+}
+
+.friday {
+    
+}
+
+.saturday {
+    
+}
+
+.sunday{
+    
 }
