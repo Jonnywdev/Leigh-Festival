@@ -279,4 +279,59 @@ hr {
 /* section-4 -- map */
 .section-four {
     height: 100vh;
+    margin: 0 3rem;
+}
+
+/* section-5 -- menu */
+.section-five {
+    height: 100vh;
+    margin: 0 3rem;
+}
+
+.menu {
+
+}
+
+.beer-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.beer-menu h2 {
+
+}
+
+.l-menu {
+    float: left;
+}
+
+.r-menu {
+    float: right;
+}
+
+.menu ul {
+
+}
+
+.menu li {
+    list-style: none;
+    
+}
+
+.menu-item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu-item img {
+    width: 15%;
+    padding-right: 1rem;
+}
+
+.menu-item h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: capitalize;
 }
