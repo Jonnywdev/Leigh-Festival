@@ -293,29 +293,21 @@ hr {
 }
 
 .beer-menu {
-    display: flex;
-    flex-direction: row;
+    column-count: 3;
 }
 
 .beer-menu h2 {
 
 }
 
-.l-menu {
-    float: left;
+.menu-text-wrapped{
+    display: flex;
+    flex-direction: column;
 }
 
-.r-menu {
-    float: right;
-}
-
-.menu ul {
-
-}
 
 .menu li {
     list-style: none;
-    
 }
 
 .menu-item {
