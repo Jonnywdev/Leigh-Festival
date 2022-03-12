@@ -284,7 +284,6 @@ hr {
 
 /* section-5 -- menu */
 .section-five {
-    height: 100vh;
     margin: 0 3rem;
 }
 
@@ -296,8 +295,12 @@ hr {
     column-count: 3;
 }
 
-.beer-menu h2 {
+.menu h2 {
+    font-weight: 400;
+}
 
+.menu p {
+    margin-bottom: 2rem;
 }
 
 .menu-text-wrapped{
@@ -315,6 +318,7 @@ hr {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .menu-item img {
