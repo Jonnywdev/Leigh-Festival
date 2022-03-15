@@ -498,12 +498,25 @@ hr {
     
 }
 
-@media (max-width: 400px) {
+@media (min-width: 400px) {
     /* header */
 
     /* Hero img */
+
+    .top-wrapper{
+        top: 15rem;
+    }
+
+    .right-cloud {
+        top: 11rem;
+    }
+
+    .cloud {
+        width: 30%;
+    }
+
     .tickets {
-        margin: 7rem 0 0 0;
+        margin: 10rem 0 0 0;
     }
 
     /* main sponsors */
