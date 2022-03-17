@@ -11,7 +11,9 @@ body {
 }
 
 /* generic styles */
-
+.active {
+    background-color: orange;
+}
 
 /* header */
 
@@ -24,14 +26,15 @@ body {
 }
 
 .header-is-wrapped {
-    background-color: transparent;
+    background-color: #29abe2;
+    opacity: 0.9;
     height: 7.5rem;
     width: 100%;
     position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     z-index: 2;
     top: 0px;
 }
@@ -349,6 +352,11 @@ hr {
     font-size: 1rem;
     font-weight: 400;
     text-transform: capitalize;
+}
+
+/* section 5 */
+#sponsors-list {
+   height: 100vh; 
 }
 
 /* media queries */
