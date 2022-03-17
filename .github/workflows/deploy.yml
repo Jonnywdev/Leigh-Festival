@@ -1,0 +1,25 @@
+name: Deploy to leighfestival.uk
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - leighfestival-site
+jobs:
+  buildanddeploy:
+    runs-on: ubuntu-latest
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Deploy
+        uses: reggionick/s3-deploy@v3
+        with:
+          folder: .
+          bucket: leighfestivaluk-287047348324
+          bucket-region: eu-west-1
+          dist-id: E2479E96AOBZ0D
+          invalidation: '/*'
+          no-cache: true
+          private: false
