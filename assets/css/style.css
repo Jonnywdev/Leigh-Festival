@@ -22,10 +22,6 @@ body {
 }
 
 .head-bg {
-    display: block;
-}
-
-.header-is-wrapped {
     background-color: #29abe2;
     opacity: 0.9;
     height: 7.5rem;
@@ -37,6 +33,10 @@ body {
     align-items: center;
     z-index: 2;
     top: 0px;
+}
+
+.header-is-wrapped {
+    
 }
 
 .header-content-logo {
