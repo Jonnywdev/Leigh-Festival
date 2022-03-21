@@ -15,42 +15,61 @@ body {
     background-color: orange;
 }
 
+* {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  *:focus {
+    outline: none;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  body {
+    margin: 0;
+    background-color: #0e3577;
+  }
+  
+
 /* header */
 
 #smaller-nav {
     display: none;
 }
 
-.head-bg {
+header {
+    display: block;
+}
+
+.header-is-wrapped {
     background-color: #29abe2;
-    opacity: 0.9;
-    height: 7.5rem;
+    height: 4rem;
     width: 100%;
     position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    z-index: 2;
+    z-index: 99;
     top: 0px;
-}
-
-.header-is-wrapped {
-    
 }
 
 .header-content-logo {
     padding: 0px 3rem;
+    width: 100%;
 }
 
 .header-content {
     padding: 0px 3rem;
+    min-width: fit-content;
 }
 
-.head-bg img {
-    max-width: 100px;
-    max-height: 100px;
-    margin-top: 7px;
+.logo-header {
+    max-width: 50px;
+    max-height: 100%;
 }
 
 /* navigation list */
@@ -58,7 +77,6 @@ body {
     font-size: 150%;
     letter-spacing: 2px;
     text-align: right;
-
 }
 
 #menu li {
@@ -136,11 +154,11 @@ a.left:hover:before {
     justify-content: center;
     align-items: flex-end;
     position: relative;
-    top: 7.5rem;
+    top: 6.5rem;
 }
 
 .hero-img {
-    width: 60%;
+    width: 50%;
 }
 
 .tickets {
@@ -150,10 +168,10 @@ a.left:hover:before {
     background: none;
     transition: all .5s;
     color: #1F1E20;
-    margin: 2rem 0;
     cursor: pointer;
     text-transform: capitalize;
-    height: 100%;
+    z-index: 2;
+    text-align: center;
 }
 
 .tickets:hover {
@@ -179,7 +197,7 @@ a.left:hover:before {
 }
 
 .left-cloud {
-    top: 7rem;
+    top: 3rem;
     left: -20px;
 }
 
@@ -368,9 +386,6 @@ hr {
         width: 65%;
     }
 
-    .tickets {
-        margin: 2rem 0 0 0;
-    }
     /* main sponsors */
 
     /* map */
@@ -411,8 +426,7 @@ hr {
 
     /* Hero img */
     .top-wrapper {
-        flex-direction: column;
-        align-items: center;
+        justify-content: space-evenly;
     }
 
     .hero-img {
@@ -439,7 +453,18 @@ hr {
 
     /* Hero img */
     .hero-img {
-        width: 80%;
+        position: relative;
+        left: 3rem;
+    }
+
+    .top-wrapper {
+        justify-content: center;
+    }
+
+    .tickets {
+        position: relative;
+        right: 3rem;
+        top: 3rem;
     }
 
     /* main sponsors */
@@ -476,8 +501,8 @@ hr {
     #menuToggle {
         display: block;
         position: absolute;
-        top: 50px;
-        right: 50px;
+        top: 20px;
+        right: 3rem;
         z-index: 1;
     }
     
@@ -503,68 +528,131 @@ hr {
       
       -webkit-touch-callout: none;
     }
-
-    #menuToggle span
-    {
-      display: block;
-      width: 50px;
-      height: 5px;
-      margin-bottom: 9px;
-      position: relative;
+    #webapp_cover {
+        position: relative;
+        top: 1rem;
+        right: 0;
+        left: 0;
+        width: 40px;
+        margin: 0 auto;
+        transform: translateY(-50%) scale(2);
+      }
       
-      background: #000;
-      border-radius: 3px;
+      #menu_button {
+        width: 39px;
+        overflow: hidden;
+      }
       
-      z-index: 1;
+      #menu_checkbox {
+        display: none;
+      }
       
-      transform-origin: 4px 0px;
+      #menu_label {
+        position: relative;
+        display: block;
+        height: 29px;
+        cursor: pointer;
+      }
       
-      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                  opacity 0.55s ease;
-    }
-    
-    #menuToggle span:first-child
-    {
-      transform-origin: 0% 0%;
-    }
-    
-    #menuToggle span:nth-last-child(2)
-    {
-      transform-origin: 0% 100%;
-    } 
-    
-    /* 
-     * Transform all the slices of hamburger
-     * into a crossmark.
-     */
-    #menuToggle input:checked ~ #line-1
-    {
-      opacity: 1;
-      transform: rotate(-30deg) translate(-2px, -1px);
-      background: #000;
-      width: 30px;
-      margin-bottom: -4px;
-    }
-    
-    /*
-     * But let's hide the middle one.
-     */
-    #menuToggle input:checked ~ #line-2
-    {
-        opacity: 1;
-        background: #000;
-    }
-    
-    /*
-     * Ohyeah and the last one should go the other direction
-     */
-    #menuToggle input:checked ~ #line-3
-    {
-      transform: rotate(30deg) translate(0, -1px);
-      width: 30px;
-      margin-bottom: 4px;
-    }
+      #menu_label:before,
+      #menu_label:after,
+      #menu_text_bar {
+        position: absolute;
+        left: 0;
+        width: 75%;
+        height: 3px;
+        background-color: #000;
+      }
+      
+      #menu_label:before,
+      #menu_label:after {
+        content: "";
+        transition: 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55) left;
+      }
+      
+      #menu_label:before {
+        top: 0;
+      }
+      
+      #menu_label:after {
+        top: 8px;
+      }
+      
+      #menu_text_bar {
+        top: 16px;
+      }
+      
+      #menu_text_bar:before {
+        content: "CLOSE";
+        position: absolute;
+        top: 15px;
+        right: 0;
+        left: 0;
+        color: #000;
+        font-size: 9px;
+        font-weight: bold;
+        font-family: 'Bai Jamjuree', sans-serif; 
+        text-align: center;
+      }
+      
+      #menu_checkbox:checked + #menu_label:before {
+        left: -39px;
+      }
+      
+      #menu_checkbox:checked + #menu_label:after {
+        left: 39px;
+      }
+      
+      #menu_checkbox:checked + #menu_label #menu_text_bar:before {
+        animation: moveUpThenDown 0.8s ease 0.2s forwards,
+          shakeWhileMovingUp 0.8s ease 0.2s forwards,
+          shakeWhileMovingDown 0.2s ease 0.8s forwards;
+      }
+      
+      @keyframes moveUpThenDown {
+        0% {
+          top: 0;
+        }
+        50% {
+          top: -27px;
+        }
+        100% {
+          top: -14px;
+        }
+      }
+      
+      @keyframes shakeWhileMovingUp {
+        0% {
+          transform: rotateZ(0);
+        }
+        25% {
+          transform: rotateZ(-10deg);
+        }
+        50% {
+          transform: rotateZ(0deg);
+        }
+        75% {
+          transform: rotateZ(10deg);
+        }
+        100% {
+          transform: rotateZ(0);
+        }
+      }
+      
+      @keyframes shakeWhileMovingDown {
+        0% {
+          transform: rotateZ(0);
+        }
+        80% {
+          transform: rotateZ(3deg);
+        }
+        90% {
+          transform: rotateZ(-3deg);
+        }
+        100% {
+          transform: rotateZ(0);
+        }
+      }
     
     /*
      * Make this absolute positioned
@@ -581,7 +669,8 @@ hr {
         list-style-type: none;
         -webkit-font-smoothing: antialiased;
         right: 0; 
-        text-align: center;       
+        text-align: center;  
+             
     }
     
     #small-menu li
@@ -608,7 +697,8 @@ hr {
 
     /* Hero img */
     .hero-img {
-        width: 90%;
+        width: 75%;
+        left: 3rem;
     }
 
     .tickets h5 {
@@ -616,7 +706,8 @@ hr {
     }
 
     .tickets {
-        margin: 3rem 0 0 0;
+        right: 3rem;
+        top: 5rem;
     }
 
     /* main sponsors */
@@ -636,7 +727,18 @@ hr {
 
     /* Hero img */
     .tickets {
-        margin: 5rem 0 0 0;
+        right: 0;
+        top: 1rem;
+    }
+
+    .hero-img {
+        left: 0;
+    }
+
+    .top-wrapper{
+        flex-direction: column;
+        align-items: center;
+
     }
 
     /* main sponsors */
@@ -656,12 +758,20 @@ hr {
 
     /* Hero img */
 
-    .top-wrapper{
-        top: 15rem;
+    .top-wrapper {
+        top: 7rem;
+    }
+
+    .hero-img {
+        width: 90%;
     }
 
     .right-cloud {
-        top: 11rem;
+        top: 15rem;
+    }
+
+    .left-cloud {
+        top: 5rem;
     }
 
     .cloud {
@@ -669,7 +779,8 @@ hr {
     }
 
     .tickets {
-        margin: 10rem 0 0 0;
+        right: 0;
+        top: 3rem;
     }
 
     /* main sponsors */
