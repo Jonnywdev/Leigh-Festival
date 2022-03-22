@@ -8,31 +8,10 @@
 body {
     font-weight: 300;
     font-family: 'Bai Jamjuree', sans-serif;
+    background: #fff;
 }
 
 /* generic styles */
-.active {
-    background-color: orange;
-}
-
-* {
-    -webkit-tap-highlight-color: transparent;
-  }
-  
-  *:focus {
-    outline: none;
-  }
-  
-  html,
-  body {
-    height: 100%;
-  }
-  
-  body {
-    margin: 0;
-    background-color: #0e3577;
-  }
-  
 
 /* header */
 
@@ -387,7 +366,20 @@ hr {
     }
 
     /* main sponsors */
+    .box {
+        width: 23%;
+    }
 
+    .box h2 {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .content-wrapped {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
     /* map */
 
     /* menu */
@@ -438,6 +430,26 @@ hr {
     }
     /* main sponsors */
 
+    .content-wrapped {
+        display: block;
+        column-count: 2;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .box h1 {
+        font-size: 1.5rem;
+    }
+
+    .box h2 {
+        font-size: 25px;
+    }
+
+    .box h3 {
+        font-size: 20px;
+    }
     /* map */
 
     /* menu */
@@ -528,131 +540,68 @@ hr {
       
       -webkit-touch-callout: none;
     }
-    #webapp_cover {
-        position: relative;
-        top: 1rem;
-        right: 0;
-        left: 0;
-        width: 40px;
-        margin: 0 auto;
-        transform: translateY(-50%) scale(2);
-      }
+
+    #menuToggle span
+    {
+      display: block;
+      width: 50px;
+      height: 5px;
+      margin-bottom: 9px;
+      position: relative;
       
-      #menu_button {
-        width: 39px;
-        overflow: hidden;
-      }
+      background: #000;
+      border-radius: 3px;
       
-      #menu_checkbox {
-        display: none;
-      }
+      z-index: 1;
       
-      #menu_label {
-        position: relative;
-        display: block;
-        height: 29px;
-        cursor: pointer;
-      }
+      transform-origin: 4px 0px;
       
-      #menu_label:before,
-      #menu_label:after,
-      #menu_text_bar {
-        position: absolute;
-        left: 0;
-        width: 75%;
-        height: 3px;
-        background-color: #000;
-      }
-      
-      #menu_label:before,
-      #menu_label:after {
-        content: "";
-        transition: 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55) left;
-      }
-      
-      #menu_label:before {
-        top: 0;
-      }
-      
-      #menu_label:after {
-        top: 8px;
-      }
-      
-      #menu_text_bar {
-        top: 16px;
-      }
-      
-      #menu_text_bar:before {
-        content: "CLOSE";
-        position: absolute;
-        top: 15px;
-        right: 0;
-        left: 0;
-        color: #000;
-        font-size: 9px;
-        font-weight: bold;
-        font-family: 'Bai Jamjuree', sans-serif; 
-        text-align: center;
-      }
-      
-      #menu_checkbox:checked + #menu_label:before {
-        left: -39px;
-      }
-      
-      #menu_checkbox:checked + #menu_label:after {
-        left: 39px;
-      }
-      
-      #menu_checkbox:checked + #menu_label #menu_text_bar:before {
-        animation: moveUpThenDown 0.8s ease 0.2s forwards,
-          shakeWhileMovingUp 0.8s ease 0.2s forwards,
-          shakeWhileMovingDown 0.2s ease 0.8s forwards;
-      }
-      
-      @keyframes moveUpThenDown {
-        0% {
-          top: 0;
-        }
-        50% {
-          top: -27px;
-        }
-        100% {
-          top: -14px;
-        }
-      }
-      
-      @keyframes shakeWhileMovingUp {
-        0% {
-          transform: rotateZ(0);
-        }
-        25% {
-          transform: rotateZ(-10deg);
-        }
-        50% {
-          transform: rotateZ(0deg);
-        }
-        75% {
-          transform: rotateZ(10deg);
-        }
-        100% {
-          transform: rotateZ(0);
-        }
-      }
-      
-      @keyframes shakeWhileMovingDown {
-        0% {
-          transform: rotateZ(0);
-        }
-        80% {
-          transform: rotateZ(3deg);
-        }
-        90% {
-          transform: rotateZ(-3deg);
-        }
-        100% {
-          transform: rotateZ(0);
-        }
-      }
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  opacity 0.55s ease;
+    }
+    
+    #menuToggle span:first-child
+    {
+      transform-origin: 0% 0%;
+    }
+    
+    #menuToggle span:nth-last-child(2)
+    {
+      transform-origin: 0% 100%;
+    }
+    
+    /* 
+     * Transform all the slices of hamburger
+     * into a crossmark.
+     */
+    #menuToggle input:checked ~ #line-1
+    {
+        opacity: 1;
+        transform: rotate(-30deg) translate(-2px, -1px);
+        background: #000;
+        width: 30px;
+        margin-bottom: -4px;
+    }
+    
+    /*
+     * But let's hide the middle one.
+     */
+    #menuToggle input:checked ~ #line-2
+    {
+        opacity: 1;
+        background: #000;
+    }
+    
+    /*
+     * Ohyeah and the last one should go the other direction
+     */
+    #menuToggle input:checked ~ #line-3
+    {
+        transform: rotate(30deg) translate(-10px, -12px);
+        width: 30px;
+        margin-bottom: 4px;
+    }
     
     /*
      * Make this absolute positioned
@@ -669,22 +618,22 @@ hr {
         list-style-type: none;
         -webkit-font-smoothing: antialiased;
         right: 0; 
-        text-align: center;  
-             
+        text-align: center;       
     }
     
     #small-menu li
     {
         padding: 2rem 1rem;
-        font-size: 3rem;
+        font-size: 2rem;
         position: relative;
         top: 3em;
+        border-bottom: 1px solid #000;
     }
     
     /*
      * And let's slide it in from the left
      */
-    #menuToggle input:checked ~ ul
+    #menuToggle input:checked  ~ ul
     {
         top: 0rem;
         display: flex;
@@ -714,6 +663,13 @@ hr {
 
     /* map */
 
+    .box h2 {
+        font-size: 17px;
+    }
+
+    .box h3 {
+        font-size: 16px;
+    }
     /* menu */
 
     /* sponsors */
@@ -742,6 +698,29 @@ hr {
     }
 
     /* main sponsors */
+    .content-wrapped {
+        column-count: 1;
+    }
+
+    .box h1 {
+        font-size: 1.75rem;
+    }
+
+    .box h2 {
+        font-size: 25px;
+    }
+
+    .box h3 {
+        font-size: 20px;
+    }
+
+    .content-para {
+        padding: 1rem 0 3rem 0;
+    }
+
+    .content-para p {
+        font-size: 20px;
+    }
 
     /* map */
 
