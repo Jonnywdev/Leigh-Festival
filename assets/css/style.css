@@ -12,6 +12,9 @@ body {
 }
 
 /* generic styles */
+.generic-section {
+    margin: 0 3rem;
+}
 
 /* header */
 
@@ -295,11 +298,33 @@ hr {
     color: #fff;
 }
 
-/* section-4 -- map */
-.section-four {
-    height: 100vh;
-    margin: 0 3rem;
+.beer-banner {
+    background: red;
 }
+
+.beer-container {
+    margin: 0.5 3rem;
+}
+
+.beer-text-wrapped {
+    padding: 5rem;
+}
+
+.beer-container h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 5rem;
+}
+
+.beer-container h2 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 3rem;
+}
+
+
+/* section-4 -- map */
+
 
 /* section-5 -- menu */
 .section-five {
@@ -308,7 +333,7 @@ hr {
 
 .beer-menu {
     column-count: 3;
-}
+} 
 
 .menu h2 {
     font-weight: 400;
