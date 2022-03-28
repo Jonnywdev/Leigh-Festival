@@ -16,6 +16,7 @@ body {
     margin: 0 3rem;
 }
 
+
 /* header */
 
 #smaller-nav {
@@ -299,27 +300,43 @@ hr {
 }
 
 .beer-banner {
-    background: red;
+    background: #000;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .beer-container {
-    margin: 0.5 3rem;
+    margin: 0.5rem 3rem;
 }
 
 .beer-text-wrapped {
-    padding: 5rem;
+    padding: 1rem 5rem;
 }
 
 .beer-container h1 {
     text-align: center;
     text-transform: capitalize;
     font-size: 5rem;
+    color: #fff;
 }
 
 .beer-container h2 {
     text-align: center;
     text-transform: capitalize;
-    font-size: 3rem;
+    font-size: 2rem;
+    color: #b3b3b3;
+}
+
+.beer-image {
+    position: relative;
+    right: 20px;
+    bottom: 65px;
+    width: 30%;
+}
+
+.second-beer-img {
+    float: right;
+    width: 30%;
 }
 
 
