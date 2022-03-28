@@ -12,6 +12,19 @@ body {
 }
 
 /* generic styles */
+.generic-section {
+    margin: 0 3rem;
+}
+
+
+.generic-container {
+    margin: 0.5rem 3rem;
+}
+
+.black {
+    color: #000 !important;
+}
+
 
 /* header */
 
@@ -295,11 +308,103 @@ hr {
     color: #fff;
 }
 
-/* section-4 -- map */
-.section-four {
+.beer-banner {
+    background: #000;
     height: 100vh;
-    margin: 0 3rem;
+    overflow: hidden;
 }
+
+
+.beer-text-wrapped {
+    padding: 2rem 5rem 0 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.generic-container h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 5rem;
+    color: #fff;
+}
+
+.generic-container h2 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: #b3b3b3;
+    font-weight: 400;
+}
+
+.generic-container h3 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: #b3b3b3;
+    padding-top: 2rem;
+    font-weight: 200;
+}
+
+.generic-container h4 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    color: #b3b3b3;
+    font-weight: 200;
+    padding-top: 1rem;
+}
+
+.beer-img-wrapped {
+    position: relative;
+    bottom: 350px;
+}
+
+.beer-image {
+    position: relative;
+    right: 20px;
+    bottom: -20px;
+    width: 30%;
+}
+
+.second-beer-img {
+    float: right;
+    width: 30%;
+}
+
+/* .buy-btn {
+    position: relative;
+} */
+
+.tickets-btn-white {
+    text-decoration: none;
+    border: 3px solid #fff;
+    border-radius: 25px;
+    background: none;
+    transition: all .5s;
+    color: #fff;
+    margin: 2rem 0;
+    cursor: pointer;
+    text-transform: capitalize;
+    z-index: 2;
+    text-align: center;
+    width: 50%;
+}
+
+.tickets-btn-white h5 {
+    padding: 1rem 0;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.tickets-btn-white:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* section-4 -- map */
+
 
 /* section-5 -- menu */
 .section-five {
@@ -308,7 +413,7 @@ hr {
 
 .beer-menu {
     column-count: 3;
-}
+} 
 
 .menu h2 {
     font-weight: 400;
@@ -347,10 +452,112 @@ hr {
     text-transform: capitalize;
 }
 
+/* jubilee section */
+#jubilee {
+    background: #fbd792;
+    overflow: hidden;
+}
+
+.jubilee-wrapped {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    padding-top: 2rem; 
+}
+
+.row-jub {
+    position: relative;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    height: 5rem;
+    padding-top: 1rem;
+}
+
+.text-wrapped-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-text {
+    width: 100%;
+}
+
+.left-text p {
+    font-size: 1rem;
+}
+
+.right-content {
+    width: 25%;
+}
+
+.queen-img {
+    display: block;
+    width: 100%;
+    float: right;
+}
+
+
+.j-img {
+
+}
 /* section 5 */
 #sponsors-list {
    height: 100vh; 
 }
+
+/* footer */
+#footer {
+    position: relative;
+    bottom: 0;
+    background: #000;
+    overflow: hidden;
+    padding: 1rem 3rem;
+}
+
+.footer-wrapped {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-logo {
+    width: 30%;
+}
+
+.footer-logo img {
+    width: 50%;
+}
+
+.footer-wrapped h1 {
+    font-size: 2rem;
+}
+
+.footer-wrapped h2 {
+    font-size: 1.5rem;
+}
+
+.footer-wrapped h3 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.social-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 30%;
+}
+
+.social {
+    width: 85% !important;
+    cursor: pointer;
+}
+
 
 /* media queries */
 @media (max-width: 1000px) {
@@ -376,11 +583,16 @@ hr {
         justify-content: space-between;
         align-items: baseline;
     }
+    /* beer festival */
+
     /* map */
 
     /* menu */
 
     /* sponsors */
+
+    /* jubilee section */
+
 
     /* footer */
 
@@ -399,11 +611,35 @@ hr {
     }
     /* main sponsors */
 
+    /* beer festival */
+
+    .generic-container h1 {
+        font-size: 4rem;
+    }
+
+    .generic-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .generic-container h3 {
+        font-size: 1.5rem;
+    }
+
+    .generic-container h4 {
+        font-size: 1.25rem;
+    }
+
+    .beer-img-wrapped {
+        bottom: 300px;
+    }
     /* map */
 
     /* menu */
 
     /* sponsors */
+
+    /* jubilee section */
+    
 
     /* footer */
     
@@ -446,11 +682,24 @@ hr {
     .box h3 {
         font-size: 20px;
     }
+
+    /* beer festival */
+    .beer-img-wrapped {
+        bottom: 300px;
+    }
+
     /* map */
 
     /* menu */
 
     /* sponsors */
+
+    /* jubilee section */
+    .left-text {
+        width: 70%;
+        padding-right: 2rem;
+    }
+
 
     /* footer */
     
@@ -477,11 +726,26 @@ hr {
 
     /* main sponsors */
 
+    /* beer festival */
+    .generic-container h1 {
+        font-size: 3.25rem;
+    }
+
+    .beer-img-wrapped {
+        position: relative;
+        bottom: 175px;
+    }
     /* map */
 
     /* menu */
 
     /* sponsors */
+
+    /* jubilee section */
+    .left-text {
+        width: 70%;
+    }
+    
 
     /* footer */
     
@@ -657,6 +921,8 @@ hr {
 
     /* main sponsors */
 
+    /* beer festival */
+
     /* map */
 
     .box h2 {
@@ -668,7 +934,42 @@ hr {
     }
     /* menu */
 
+    /* beer festival */
+    .beer-img-wrapped {
+        bottom: 0px;
+    }
+
+    .beer-banner {
+        height: 125vh
+    }
+
+    .tickets-btn-white {
+        width: 100%;
+    }
+
     /* sponsors */
+
+    /* jubilee section */
+
+    .text-wrapped-row {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .right-content {
+        width: 35%;
+        padding-bottom: 2rem;
+    }
+
+    .left-text { 
+        padding: none;
+        width: 100%;
+    }
+
+    .row-jub {
+        justify-content: center;
+    }
+    
 
     /* footer */
     
@@ -720,11 +1021,35 @@ hr {
 
     /* map */
 
+    /* beer festival */
+    .beer-text-wrapped {
+        padding: 2rem 0 0 0;
+    }
+
     /* menu */
 
     /* sponsors */
 
+    /* jubilee section */
+    
+
     /* footer */
+
+    .footer-logo {
+        width: 50%;
+    }
+    
+    .footer-wrapped h1 {
+        font-size: 1.5rem;
+    }
+    
+    .footer-wrapped h2 {
+        font-size: 1.25rem;
+    }
+    
+    .footer-wrapped h3 {
+        font-size: 1rem;
+    }
     
 }
 
@@ -778,12 +1103,37 @@ hr {
 
     .tickets {
         right: 0;
-        top: 3rem;
+        top: 10rem;
     }
 
     /* main sponsors */
     .heading-wrapped h1 {
         font-size: 2.25rem;
+    }
+
+    /* beer festival */
+    .generic-container h1 {
+        font-size: 3rem;
+    }
+
+    .generic-container h2 {
+        font-size: 1.25rem;
+    }
+
+    .generic-container h3 {
+        font-size: 1.25rem;
+    }
+
+    .generic-container h4 {
+        font-size: 1rem;
+    }
+
+    .beer-banner {
+        height: 90vh;
+    }
+
+    .beer-img-wrapped {
+        bottom: 60px;
     }
 
     /* map */
@@ -792,7 +1142,18 @@ hr {
 
     /* sponsors */
 
+    /* jubilee section */
+    .right-content {
+        width: 50%;
+    }
+
+    .generic-container {
+        margin: 0.5rem 2rem;
+    }
+    
+
     /* footer */
+    
     
 }
 
@@ -803,11 +1164,32 @@ hr {
 
     /* main sponsors */
 
+    /* beer festival */
+    .generic-container h1 {
+        font-size: 2rem;
+    }
+
+    .generic-container h2 {
+        font-size: 1rem;
+    }
+
+    .generic-container h3 {
+        font-size: 1rem;
+    }
+
+    .generic-container h4 {
+        font-size: 1.5rem;
+    }
+
     /* map */
+    
 
     /* menu */
 
     /* sponsors */
+
+    /* jubilee section */
+    
 
     /* footer */
     
