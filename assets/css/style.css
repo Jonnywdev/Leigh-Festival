@@ -210,7 +210,6 @@ a.left:hover:before {
 }
 
 .event-sponsors {
-    background: #fff;
     position: relative;
 }
 
@@ -1100,6 +1099,10 @@ hr {
     #menuToggle {
         right: 2rem;
     }
+    
+    .section-one {
+        height: 99vh;
+    }
 
     .section-two {
         margin: 0 2rem;
@@ -1123,6 +1126,7 @@ hr {
         height: 50vh;
         justify-content: space-between;
     }
+    
 
     .hero-img {
         width: 90%;
