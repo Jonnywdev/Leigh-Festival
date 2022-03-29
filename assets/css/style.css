@@ -210,7 +210,6 @@ a.left:hover:before {
 }
 
 .event-sponsors {
-    background: #fff;
     position: relative;
 }
 
@@ -564,6 +563,16 @@ hr {
 
 
 /* media queries */
+@media (max-width: 1250px) {
+    .beer-img-wrapped {
+        bottom: 400px;
+    }
+
+    .beer-banner {
+        height: 80vh;
+    }
+}
+
 @media (max-width: 1000px) {
     /* header */
 
@@ -588,6 +597,9 @@ hr {
         align-items: baseline;
     }
     /* beer festival */
+    .beer-img-wrapped {
+        bottom: 190px;
+    }
 
     /* map */
 
@@ -692,6 +704,9 @@ hr {
         bottom: 300px;
     }
 
+    .beer-banner {
+        height: 65vh;
+    }
     /* map */
 
     /* menu */
@@ -955,7 +970,7 @@ hr {
     }
 
     .beer-banner {
-        height: 125vh
+        height: 80vh;
     }
 
     .tickets-btn-white {
@@ -1084,6 +1099,10 @@ hr {
     #menuToggle {
         right: 2rem;
     }
+    
+    .section-one {
+        height: 99vh;
+    }
 
     .section-two {
         margin: 0 2rem;
@@ -1104,8 +1123,10 @@ hr {
     /* Hero img */
 
     .top-wrapper {
-        top: 7rem;
+        height: 50vh;
+        justify-content: space-between;
     }
+    
 
     .hero-img {
         width: 90%;
@@ -1183,6 +1204,9 @@ hr {
     /* header */
 
     /* Hero img */
+    .top-wrapper {
+        height: 40vh;
+    }
 
     /* main sponsors */
 
