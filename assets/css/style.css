@@ -1104,7 +1104,8 @@ hr {
     /* Hero img */
 
     .top-wrapper {
-        top: 7rem;
+        height: 50vh;
+        justify-content: space-between;
     }
 
     .hero-img {
@@ -1183,6 +1184,9 @@ hr {
     /* header */
 
     /* Hero img */
+    .top-wrapper {
+        height: 40vh;
+    }
 
     /* main sponsors */
 
