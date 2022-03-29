@@ -564,6 +564,16 @@ hr {
 
 
 /* media queries */
+@media (max-width: 1250px) {
+    .beer-img-wrapped {
+        bottom: 400px;
+    }
+
+    .beer-banner {
+        height: 80vh;
+    }
+}
+
 @media (max-width: 1000px) {
     /* header */
 
@@ -588,6 +598,9 @@ hr {
         align-items: baseline;
     }
     /* beer festival */
+    .beer-img-wrapped {
+        bottom: 190px;
+    }
 
     /* map */
 
@@ -692,6 +705,9 @@ hr {
         bottom: 300px;
     }
 
+    .beer-banner {
+        height: 65vh;
+    }
     /* map */
 
     /* menu */
@@ -955,7 +971,7 @@ hr {
     }
 
     .beer-banner {
-        height: 125vh
+        height: 80vh;
     }
 
     .tickets-btn-white {
