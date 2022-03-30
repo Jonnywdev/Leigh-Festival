@@ -21,8 +21,9 @@ body {
     margin: 0.5rem 3rem;
 }
 
-.black {
+.black-heading {
     color: #000 !important;
+    text-align: left;
 }
 
 
@@ -222,12 +223,17 @@ a.left:hover:before {
 
 .heading-wrapped {
     padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
 }
 
 .heading-wrapped h1 {
     font-size: 3rem;
     text-align: left;
     text-transform: capitalize;
+    padding-right: 1rem;
 }
 
 .sponsor {
@@ -485,10 +491,12 @@ hr {
 .text-wrapped-row {
     display: flex;
     flex-direction: row;
+    padding: 1rem 0;
 }
 
 .left-text {
-    width: 100%;
+    width: 75%;
+    column-count: 2;
 }
 
 .left-text p {
@@ -496,13 +504,27 @@ hr {
 }
 
 .right-content {
-    width: 25%;
+    width: 20%;
+}
+
+.flags-wrapped {
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 1rem;
+}
+
+.flags-wrapped img {
+    width: 100%;
 }
 
 .queen-img {
     display: block;
     width: 100%;
     float: right;
+}
+
+.j-img {
+    width: 10%;
 }
 
 /* section 5 */
