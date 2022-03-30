@@ -527,11 +527,25 @@ hr {
     width: 10%;
 }
 
-/* section 5 */
-#sponsors-list {
-   height: 100vh; 
+/* sponsors */
+
+.sponsors-wrapped {
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10%;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 20px 0;
 }
 
+.sponsors-wrapped img {
+    width: 100%;
+}
+
+/* Section for cups?? */
+
+.cups-section {
+    height: 100vh;
+}
 /* footer */
 #footer {
     position: relative;
