@@ -210,16 +210,27 @@ a.left:hover:before {
     margin: 0 3rem;
 }
 
-.event-sponsors {
+/* .event-sponsors {
     position: relative;
+} */
+
+.main-people-wrapped {
+    display: flex;
+    flex-direction: row;
 }
 
 .sponsors-wrapped {
-    padding: 1rem 3rem;
-    display: flex;
+    /* padding: 1rem 3rem; */
+    /* display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: center; */
 }
+
+.sponsor-wrapped {
+    width: 45%;
+}
+
+
 
 .heading-wrapped {
     padding: 1rem 0;
@@ -466,6 +477,10 @@ hr {
 }
 
 /* jubilee section */
+#jubilee-section {
+    margin: 0 3rem;
+}
+
 #jubilee {
     background: #fbd792;
     overflow: hidden;
@@ -543,9 +558,47 @@ hr {
 
 /* Section for cups?? */
 
-.cups-section {
-    height: 100vh;
+.cup-container {
+    text-align: left;
+    color: #000;
+    margin: 0.5rem 3rem;
 }
+
+.cups-wrapped {
+    width: 100%;
+    overflow: hidden;
+}
+
+.cups-wrapped img {
+    width: 100%;
+}
+
+/* tryit */
+.trophie-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.width {
+    width: 30%;
+}
+
+.middle-content-t img{
+    width: 100%;
+}
+
+.right-content-t {
+    text-align: left;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+.left-content-t {
+    text-align: right;
+}
+
 /* footer */
 #footer {
     position: relative;
