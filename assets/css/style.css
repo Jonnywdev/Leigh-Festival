@@ -26,6 +26,21 @@ body {
     text-align: left;
 }
 
+.heading-wrapped {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.heading-wrapped h1 {
+    font-size: 3rem;
+    text-align: left;
+    text-transform: capitalize;
+    padding-right: 1rem;
+}
+
 
 /* header */
 
@@ -217,30 +232,41 @@ a.left:hover:before {
 .main-people-wrapped {
     display: flex;
     flex-direction: row;
-}
-
-.sponsors-wrapped {
-    /* padding: 1rem 3rem; */
-    /* display: flex;
-    justify-content: space-around;
-    align-items: center; */
+    justify-content: space-between;
 }
 
 .sponsor-wrapped {
     width: 45%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }
 
+#partnership {
+    text-align: right;
+}
 
+.funded-by {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+/* 
+.funded-by img {
+    width: 100;
+} */
 
-.heading-wrapped {
+.wigan {
+    width: 100%;
+}
+
+.heading-main {
     padding: 1rem 0;
     display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
 }
 
-.heading-wrapped h1 {
+.heading-main h1 {
     font-size: 3rem;
     text-align: left;
     text-transform: capitalize;
