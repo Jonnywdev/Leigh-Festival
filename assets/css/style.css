@@ -1362,6 +1362,10 @@ a {
     .footer-wrapped h3 {
         font-size: 1rem;
     }
+
+    .j-img {
+        width: 30%;
+    }
     
 }
 
@@ -1532,7 +1536,9 @@ a {
     /* sponsors */
 
     /* jubilee section */
-    
+    .j-img {
+        width: 30%;
+    }
 
     /* footer */
     
