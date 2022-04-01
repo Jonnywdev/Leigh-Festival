@@ -16,13 +16,32 @@ body {
     margin: 0 3rem;
 }
 
+.basic-para {
+    font-size: 20px;
+}
 
 .generic-container {
     margin: 0.5rem 3rem;
 }
 
-.black {
+.black-heading {
     color: #000 !important;
+    text-align: left;
+}
+
+.heading-wrapped {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading-wrapped h1 {
+    font-size: 3rem;
+    text-align: left;
+    text-transform: capitalize;
+    padding-right: 1rem;
 }
 
 
@@ -209,25 +228,58 @@ a.left:hover:before {
     margin: 0 3rem;
 }
 
-.event-sponsors {
+/* .event-sponsors {
     position: relative;
-}
+} */
 
-.sponsors-wrapped {
-    padding: 1rem 3rem;
+.main-people-wrapped {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.heading-wrapped {
+.sponsor-wrapped {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#partnership {
+    text-align: right;
+}
+
+.funded-by {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.funded-info {
+    display: flex;
+    justify-content: flex-end;
+} 
+
+.wigan {
+    width: 60%;
+}
+
+.heading-main {
     padding: 1rem 0;
+    display: flex;
 }
 
-.heading-wrapped h1 {
+.heading-main h1 {
     font-size: 3rem;
     text-align: left;
     text-transform: capitalize;
+    padding-right: 1rem;
+}
+
+.heading-wrapped h3 {
+    font-size: 2rem;
+    font-weight: 400;
 }
 
 .sponsor {
@@ -460,10 +512,11 @@ hr {
 }
 
 /* jubilee section */
-#jubilee {
-    background: #fbd792;
-    overflow: hidden;
+#jubilee-section {
+    margin: 0 3rem;
 }
+
+
 
 .jubilee-wrapped {
     display: flex;
@@ -485,18 +538,30 @@ hr {
 .text-wrapped-row {
     display: flex;
     flex-direction: row;
+    padding: 1rem 0;
 }
 
-.left-text {
-    width: 100%;
-}
-
-.left-text p {
+.text-wrapped-row p {
     font-size: 1rem;
 }
 
+a {
+    color: #000;  
+    text-decoration: none;  
+}
+
 .right-content {
-    width: 25%;
+    width: 20%;
+}
+
+.flags-wrapped {
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 1rem;
+}
+
+.flags-wrapped img {
+    width: 100%;
 }
 
 .queen-img {
@@ -505,11 +570,121 @@ hr {
     float: right;
 }
 
-/* section 5 */
-#sponsors-list {
-   height: 100vh; 
+.j-img {
+    width: 10%;
 }
 
+/* sponsors */
+
+.sponsors-wrapped {
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15% 15%;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 20px 0;
+}
+
+.sponsors-wrapped img {
+    width: 100%;
+}
+
+/* Section for cups?? */
+
+.cup-container {
+    text-align: left;
+    color: #000;
+    margin: 0.5rem 3rem;
+}
+
+.cups-wrapped {
+    width: 100%;
+    overflow: hidden;
+}
+
+.cups-wrapped img {
+    width: 100%;
+}
+
+/* tryit */
+.trophie-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.width {
+    width: 30%;
+}
+
+.middle-content-t img{
+    width: 100%;
+}
+
+.right-content-t {
+    text-align: left;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+.left-content-t {
+    text-align: right;
+}
+
+/* Music */
+.music-schedule {
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 20px 0;
+}
+
+.band-wrapped {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.music-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.band-logo {
+    width: 100%;
+}
+
+.img-band-wrapped {
+    display: grid;
+    grid-template-columns: 9% 9% 9% 9% 9% 9%;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    padding: 20px 0;
+}
+
+.music-box h1 {
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.music-box h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.music-box h3 {
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+#bands-p {
+    font-size: 25px;
+}
 /* footer */
 #footer {
     position: relative;
@@ -608,6 +783,21 @@ hr {
     /* sponsors */
 
     /* jubilee section */
+    .generic-container h1 {
+        font-size: 4rem;
+    }
+
+    #bands-p {
+        font-size: 20px;
+    }
+
+    .music-box h3 {
+        font-size: 1.5rem;
+    }
+
+    .music-box h1 {
+        font-size: 1.8rem;
+    }
 
 
     /* footer */
@@ -653,9 +843,24 @@ hr {
     /* menu */
 
     /* sponsors */
+    .sponsors-wrapped {
+        grid-template-columns: 19% 19% 19% 19% 19%;
+    }
 
     /* jubilee section */
     
+    .music-schedule {
+        grid-template-columns: 23% 23% 23% 23%;
+        grid-gap: 25px;
+    }
+
+    .music-box h1 {
+        font-size: 1.5rem;
+    }
+
+    .music-box h3 {
+        font-size: 1.25rem;
+    }
 
     /* footer */
     
@@ -677,6 +882,9 @@ hr {
         top: 15rem;
     }
     /* main sponsors */
+    .heading-main h1 {
+        font-size: 2rem;
+    }
 
     .content-wrapped {
         display: block;
@@ -715,11 +923,33 @@ hr {
     }
 
     /* sponsors */
+    
 
     /* jubilee section */
-    .left-text {
-        width: 70%;
-        padding-right: 2rem;
+    .generic-container h1 {
+        font-size: 3rem;
+    }
+
+    .music-box h3 {
+        font-size: 1rem;
+    }
+
+    .img-band-wrapped {
+        grid-template-columns: 15% 15% 15% 15% 15% 15%;
+    }
+
+    .music-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .music-box h3 {
+        font-size: 1.2rem;
+    }
+
+    .music-schedule {
+        grid-template-columns: 45% 45%;
+        grid-template-rows: auto auto;
+        grid-gap: 60px;
     }
 
 
@@ -747,6 +977,9 @@ hr {
     }
 
     /* main sponsors */
+    .heading-main h1 {
+        font-size: 1.5rem;
+    }
 
     /* beer festival */
     .generic-container h1 {
@@ -771,8 +1004,8 @@ hr {
     /* sponsors */
 
     /* jubilee section */
-    .left-text {
-        width: 70%;
+    .generic-container h1 {
+        font-size: 2.5rem;
     }
     
 
@@ -981,6 +1214,10 @@ hr {
 
     /* jubilee section */
 
+    .generic-container h1 {
+        font-size: 2rem;
+    }
+
     .text-wrapped-row {
         flex-direction: column-reverse;
         align-items: center;
@@ -1001,6 +1238,22 @@ hr {
     }
     
 
+    .music-schedule {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .music-box h1 {
+        font-size: 2rem;
+    }
+
+    .music-box h2 {
+        font-size: 1.75rem;
+    }
+
+    .music-box h3 {
+        font-size: 1.5rem;
+    }
     /* footer */
     
 }
@@ -1029,6 +1282,25 @@ hr {
     }
 
     /* main sponsors */
+    .main-people-wrapped {
+        flex-direction: column;
+    }
+
+    .sponsor-wrapped {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .funded-by {
+        width: 100%;
+        align-items: center;
+    }
+
+    .funded-info {
+        justify-content: center;
+    }
+
     .content-wrapped {
         column-count: 1;
     }
@@ -1068,7 +1340,10 @@ hr {
     /* sponsors */
 
     /* jubilee section */
-    
+    .img-band-wrapped {
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: auto auto;
+    }
 
     /* footer */
 
@@ -1091,6 +1366,13 @@ hr {
 }
 
 @media (max-width: 400px) {
+    .generic-section {
+        margin: 0px 2rem;
+    }
+
+    .cup-container {
+        margin: 0.5rem 2rem;
+    }
     /* header */
     .header-content-logo {
         padding: 0px 2rem;
@@ -1172,7 +1454,7 @@ hr {
     }
 
     .beer-banner {
-        height: 90vh;
+        height: 70vh;
     }
 
     .beer-img-wrapped {
@@ -1192,6 +1474,10 @@ hr {
 
     .generic-container {
         margin: 0.5rem 2rem;
+    }
+
+    .sponsors-wrapped {
+        grid-template-columns: 23% 23% 23% 23%;
     }
     
 
