@@ -16,6 +16,9 @@ body {
     margin: 0 3rem;
 }
 
+.basic-para {
+    font-size: 20px;
+}
 
 .generic-container {
     margin: 0.5rem 3rem;
@@ -250,15 +253,16 @@ a.left:hover:before {
     width: 45%;
     display: flex;
     flex-direction: column;
-    text-align: left;
+    align-items: flex-end;
 }
-/* 
-.funded-by img {
-    width: 100;
-} */
+
+.funded-info {
+    display: flex;
+    justify-content: flex-end;
+} 
 
 .wigan {
-    width: 100%;
+    width: 60%;
 }
 
 .heading-main {
@@ -271,6 +275,11 @@ a.left:hover:before {
     text-align: left;
     text-transform: capitalize;
     padding-right: 1rem;
+}
+
+.heading-wrapped h3 {
+    font-size: 2rem;
+    font-weight: 400;
 }
 
 .sponsor {
@@ -572,7 +581,7 @@ hr {
 
 .sponsors-wrapped {
     display: grid;
-    grid-template-columns: 10% 10% 10% 10% 10% 10%;
+    grid-template-columns: 15% 15% 15% 15% 15% 15%;
     grid-template-rows: auto auto auto auto;
     grid-gap: 10px;
     padding: 20px 0;
@@ -623,6 +632,56 @@ hr {
 
 .left-content-t {
     text-align: right;
+}
+
+/* Music */
+.music-schedule {
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 20px 0;
+}
+
+.band-wrapped {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.music-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.band-logo {
+    width: 100%;
+}
+
+.img-band-wrapped {
+    display: grid;
+    grid-template-columns: 9% 9% 9% 9% 9% 9% 9% 9% 9% 9%;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 20px 0;
+}
+
+.music-box h1 {
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.music-box h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.music-box h3 {
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    font-weight: 300;
 }
 
 /* footer */
