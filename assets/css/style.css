@@ -1466,6 +1466,9 @@ a {
     /* menu */
 
     /* sponsors */
+    .sponsors-wrapped {
+        grid-template-columns: 22.5% 22.5% 22.5% 22.5%;
+    }
 
     /* jubilee section */
     .right-content {
@@ -1474,6 +1477,14 @@ a {
 
     .generic-container {
         margin: 0.5rem 2rem;
+    }
+
+    .j-img {
+        width: 30%;
+    }
+
+    .heading-wrapped h1 {
+        font-size: 2rem;
     }
 
     .sponsors-wrapped {
