@@ -16,6 +16,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta name="keywords" content="">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ab972f586c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css" media="screen" type="text/css">
@@ -206,8 +207,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
 
         <div class="beer-img-wrapped">
-            <img src="assets/images/beer.png" alt="" class="beer-image">
-            <img src="assets/images/gin.png" alt="" class="second-beer-img">
+            <img src="assets/images/beer.png" alt="" class="beer-image" data-aos="slide-right" >
+            <img src="assets/images/gin.png" alt="" class="second-beer-img" data-aos="slide-left">
         </div>
     </section>
 
@@ -231,8 +232,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div> 
         
         <div class="cups-wrapped">
-            <img src="assets/images/cup-top.png" alt="">
-            <img src="assets/images/cup-bottom.png" alt="">
+            <img src="assets/images/cup-top.png" alt="" data-aos="fade-left">
+            <img src="assets/images/cup-bottom.png" alt="" data-aos="slide-right">
         </div>
     </section>
 
@@ -425,14 +426,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 </div>   
                             </div>
                             <div class="menu-item">
-                                <img src="assets/images/logo.png" alt="">
+                                <img src="assets/images/logos/colin n al.png" alt="">
                                 <div class="menu-text-wrapped">
                                     <h3>dick turpin</h3>
                                     <p>Toffee, malty & mellow hops | 4.2% ABV</p>
                                 </div>   
                             </div>
                             <div class="menu-item">
-                                <img src="assets/images/logo.png" alt="">
+                                <img src="assets/images/logos/rotary-leigh.png" alt="">
                                 <div class="menu-text-wrapped">
                                     <h3>inkeepers reserve</h3>
                                     <p>Malty & hoppy | 4.5% ABV</p>
@@ -481,7 +482,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 </div>    
                             </div>
                             <div class="menu-item">
-                                <img src="assets/images/logo.png" alt="">
+                                <img src="assets/images/logos/sumners.png" alt="">
                                 <div class="menu-text-wrapped">
                                     <h3>Mahou</h3>
                                     <p>5.1% ABV</p>
@@ -495,7 +496,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 </div>    
                             </div>
                             <div class="menu-item">
-                                <img src="assets/images/logo.png" alt="">
+                                <img src="assets/images/logos/rm-couriers.png" alt="">
                                 <div class="menu-text-wrapped">
                                     <h3>McEwans</h3>
                                     <p>4.1% ABV</p>
@@ -649,6 +650,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <img src="assets/images/thegooda.png" alt="">
             <img src="assets/images/mill-lane.png" alt="">
             <img src="assets/images/logos/colinsnd.png" alt="">
+            <img src="assets/images/logos/rm-couriers.png" alt="">
+            <img src="assets/images/logos/sumners.png" alt="">
         </div>
         <hr>
     </section>
@@ -767,8 +770,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <img src="assets/images/boomers.png" alt="">
             <img src="assets/images/cooke.png" alt="">
             <img src="assets/images/IMC.png" alt="">
-            <img src="assets/images/marshy.png" alt="">
+            <img src="assets/images/logos/marshy.png" alt="">
             <img src="assets/images/logos/skyline.png" alt="">
+            <img src="assets/images/logos/rotary-leigh.png" alt="">
+            <img src="assets/images/logos/colin n al.png" alt="">
         </div>
         
     </section>
@@ -800,6 +805,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(el, s);
     })();
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 2000
+    });
     </script>
 
 
