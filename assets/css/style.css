@@ -690,6 +690,26 @@ a {
 #bands-p {
     font-size: 25px;
 }
+
+/* Opportunities */
+
+.opportunities-wrapped {
+    background: #000;
+}
+
+.opportunities-text {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    align-items: center;
+}
+
+.opportunities-text h1 {
+    color: #fff;
+    font-size: 2rem;
+    padding-bottom: 5rem;
+}
+
 /* footer */
 #footer {
     position: relative;
@@ -697,6 +717,7 @@ a {
     background: #000;
     overflow: hidden;
     padding: 1rem 3rem;
+    margin-top: 4rem;
 }
 
 .footer-wrapped {
@@ -959,6 +980,11 @@ a {
 
 
     /* footer */
+
+    /* contact us */
+    .opportunities-text h1 {
+        font-size: 1.7rem;
+    }
     
 }
 
@@ -1015,6 +1041,10 @@ a {
     
 
     /* footer */
+
+    .opportunities-text h1 {
+        font-size: 1.5rem;
+    }
     
 }
 
@@ -1260,6 +1290,11 @@ a {
         font-size: 1.5rem;
     }
     /* footer */
+
+    .opportunities-text h1 {
+    text-align: center;
+    font-size: 1.7rem;
+    }
     
 }
 
@@ -1372,6 +1407,13 @@ a {
         width: 30%;
     }
     
+    .opportunities-text {
+        padding: 2rem;
+    }
+
+    .opportunities-text h1 {
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 400px) {
@@ -1502,6 +1544,11 @@ a {
     
 
     /* footer */
+
+    /* contact */
+    .opportunities-text h1 {
+        font-size: 1.25rem;
+    }
     
     
 }
