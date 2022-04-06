@@ -983,7 +983,6 @@ a {
 
     /* contact us */
     .opportunities-text h1 {
-        color: #fff;
         font-size: 1.7rem;
     }
     
@@ -1042,6 +1041,10 @@ a {
     
 
     /* footer */
+
+    .opportunities-text h1 {
+        font-size: 1.5rem;
+    }
     
 }
 
@@ -1287,6 +1290,11 @@ a {
         font-size: 1.5rem;
     }
     /* footer */
+
+    .opportunities-text h1 {
+    text-align: center;
+    font-size: 1.7rem;
+    }
     
 }
 
@@ -1399,6 +1407,13 @@ a {
         width: 30%;
     }
     
+    .opportunities-text {
+        padding: 2rem;
+    }
+
+    .opportunities-text h1 {
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 400px) {
@@ -1529,6 +1544,11 @@ a {
     
 
     /* footer */
+
+    /* contact */
+    .opportunities-text h1 {
+        font-size: 1.25rem;
+    }
     
     
 }
