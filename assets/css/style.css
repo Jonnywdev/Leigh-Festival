@@ -690,6 +690,26 @@ a {
 #bands-p {
     font-size: 25px;
 }
+
+/* Opportunities */
+
+.opportunities-wrapped {
+    background: #000;
+}
+
+.opportunities-text {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    align-items: center;
+}
+
+.opportunities-text h1 {
+    color: #fff;
+    font-size: 2rem;
+    padding-bottom: 5rem;
+}
+
 /* footer */
 #footer {
     position: relative;
@@ -697,6 +717,7 @@ a {
     background: #000;
     overflow: hidden;
     padding: 1rem 3rem;
+    margin-top: 4rem;
 }
 
 .footer-wrapped {
@@ -959,6 +980,12 @@ a {
 
 
     /* footer */
+
+    /* contact us */
+    .opportunities-text h1 {
+        color: #fff;
+        font-size: 1.7rem;
+    }
     
 }
 
