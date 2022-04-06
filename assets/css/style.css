@@ -458,6 +458,11 @@ hr {
     color: #000;
 }
 
+/* buy tickets now, from ticket source */
+.tickets-heading {
+    padding: 1rem 3rem;
+}
+
 /* section-4 -- map */
 .map img {
     width: 100%;
