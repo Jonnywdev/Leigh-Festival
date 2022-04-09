@@ -172,6 +172,11 @@ a.left:hover:before {
     width: 50%;
 }
 
+.btns-wrapped {
+    display: flex;
+    flex-direction: column;
+}
+
 #oops {
     padding-right: 20px;
 }
@@ -189,6 +194,20 @@ a.left:hover:before {
     text-align: center;
 }
 
+.tickets-solid {
+    text-decoration: none;
+    border: 3px solid #000;
+    border-radius: 25px;
+    background: #000;
+    transition: all .5s;
+    color: #fff;
+    cursor: pointer;
+    text-transform: capitalize;
+    z-index: 2;
+    text-align: center;
+    margin-top: 1rem;
+}
+
 .tickets:hover {
     background: #000;
     color: #fff;
@@ -199,6 +218,13 @@ a.left:hover:before {
     font-weight: 500;
     font-size: 1.5rem;
 }
+
+.tickets-solid h5 {
+    padding: 1rem 2rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
 
 .cloud {
     width: 25%;
@@ -897,12 +923,17 @@ a {
 
     /* Hero img */
     .top-wrapper {
-        justify-content: space-evenly;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .hero-img {
-        width: 70%;
+    .btns-wrapped {
+        width: 50%;
+        margin-top: 2rem;
+        align-items: center;
     }
+
 
     .right-cloud {
         top: 15rem;
@@ -991,21 +1022,9 @@ a {
 @media (max-width: 700px) {
     /* header */
 
-    /* Hero img */
-    .hero-img {
-        position: relative;
-        left: 3rem;
-    }
 
-    .top-wrapper {
-        justify-content: center;
-    }
-
-    .tickets {
-        position: relative;
-        right: 3rem;
-        top: 3rem;
-    }
+    
+    
 
     /* main sponsors */
     .heading-main h1 {
@@ -1204,7 +1223,6 @@ a {
     /* Hero img */
     .hero-img {
         width: 75%;
-        left: 3rem;
     }
 
     .tickets h5 {
@@ -1212,10 +1230,6 @@ a {
         padding: 1rem 1rem;
     }
 
-    .tickets {
-        right: 3rem;
-        top: 5rem;
-    }
 
     /* main sponsors */
 
@@ -1302,13 +1316,13 @@ a {
     /* header */
 
     /* Hero img */
-    .tickets {
-        right: 0;
-        top: 4rem;
-    }
 
     .tickets h5 {
-        padding: 1rem 5rem;
+        padding: 1rem 2rem;
+    }
+
+    .tickets-solid h5 {
+        padding: 1rem 2rem;
     }
 
     .hero-img {
@@ -1318,7 +1332,12 @@ a {
     .top-wrapper{
         flex-direction: column;
         align-items: center;
+        height: 65vh;
+        justify-content: space-between;
+    }
 
+    .btns-wrapped {
+        width: 75%;
     }
 
     /* main sponsors */
