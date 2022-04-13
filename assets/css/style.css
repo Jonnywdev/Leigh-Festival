@@ -724,6 +724,21 @@ a {
     background: #2B2A29;
 }
 
+.andy-wrapped {
+    padding: 3rem;
+    color: #fff;
+}
+
+.andys-content-wrapped {
+    display: flex;
+    flex-direction: row;
+}
+
+.andys-article-wrapped {
+    column-count: 2;
+}
+
+
 /* Opportunities */
 
 .opportunities-wrapped {
