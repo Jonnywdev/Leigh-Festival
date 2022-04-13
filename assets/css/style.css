@@ -717,6 +717,13 @@ a {
     font-size: 25px;
 }
 
+/* andys man club */
+.andys {
+    height: 100vh;
+    width: 100%;
+    background: #2B2A29;
+}
+
 /* Opportunities */
 
 .opportunities-wrapped {
