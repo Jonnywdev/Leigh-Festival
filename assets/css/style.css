@@ -721,6 +721,7 @@ a {
 .andys {
     width: 100%;
     background: #2B2A29;
+    overflow: hidden;
 }
 
 .andy-wrapped {
