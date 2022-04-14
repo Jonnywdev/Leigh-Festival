@@ -391,7 +391,7 @@ hr {
 
 .beer-banner {
     background: #000;
-    height: 100vh;
+    height: 150vh;
     overflow: hidden;
 }
 
@@ -437,15 +437,22 @@ hr {
     padding-top: 1rem;
 }
 
+.generic-container h5 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 500;
+    padding-top: 1rem;
+}
+
 .beer-img-wrapped {
     position: relative;
-    bottom: 350px;
+    bottom: 20rem;
 }
 
 .beer-image {
     position: relative;
-    right: 20px;
-    bottom: -20px;
     width: 30%;
 }
 
@@ -454,6 +461,15 @@ hr {
     width: 30%;
 }
 
+.bar-sponsors-wrapped {
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+    justify-content: center;
+}
+.bar-sponsors-wrapped img {
+    width: 100%;
+}
 /* .buy-btn {
     position: relative;
 } */
@@ -842,13 +858,6 @@ a {
 
 /* media queries */
 @media (max-width: 1250px) {
-    .beer-img-wrapped {
-        bottom: 400px;
-    }
-
-    .beer-banner {
-        height: 80vh;
-    }
 }
 
 @media (max-width: 1000px) {
@@ -875,9 +884,7 @@ a {
         align-items: baseline;
     }
     /* beer festival */
-    .beer-img-wrapped {
-        bottom: 190px;
-    }
+    
 
     /* map */
 
@@ -954,7 +961,11 @@ a {
     }
 
     .beer-img-wrapped {
-        bottom: 300px;
+        bottom: 190px;
+    }
+
+    .beer-banner {
+        height: 125vh;
     }
     /* map */
 
@@ -1039,12 +1050,12 @@ a {
 
     /* beer festival */
     .beer-img-wrapped {
-        bottom: 300px;
+        bottom: 12rem;
     }
 
-    .beer-banner {
+    /* .beer-banner {
         height: 65vh;
-    }
+    } */
     /* map */
 
     /* menu */
@@ -1119,11 +1130,10 @@ a {
     .generic-container h1 {
         font-size: 3.25rem;
     }
-
-    .beer-img-wrapped {
-        position: relative;
-        bottom: 175px;
+    .beer-banner {
+        height: 115vh;
     }
+
     /* map */
 
     /* menu */
@@ -1349,12 +1359,12 @@ a {
 
     /* beer festival */
     .beer-img-wrapped {
-        bottom: 0px;
+        bottom: 6rem;
     }
 
-    .beer-banner {
+    /* .beer-banner {
         height: 80vh;
-    }
+    } */
 
     .tickets-btn-white {
         width: 100%;
@@ -1635,11 +1645,15 @@ a {
     }
 
     .beer-banner {
-        height: 70vh;
+        height: 105vh;
+    } 
+
+    .bar-sponsors-wrapped {
+        width: 50%;
     }
 
     .beer-img-wrapped {
-        bottom: 60px;
+        bottom: 1rem;
     }
 
     /* map */
@@ -1715,6 +1729,10 @@ a {
 
     .generic-container h4 {
         font-size: 1.5rem;
+    }
+
+    .beer-banner {
+        height: 115vh;
     }
 
     /* map */
