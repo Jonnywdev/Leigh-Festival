@@ -641,6 +641,10 @@ a {
     width: 100%;
 }
 
+.sponsor-link {
+    width: 80%;
+}
+
 /* Section for cups?? */
 
 .cup-container {
@@ -1655,7 +1659,7 @@ a {
     } 
 
     .bar-sponsors-wrapped {
-        width: 50%;
+        width: 100%;
     }
 
     .beer-img-wrapped {
