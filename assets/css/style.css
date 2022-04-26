@@ -691,6 +691,50 @@ a {
     text-align: right;
 }
 
+/* foodvan */
+.foodvans {
+    margin: 0 3rem;
+}
+
+.foodvans h1 {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 3rem;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.food-van-wrapped {
+    display: flex;
+    flex-direction: row;
+    padding-top: 3rem;
+}
+
+.food-van-img-wrapped {
+    width: 65%;
+    position: relative;
+    left: -8rem;
+    bottom: .5rem;
+}
+
+.food-van-img-wrapped img {
+    width: 100%;
+}
+
+.foodvan-text-wrapped {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.foodvan-text-wrapped h2 {
+    text-decoration: underline;
+    font-size: 2rem;
+}
+
 /* Music */
 .music-schedule {
     display: grid;
