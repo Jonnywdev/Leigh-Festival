@@ -728,6 +728,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    width: 50%;
 }
 
 .foodvan-text-wrapped h2 {
