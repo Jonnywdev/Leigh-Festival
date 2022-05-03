@@ -711,6 +711,7 @@ a {
     display: flex;
     flex-direction: row;
     padding-top: 3rem;
+    align-items: flex-end;
 }
 
 .food-van-img-wrapped {
@@ -727,14 +728,18 @@ a {
 .foodvan-text-wrapped {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     width: 50%;
 }
 
-.foodvan-text-wrapped h2 {
-    text-decoration: underline;
-    font-size: 2rem;
+.foodvan-text-wrapped ul {
+    padding-top: 2rem;
 }
+
+.foodvan-text-wrapped li {
+    padding-bottom: 1rem;
+}
+
 
 /* Music */
 .music-schedule {
@@ -1165,6 +1170,15 @@ a {
         bottom: -250px;
     }
 
+    /* food vans */
+    .food-van-img-wrapped {
+        width: 95%;
+    }
+
+    .foodvan-text-wrapped {
+        width: 60%;
+    }
+
     /* contact us */
     .opportunities-text h1 {
         font-size: 1.7rem;
@@ -1227,6 +1241,29 @@ a {
         width: 50%;
         bottom: -15px;
         left: 25%;
+    }
+
+    /* food vans */
+    .food-van-wrapped {
+        flex-direction: column-reverse;
+    }
+
+    .foodvan-text-wrapped {
+        width: 100%;
+    }
+
+    .food-van-img-wrapped {
+        width: 100%;
+        left: -4rem;
+        bottom: -1.5rem;
+    }
+
+    .foodvan-text-wrapped ul {
+        column-count: 2;
+    }
+
+    .foodvan-text-wrapped li {
+        padding-right: 2rem;
     }
     /* footer */
 
@@ -1582,6 +1619,11 @@ a {
     .andy-wrapped h1 {
         font-size: 2.5rem;
     }
+
+    /* food trucks */
+    .food-van-wrapped {
+        padding-top: 1rem;
+    }    
 
     /* footer */
 
