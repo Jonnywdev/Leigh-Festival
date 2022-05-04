@@ -711,7 +711,6 @@ a {
     display: flex;
     flex-direction: row;
     padding-top: 3rem;
-    align-items: flex-end;
 }
 
 .food-van-img-wrapped {
