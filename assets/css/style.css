@@ -579,7 +579,17 @@ hr {
 }
 
 .mixed-abilty-wrapped {
+    display: flex;
+    flex-direction: column;
+}
 
+.teams-wrapped {
+    display: flex;
+    flex-direction: row;
+}
+
+.teams-wrapped img {
+    width: 50%;
 }
 
 /* jubilee section */
