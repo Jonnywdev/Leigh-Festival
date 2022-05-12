@@ -567,6 +567,31 @@ hr {
     text-transform: capitalize;
 }
 
+/* MIXED ABILITY MATCH */
+#mixed-header {
+    font-size: 2rem;
+    padding-top: 2rem;
+}
+
+#mixed-sub-heading {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+.mixed-abilty-wrapped {
+    display: flex;
+    flex-direction: column;
+}
+
+.teams-wrapped {
+    display: flex;
+    flex-direction: row;
+}
+
+.teams-wrapped img {
+    width: 50%;
+}
+
 /* jubilee section */
 #jubilee-section {
     margin: 0 3rem;
