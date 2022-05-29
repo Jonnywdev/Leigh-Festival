@@ -1065,8 +1065,6 @@ a {
 
 
 /* media queries */
-@media (max-width: 1250px) {
-}
 
 @media (max-width: 1000px) {
     /* header */
@@ -1415,6 +1413,15 @@ a {
     .opportunities-text h1 {
         font-size: 1.5rem;
     }
+
+    /* mixed ability */
+    .teams-wrapped h3 {
+        font-size: 3rem;
+    }
+
+    .team-wrapper h2 {
+        font-size: 1rem;
+    }
     
 }
 
@@ -1662,8 +1669,34 @@ a {
     /* footer */
 
     .opportunities-text h1 {
-    text-align: center;
-    font-size: 1.7rem;
+        text-align: center;
+        font-size: 1.7rem;
+    }
+
+    /* mixed ability */
+
+    .mixed-ability-description-wrapped {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mixed-ability-description-wrapped p {
+        width: 100%;
+    }
+
+    .mixed-sponsor-wrapped {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .mixed-sponsor-wrapped h4 {
+        font-size: 2rem;
+        padding: 2rem 2rem 0 0;
     }
     
 }
@@ -1798,6 +1831,26 @@ a {
 
     .opportunities-text h1 {
         font-size: 1.5rem;
+    }
+
+    /* mixed ability */
+    .teams-wrapped {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .team-wrapper {
+        width: 60%;
+    }
+
+    .teams-wrapped h3 {
+        font-size: 4rem;
+        padding: 2rem 0;
+    }
+
+    .team-wrapper h2 {
+        font-size: 1.25rem;
     }
 }
 
@@ -1946,6 +1999,23 @@ a {
         font-size: 1.25rem;
     }
     
+    /* mixed ability */
+    .team-wrapper h2 {
+        font-size: 1rem;
+    }
+
+    .mixed-sponsor-wrapped img {
+        width: 70%;
+    }
+
+    .mixed-sponsor-wrapped {
+        justify-content: center;
+    }
+
+    .mixed-sponsor-wrapped h4 {
+        font-size: 2.5rem;
+        padding: 2rem 0 0 0;
+    }
     
 }
 
@@ -1992,6 +2062,21 @@ a {
         width: 30%;
     }
 
-    /* footer */
+    /* mixed ability */
+    .team-wrapper {
+        width: 100%;
+    }
+
+    .teams-wrapped h3 {
+        font-size: 3rem;
+    }
+
+    .team-wrapper h2 {
+        font-size: 1.25rem;
+    }
+
+    .mixed-sponsor-wrapped h4 {
+        font-size: 1.8rem;
+    }
     
 }
