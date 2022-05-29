@@ -1852,6 +1852,16 @@ a {
     .team-wrapper h2 {
         font-size: 1.25rem;
     }
+
+    /* try it section */
+
+    .tryit-header-wrapped h1 {
+        font-size: 1.5rem;
+    }
+
+    .try-it-btn h5 {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 400px) {
@@ -2016,6 +2026,20 @@ a {
         font-size: 2.5rem;
         padding: 2rem 0 0 0;
     }
+
+    /* try it section */
+    .tryit-header-wrapped {
+        flex-direction: column;
+    }
+
+    .tryit-header-wrapped img {
+        width: 30%;
+        padding-bottom: 2rem;
+    }
+
+    .try-it-btn {
+        width: 75%;
+    }
     
 }
 
@@ -2077,6 +2101,29 @@ a {
 
     .mixed-sponsor-wrapped h4 {
         font-size: 1.8rem;
+    }
+
+    /* try it section */
+    .tryit-container {
+        margin: 2rem;
+    }
+
+    .tryit-header-wrapped img {
+        width: 45%;
+    }
+
+    .tryit-header-wrapped h1 {
+        font-size: 1.5rem;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .tryit-content p {
+        padding-bottom: 1rem;
+    }
+
+    .try-it-btn h5 {
+        padding: 1rem 2rem;
     }
     
 }
