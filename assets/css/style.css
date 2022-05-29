@@ -993,6 +993,76 @@ a {
     cursor: pointer;
 }
 
+/* try it section */
+
+.try-it {
+    background-color: #a4d4f3;
+}
+
+.tryit-container {
+    margin: 2rem 3rem;
+}
+
+.tryit-header-wrapped {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.tryit-header-wrapped img {
+    width: 15%;
+}
+
+.tryit-header-wrapped h1{
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+
+.tryit-content {
+    margin: 1rem 0;
+    padding-top: 2rem;
+}
+
+.tryit-content p {
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.try-it-btn-wrapped {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.try-it-btn {
+    text-decoration: none;
+    border: 3px solid #000;
+    border-radius: 25px;
+    background: none;
+    transition: all .5s;
+    color: #000;
+    margin: 2rem 0;
+    cursor: pointer;
+    text-transform: capitalize;
+    z-index: 2;
+    text-align: center;
+    width: 50%;
+}
+
+.try-it-btn h5 {
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+}
+
+.try-it-btn:hover {
+    background: #fff;
+    color: #000;
+}
+
 
 /* media queries */
 @media (max-width: 1250px) {
