@@ -576,6 +576,7 @@ hr {
 #mixed-sub-heading {
     font-size: 1.5rem;
     padding-top: 1rem;
+    font-weight: 300;
 }
 
 .mixed-abilty-wrapped {
@@ -586,11 +587,61 @@ hr {
 .teams-wrapped {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.team-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.team-wrapper h2 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 .teams-wrapped img {
     width: 50%;
 }
+
+.teams-wrapped h3 {
+    font-size: 5rem;
+}
+
+.mixed-sponsor-wrapped {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.mixed-sponsor-wrapped h4{
+    font-size: 1.5rem;
+}
+
+.mixed-sponsor-wrapped img {
+    width: 50%;
+}
+
+.mixed-ability-description-wrapped {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.mixed-ability-description-wrapped p {
+    width: 60%;
+}
+
+
 
 /* jubilee section */
 #jubilee-section {
