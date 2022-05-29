@@ -576,6 +576,7 @@ hr {
 #mixed-sub-heading {
     font-size: 1.5rem;
     padding-top: 1rem;
+    font-weight: 300;
 }
 
 .mixed-abilty-wrapped {
@@ -586,11 +587,61 @@ hr {
 .teams-wrapped {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.team-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.team-wrapper h2 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 .teams-wrapped img {
     width: 50%;
 }
+
+.teams-wrapped h3 {
+    font-size: 5rem;
+}
+
+.mixed-sponsor-wrapped {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.mixed-sponsor-wrapped h4{
+    font-size: 1.5rem;
+}
+
+.mixed-sponsor-wrapped img {
+    width: 50%;
+}
+
+.mixed-ability-description-wrapped {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.mixed-ability-description-wrapped p {
+    width: 60%;
+}
+
+
 
 /* jubilee section */
 #jubilee-section {
@@ -942,10 +993,78 @@ a {
     cursor: pointer;
 }
 
+/* try it section */
+
+.try-it {
+    background-color: #a4d4f3;
+}
+
+.tryit-container {
+    margin: 2rem 3rem;
+}
+
+.tryit-header-wrapped {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.tryit-header-wrapped img {
+    width: 15%;
+}
+
+.tryit-header-wrapped h1{
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+
+.tryit-content {
+    margin: 1rem 0;
+    padding-top: 2rem;
+}
+
+.tryit-content p {
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.try-it-btn-wrapped {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.try-it-btn {
+    text-decoration: none;
+    border: 3px solid #000;
+    border-radius: 25px;
+    background: none;
+    transition: all .5s;
+    color: #000;
+    margin: 2rem 0;
+    cursor: pointer;
+    text-transform: capitalize;
+    z-index: 2;
+    text-align: center;
+    width: 50%;
+}
+
+.try-it-btn h5 {
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+}
+
+.try-it-btn:hover {
+    background: #fff;
+    color: #000;
+}
+
 
 /* media queries */
-@media (max-width: 1250px) {
-}
 
 @media (max-width: 1000px) {
     /* header */
@@ -1294,6 +1413,15 @@ a {
     .opportunities-text h1 {
         font-size: 1.5rem;
     }
+
+    /* mixed ability */
+    .teams-wrapped h3 {
+        font-size: 3rem;
+    }
+
+    .team-wrapper h2 {
+        font-size: 1rem;
+    }
     
 }
 
@@ -1541,8 +1669,34 @@ a {
     /* footer */
 
     .opportunities-text h1 {
-    text-align: center;
-    font-size: 1.7rem;
+        text-align: center;
+        font-size: 1.7rem;
+    }
+
+    /* mixed ability */
+
+    .mixed-ability-description-wrapped {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mixed-ability-description-wrapped p {
+        width: 100%;
+    }
+
+    .mixed-sponsor-wrapped {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .mixed-sponsor-wrapped h4 {
+        font-size: 2rem;
+        padding: 2rem 2rem 0 0;
     }
     
 }
@@ -1677,6 +1831,36 @@ a {
 
     .opportunities-text h1 {
         font-size: 1.5rem;
+    }
+
+    /* mixed ability */
+    .teams-wrapped {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .team-wrapper {
+        width: 60%;
+    }
+
+    .teams-wrapped h3 {
+        font-size: 4rem;
+        padding: 2rem 0;
+    }
+
+    .team-wrapper h2 {
+        font-size: 1.25rem;
+    }
+
+    /* try it section */
+
+    .tryit-header-wrapped h1 {
+        font-size: 1.5rem;
+    }
+
+    .try-it-btn h5 {
+        font-size: 1rem;
     }
 }
 
@@ -1825,6 +2009,37 @@ a {
         font-size: 1.25rem;
     }
     
+    /* mixed ability */
+    .team-wrapper h2 {
+        font-size: 1rem;
+    }
+
+    .mixed-sponsor-wrapped img {
+        width: 70%;
+    }
+
+    .mixed-sponsor-wrapped {
+        justify-content: center;
+    }
+
+    .mixed-sponsor-wrapped h4 {
+        font-size: 2.5rem;
+        padding: 2rem 0 0 0;
+    }
+
+    /* try it section */
+    .tryit-header-wrapped {
+        flex-direction: column;
+    }
+
+    .tryit-header-wrapped img {
+        width: 30%;
+        padding-bottom: 2rem;
+    }
+
+    .try-it-btn {
+        width: 75%;
+    }
     
 }
 
@@ -1871,6 +2086,44 @@ a {
         width: 30%;
     }
 
-    /* footer */
+    /* mixed ability */
+    .team-wrapper {
+        width: 100%;
+    }
+
+    .teams-wrapped h3 {
+        font-size: 3rem;
+    }
+
+    .team-wrapper h2 {
+        font-size: 1.25rem;
+    }
+
+    .mixed-sponsor-wrapped h4 {
+        font-size: 1.8rem;
+    }
+
+    /* try it section */
+    .tryit-container {
+        margin: 2rem;
+    }
+
+    .tryit-header-wrapped img {
+        width: 45%;
+    }
+
+    .tryit-header-wrapped h1 {
+        font-size: 1.5rem;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .tryit-content p {
+        padding-bottom: 1rem;
+    }
+
+    .try-it-btn h5 {
+        padding: 1rem 2rem;
+    }
     
 }
