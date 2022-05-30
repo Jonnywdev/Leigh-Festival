@@ -1063,6 +1063,31 @@ a {
     color: #000;
 }
 
+/* tryit page */
+
+.page-container {
+    margin: 7rem 3rem;
+}
+
+.description-wrapped {
+    display: flex;
+    flex-direction: column;
+}
+
+.groups-wrapped {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.group-card {
+    background: #a4d4f3;
+    width: 40%;
+    padding: 0.5rem;
+    height: ;
+}
+
 
 /* media queries */
 
