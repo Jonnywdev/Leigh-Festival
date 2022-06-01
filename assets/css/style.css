@@ -1065,13 +1065,26 @@ a {
 
 /* tryit page */
 
-.page-container {
-    margin: 7rem 3rem;
+#try-it-body {
+    background: #a7d2f2;
+}
+
+.tryit-section {
+    margin: 4rem 3rem;
 }
 
 .description-wrapped {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.logo-header-try {
+    max-width: 100px;
+    max-height: 100%;
+    padding-right: 1rem;
 }
 
 .description-wrapped h1 {
@@ -1092,7 +1105,7 @@ a {
     width: 40%;
     overflow: hidden;
     border-radius: 20px;
-    box-shadow: 0 0 20px 8px #d0d0d0;
+    box-shadow: 0 0 10px 4px #606060;
     
 }
 
@@ -1113,6 +1126,64 @@ a {
     padding-bottom: 0.5rem;
 }
 
+.try {
+    height: 100vh;
+}
+
+.games-are-wrapped {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+/* round one */
+.rounds {
+    font-size: 2rem;
+}
+
+.match-wrapped {
+    width: 45%;
+}
+
+.match-card {
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f2;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.time-wrapped {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 1rem;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.timeandpitch {
+    font-weight: 400;
+}
+
+.team-wrapped {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.team-wrapped h5{
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.teams-text {
+    font-size: 1.5rem;
+}
+
 .try-it-sponsors-wrapped {
     margin-top: 3rem;
 }
@@ -1129,6 +1200,11 @@ a {
     width: 100%;
 }
 
+/* update text */
+.update {
+    font-size: 1rem;
+    color: red;
+}
 /* media queries */
 
 @media (max-width: 1000px) {
