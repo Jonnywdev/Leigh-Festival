@@ -2305,6 +2305,19 @@ th, td {
         padding: 13px;
         font-size: 0.8rem;
     }
+
+    .teams-text {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .team-wrapped h5 {
+        font-size: 1.5rem;
+    }
+
+    .sponsors-wrapped-try {
+        grid-gap: 15px;
+    }
     
 }
 
@@ -2391,4 +2404,21 @@ th, td {
         padding: 1rem 2rem;
     }
     
+    /* try it page */
+    th, td {
+        padding: 6px;
+        font-size: 0.65rem;
+    }
+
+    .teams-text {
+        font-size: 1rem;
+    }
+
+    .time-wrapped {
+        font-size: 0.65rem;
+    }
+
+    .update {
+        font-size: 0.7rem !important;
+    }
 }
