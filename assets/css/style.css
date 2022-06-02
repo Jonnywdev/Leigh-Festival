@@ -2116,6 +2116,14 @@ th, td {
         grid-gap: 18px;
     }
 
+    .tryit-section {
+        margin: 3rem 1rem;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 0.75rem;
+    }
 }
 
 @media (max-width: 400px) {
@@ -2297,15 +2305,6 @@ th, td {
 
     /* tryit page */
 
-    .tryit-section {
-        margin: 3rem 2rem;
-    }
-
-    th, td {
-        padding: 13px;
-        font-size: 0.8rem;
-    }
-
     .teams-text {
         font-size: 1.3rem;
         text-align: center;
@@ -2318,6 +2317,7 @@ th, td {
     .sponsors-wrapped-try {
         grid-gap: 15px;
     }
+
     
 }
 
@@ -2407,7 +2407,7 @@ th, td {
     /* try it page */
     th, td {
         padding: 6px;
-        font-size: 0.65rem;
+        font-size: 0.60rem;
     }
 
     .teams-text {
