@@ -2306,7 +2306,7 @@ th, td {
     /* tryit page */
 
     .teams-text {
-        font-size: 1.3rem;
+        font-size: 1rem;
         text-align: center;
     }
 
@@ -2411,7 +2411,7 @@ th, td {
     }
 
     .teams-text {
-        font-size: 1rem;
+        font-size: 0.85rem;
     }
 
     .time-wrapped {
