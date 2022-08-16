@@ -8,13 +8,21 @@
 body {
     font-weight: 300;
     font-family: 'Bai Jamjuree', sans-serif;
-    background: #fff;
+    background: #000;
     overflow-x: hidden;
 }
 
 /* generic */
 a {
     text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.hide {
+    display: block;
 }
 /* header */ 
 
@@ -46,10 +54,129 @@ header {
 }
 
 /* placeholder */
+
 .new-placeholder {
     width: 100%;
 }
 
 .new-placeholder img {
     width: 100%;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-wrapped {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-logo {
+    width: 25%;
+}
+
+.icons-wrapped {
+    margin: 2% 0;
+    display: flex;
+    width: 10%;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.icons-wrapped a {
+    color: #fff;
+}
+
+.icons-wrapped a:hover {
+    color: #00DAEE;
+}
+
+.icons-wrapped i {
+    font-size: 2rem;
+}
+
+.footer-wrapped a {
+    font-size: 1.25rem;
+    color: #989898;
+    cursor: pointer;
+}
+
+.footer-wrapped a img {
+    width: 10%;
+    cursor: pointer;
+}
+
+/* media query */
+
+@media (max-width: 1000px) {
+    /* header */
+
+    /* footer */
+    .icons-wrapped {
+        width: 15%;
+    }
+}
+
+@media (max-width: 700px) {
+    /* header */
+
+    /* footer */
+    .icons-wrapped i {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 600px) {
+    /* header */
+
+    /* footer */
+    .footer-logo {
+        width: 40%;
+    }
+
+    .icons-wrapped {
+        width: 20%;
+    }
+
+    .footer-wrapped a {
+        font-size: 1rem;
+    }
+
+    .footer-wrapped a img {
+        width: 15%;
+    }
+}
+
+@media (max-width: 500px) {
+    /* header */
+
+    /* footer */
+    .hide {
+        display: none;
+    }
+
+    .hidden {
+        display: block;
+    }
+}
+
+@media (max-width: 400px) {
+    /* header */
+
+    /* footer */
+
+    .icons-wrapped {
+        width: 35%;
+    }
 }
