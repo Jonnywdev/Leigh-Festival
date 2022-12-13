@@ -1,15 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;
-    border: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
 body {
     font-weight: 300;
-    font-family: 'Bai Jamjuree', sans-serif;
-    background: #000;
-    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    border: none;
 }
 
 /* generic */
@@ -17,54 +13,148 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.flex {
+    display: flex;
+}
+
+.align-c {
+    align-items: center;
+}
+
+.jc {
+    justify-content: center;
+}
+
 .hidden {
     display: none;
 }
 
-.hide {
-    display: block;
+.image-wrapper {
+    max-width: 100%;
 }
+
+.image-wrapper img {
+    width: 100%;
+}
+
+.bg-blue {
+    background: #00DAEE
+}
+
 /* header */ 
-
-header {
-    width: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
+nav {
     background: #00DAEE;
+    max-width: 100%;
 }
 
-.header-is-wrapped {
-    padding: 5%;
-}
-
-.header-logo {
-    width: 100%;
-    
-}
-
-.header-is-wrapped img {
-    width: 15%;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-/* placeholder */
-
-.new-placeholder {
+nav img {
+    max-width: 160px;
     width: 100%;
 }
 
-.new-placeholder img {
-    width: 100%;
+.navbar {
+    align-items: flex-end;
 }
+
+.navbar-brand {
+    width: 90%;
+}
+
+.navbar-collapse {
+    width: 10%;
+}
+
+.nav-link {
+    padding: 0 !important;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* hero-img */
+
+
+/* information about LF */
+.about-text h3 {
+    font-weight: 600;
+}
+
+/* sponsorship */
+.small-btn {
+    color: #000;
+    transition: all .5s;
+}
+
+.small-btn:hover {
+    color: #5b9cb4;
+}
+
+.txt-btn {
+    text-decoration: none;
+    color: #000;
+}
+
+.swiper-controls {
+    margin: 20px 0;
+}
+
+.swiper-controls div i {
+    color: #000;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.swiper-controls div i:hover {
+    color: #5b9cb4;
+}
+
+/* contact us banner */
+.contact-banner {
+    background: #5b9cb4;
+}
+
+.contact-txt-wrapped {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5px;
+}
+
+.contact-txt-wrapped h5{
+    font-weight: 600;
+    font-size: 26px;
+}
+
+/* CSS */
+.button-33 {
+    background-color: #9ce3ff;
+    border-radius: 100px;
+    box-shadow: rgba(42,186,255, .2) 0 -25px 18px -14px inset,rgba(42,186,255, .15) 0 1px 2px,rgba(42,186,255, .15) 0 2px 4px,rgba(42,186,255, .15) 0 4px 8px,rgba(42,186,255, .15) 0 8px 16px,rgba(42,186,255, .15) 0 16px 32px;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 30px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-33:hover {
+    box-shadow: rgba(42,186,255,.35) 0 -25px 18px -14px inset,rgba(42,186,255,.25) 0 1px 2px,rgba(42,186,255,.25) 0 2px 4px,rgba(42,186,255,.25) 0 4px 8px,rgba(42,186,255,.25) 0 8px 16px,rgba(42,186,255,.25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+  }
 
 /* footer */
-
 footer {
     width: 100%;
     background: #000;
@@ -117,66 +207,4 @@ footer {
     cursor: pointer;
 }
 
-/* media query */
-
-@media (max-width: 1000px) {
-    /* header */
-
-    /* footer */
-    .icons-wrapped {
-        width: 15%;
-    }
-}
-
-@media (max-width: 700px) {
-    /* header */
-
-    /* footer */
-    .icons-wrapped i {
-        font-size: 1.75rem;
-    }
-}
-
-@media (max-width: 600px) {
-    /* header */
-
-    /* footer */
-    .footer-logo {
-        width: 40%;
-    }
-
-    .icons-wrapped {
-        width: 20%;
-    }
-
-    .footer-wrapped a {
-        font-size: 1rem;
-    }
-
-    .footer-wrapped a img {
-        width: 15%;
-    }
-}
-
-@media (max-width: 500px) {
-    /* header */
-
-    /* footer */
-    .hide {
-        display: none;
-    }
-
-    .hidden {
-        display: block;
-    }
-}
-
-@media (max-width: 400px) {
-    /* header */
-
-    /* footer */
-
-    .icons-wrapped {
-        width: 35%;
-    }
-}
+/* Contact us page */
