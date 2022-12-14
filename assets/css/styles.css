@@ -48,6 +48,10 @@ a:hover {
     display: none;
 }
 
+.active {
+    color: #000;
+}
+
 /* image elements */
 
 .image-wrapper {
@@ -88,13 +92,23 @@ nav img {
 }
 
 .navbar-collapse {
-    width: 10%;
+    width: 20%;
 }
 
 .nav-link {
-    padding: 0 !important;
+    padding-bottom: 0 !important;
     font-size: 20px;
     font-weight: 400;
+    color: #989898;
+    transition: all .5s;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+
+.navl-left {
+    padding-right: 5px;
 }
 
 /* hero-img */
@@ -196,7 +210,7 @@ footer {
 }
 
 .footer-logo {
-    width: 65%;
+    width: 70%;
 }
 
 .icons-wrapped {
