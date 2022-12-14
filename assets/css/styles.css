@@ -9,6 +9,7 @@ body {
 }
 
 /* generic */
+/* tag elements */
 a {
     text-decoration: none;
 }
@@ -18,6 +19,8 @@ a:hover {
     color: #000;
 }
 
+/* direction elements */
+
 .flex {
     display: flex;
 }
@@ -26,18 +29,26 @@ a:hover {
     align-items: center;
 }
 
-.jc {
-    justify-content: center;
+.flex-end {
+    align-items: flex-end;
 }
 
-.hidden {
-    display: none;
+.jc {
+    justify-content: center;
 }
 
 .container-margin-y {
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
+
+/* display elements */
+
+.hidden {
+    display: none;
+}
+
+/* image elements */
 
 .image-wrapper {
     max-width: 100%;
@@ -47,8 +58,14 @@ a:hover {
     width: 100%;
 }
 
+/* color elements */
+
 .bg-blue {
     background: #00DAEE
+}
+
+.color-white {
+    color: #fff !important;
 }
 
 /* header */ 
@@ -175,23 +192,18 @@ footer {
 }
 
 .footer-wrapped {
-    padding: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    padding: 2% 5%;
 }
 
 .footer-logo {
-    width: 25%;
+    width: 65%;
 }
 
 .icons-wrapped {
-    margin: 2% 0;
+    margin: 0;
     display: flex;
-    width: 10%;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: flex-end;
     cursor: pointer;
 }
 
@@ -208,14 +220,19 @@ footer {
 }
 
 .footer-wrapped a {
-    font-size: 1.25rem;
     color: #989898;
     cursor: pointer;
 }
 
+.footer-wrapped a:hover {
+    color: #00DAEE;
+}
+
 .footer-wrapped a img {
-    width: 10%;
+    width: 20%;
     cursor: pointer;
 }
+
+
 
 /* Contact us page */
