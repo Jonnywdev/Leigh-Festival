@@ -34,6 +34,11 @@ a:hover {
     display: none;
 }
 
+.container-margin-y {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
 .image-wrapper {
     max-width: 100%;
 }
@@ -114,45 +119,51 @@ nav img {
 
 /* contact us banner */
 .contact-banner {
-    background: #5b9cb4;
+    position: relative;
 }
 
-.contact-txt-wrapped {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.contact-us-b-btn {
+    position: absolute;
+    bottom: 25px;
+}
+
+.contact-btn {
     align-items: center;
-    padding: 20px 5px;
-}
-
-.contact-txt-wrapped h5{
-    font-weight: 600;
-    font-size: 26px;
-}
-
-/* CSS */
-.button-33 {
-    background-color: #9ce3ff;
-    border-radius: 100px;
-    box-shadow: rgba(42,186,255, .2) 0 -25px 18px -14px inset,rgba(42,186,255, .15) 0 1px 2px,rgba(42,186,255, .15) 0 2px 4px,rgba(42,186,255, .15) 0 4px 8px,rgba(42,186,255, .15) 0 8px 16px,rgba(42,186,255, .15) 0 16px 32px;
-    color: #000;
+    appearance: none;
+    background-color: #000;
+    border-radius: 4px;
+    border-width: 0;
+    box-sizing: border-box;
+    color: #fff !important;
     cursor: pointer;
-    display: inline-block;
-    padding: 7px 20px;
-    text-align: center;
+    display: inline-flex;
+    height: 55px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    text-align: left;
     text-decoration: none;
-    transition: all 250ms;
-    border: 0;
-    font-size: 30px;
+    transition: all .5s;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-  }
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 30px;
+}
   
-  .button-33:hover {
-    box-shadow: rgba(42,186,255,.35) 0 -25px 18px -14px inset,rgba(42,186,255,.25) 0 1px 2px,rgba(42,186,255,.25) 0 2px 4px,rgba(42,186,255,.25) 0 4px 8px,rgba(42,186,255,.25) 0 8px 16px,rgba(42,186,255,.25) 0 16px 32px;
-    transform: scale(1.05) rotate(-1deg);
-  }
+.contact-btn:focus {
+    box-shadow: #000 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px inset;
+}
+  
+.contact-btn:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px inset;
+    transform: translateY(-2px);
+}
 
 /* footer */
 footer {
