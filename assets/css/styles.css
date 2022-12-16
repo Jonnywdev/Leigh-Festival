@@ -12,6 +12,7 @@ body {
 /* tag elements */
 a {
     text-decoration: none;
+    color: #000;
 }
 
 a:hover {
@@ -250,3 +251,31 @@ footer {
 
 
 /* Contact us page */
+
+.contact-submit {
+    width: 100%;
+    color: #000;
+    background: #00DAEE;
+    border: none;
+    padding: 5px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+.contact-submit:hover {
+    background: #5b9cb4;
+}
+
+.contact-text {
+    color: #000;
+    transition: all .5s;
+}
+
+.contact-text:hover {
+    color: #5b9cb4;
+}
+
+.contact-card {
+    box-shadow: 3px 6px 10px  #5b9cb4;
+}
