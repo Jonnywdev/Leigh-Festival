@@ -116,6 +116,11 @@ nav img {
 
 
 /* information about LF */
+.info-section {
+    display: flex;
+    flex-direction: row;       
+}
+
 .about-text h3 {
     font-weight: 600;
 }
@@ -211,7 +216,7 @@ footer {
 }
 
 .footer-logo {
-    width: 70%;
+    width: 50%;
 }
 
 .icons-wrapped {
@@ -278,4 +283,78 @@ footer {
 
 .contact-card {
     box-shadow: 3px 6px 10px  #5b9cb4;
+}
+
+/* responsiveness */
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    /* header */
+    
+    /* sponsorship page */
+
+    /* sponorsable item page */
+
+    /* contact us page */
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    /* header */
+    .navbar-collapse {
+        width: 25%;
+    }
+
+    /* sponsorship page */
+
+    /* sponorsable item page */
+
+    /* contact us page */
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* header */
+    .navbar-nav {
+        margin: 0 auto !important;
+        text-align: center;
+    }
+
+    .container {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        max-width: 90%;
+        padding: 0;
+    }
+
+    .navbar-brand {
+        width: fit-content;
+    }
+    
+    /* sponsorship page */
+
+    .info-section {
+        flex-direction: column-reverse;
+    }
+
+    .col {
+        flex-basis: content;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* sponorsable item page */
+
+    /* contact us page */
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    /* header */
+    
+    /* sponsorship page */
+
+    /* sponorsable item page */
+
+    /* contact us page */
 }
