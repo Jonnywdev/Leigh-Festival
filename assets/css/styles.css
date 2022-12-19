@@ -88,12 +88,8 @@ nav img {
     align-items: flex-end;
 }
 
-.navbar-brand {
-    width: 90%;
-}
-
 .navbar-collapse {
-    width: 20%;
+    justify-content: flex-end;
 }
 
 .nav-link {
@@ -112,6 +108,27 @@ nav img {
     padding-right: 5px;
 }
 
+/* dropdown */
+.dropdown-menu {
+    padding: 0;
+    left: -15px;
+    background: #00DAEE;
+    border: none;
+    border-radius: 5px;
+}
+
+.b-btm {
+    border-bottom: 1px solid #5b9cb4;
+}
+
+.dropdown-item {
+    transition: all .5s;
+}
+
+.dropdown-item:hover {
+    background: #03C1D3;
+
+}
 /* hero-img */
 
 
@@ -253,6 +270,24 @@ footer {
     cursor: pointer;
 }
 
+.footer-bottom-row {
+    max-width: 100%;
+    padding-bottom: 20px;
+}
+
+.avandor-logo {
+    width: 5%;
+}
+
+.avandor-txt {
+    color: #989898;
+    transition: all .5s;
+}
+
+.avandor-txt:hover {
+    color: #00DAEE;
+}
+
 
 
 /* Contact us page */
@@ -285,6 +320,39 @@ footer {
     box-shadow: 3px 6px 10px  #5b9cb4;
 }
 
+/* sponsorship grid */
+.sponsor-item-wrapped {
+    flex-direction: row;
+}
+
+.sponsorship-grid-col {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+  
+.sponsorship-grid-col img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.sponsor-txt-wrapped {
+    padding-left: 10px;
+}
+
+.get-in-touch {
+    padding: 5px 10px;
+    background: #000;
+    color: #fff;
+    margin-left: 4px;
+    transition: all .5s;
+}
+
+.get-in-touch:hover {
+    color: #00DAEE;
+}
 /* responsiveness */
 
 /* Large devices (desktops, less than 1200px) */
@@ -354,7 +422,12 @@ footer {
     
     /* sponsorship page */
 
-    /* sponorsable item page */
 
+    /* sponorsable item page */
+    .sponsorship-grid-col {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
     /* contact us page */
 }
