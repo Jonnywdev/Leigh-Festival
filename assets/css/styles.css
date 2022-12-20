@@ -344,15 +344,32 @@ footer {
 }
 
 .get-in-touch {
-    padding: 5px 10px;
+    padding: 10px 40px;
     background: #000;
     color: #fff;
     margin-left: 4px;
     transition: all .5s;
+    font-size: 20px;
 }
 
 .get-in-touch:hover {
     color: #00DAEE;
+}
+
+.colour-grid {
+    flex-direction: row;
+}
+
+.colours-wrapped {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.colour-box-wrapped {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
 }
 /* responsiveness */
 
