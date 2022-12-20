@@ -371,6 +371,46 @@ footer {
     height: 100px;
     border: 2px solid #000;
 }
+
+/* colours */
+#orange {
+    background: #ffaa00;
+}
+
+#dark-green {
+    background: #008206;
+}
+
+#pink {
+    background: #ff66d0;
+}
+
+#dark-blue {
+    background: #1f1f91;
+}
+
+#red {
+    background: #ff0000;
+}
+
+#light-green {
+    background: #4bff00;
+}
+
+#light-blue {
+    background: #00ffff;
+}
+
+#purple {
+    background: #d300ff;
+}
+
+/* to be added when a colour is taken. */
+#white {
+    background: #fff;
+    border: none;
+}
+
 /* responsiveness */
 
 /* Large devices (desktops, less than 1200px) */
