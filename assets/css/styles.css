@@ -308,6 +308,10 @@ footer {
     background: #5b9cb4;
 }
 
+.contact-wrapped {
+    flex-direction: row;
+}
+
 .contact-text {
     color: #000;
     transition: all .5s;
@@ -319,6 +323,10 @@ footer {
 
 .contact-card {
     box-shadow: 3px 6px 10px  #5b9cb4;
+}
+
+.contact-form {
+    margin-bottom: 0;
 }
 
 /* sponsorship grid */
@@ -357,13 +365,20 @@ footer {
 }
 
 .colour-grid {
-    flex-direction: row;
+    display: grid;
+    align-content: end;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    gap: 10px;
+    padding: 10px;
 }
 
 .colours-wrapped {
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .colour-box-wrapped {
@@ -432,9 +447,18 @@ footer {
         width: 25%;
     }
 
+
+    .navbar-nav {
+        text-align: center;
+    }
+
     /* sponsorship page */
 
     /* sponorsable item page */
+    .colour-box-wrapped {
+        width: 85px;
+        height: 85px;
+    }
 
     /* contact us page */
 
@@ -453,6 +477,11 @@ footer {
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 768px) {
+    /* generic */
+    .container {
+        margin: 2rem auto !important;
+    }
+
     /* header */
     .navbar-nav {
         margin: 0 auto !important;
@@ -469,6 +498,26 @@ footer {
     .navbar-brand {
         width: fit-content;
     }
+
+    .nav-item {
+        border-bottom: 1px solid #5b9cb4;
+        padding: 10px 0;
+    }
+
+    .dropdown-item {
+        padding: 6px;
+        text-align: center;
+    }
+
+    /* home - sponsorship */
+    .about-text {
+        padding-bottom: 3rem;
+    }
+
+    .contact-us-b-btn {
+        position: absolute;
+        bottom: 0;
+    }
     
     /* sponsorship page */
 
@@ -481,14 +530,67 @@ footer {
         padding-left: 0;
         padding-right: 0;
     }
+
     /* sponorsable item page */
+    .sponsor-item-wrapped {
+        flex-direction: column-reverse;
+    }
+
+    .get-in-touch {
+        margin-left: 0px;
+    }
+
+    .sponsorship-grid-col {
+        margin-top: 5rem;
+    }    
+
+    .colour-grid {
+        grid-template-columns: auto auto auto auto;
+    }
 
     /* contact us page */
+    .contact-wrapped {
+        flex-direction: column;
+    }
+    
+    .contact-card {
+        width: 100%; 
+    }
+
+    .contact-form {
+        margin-bottom: 5rem;
+    }
+
+    /* footer */
+    .footer-wrapped .row .col {
+        justify-content: center !important;
+    }
+
+    .footer-logo {
+        width: 40%;
+        margin: 20px 0;
+    }
+
+    .text-right {
+        text-align: center !important;
+    }
+
+    .icons-wrapped {
+        justify-content: center;
+    }
+
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
-@media (mam-width: 576px) {
+@media (max-width: 576px) {
+    /* generic */
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+    }
     /* header */
+
+    /* home - sponsorship */
     
     /* sponsorship page */
 
@@ -499,5 +601,74 @@ footer {
         flex: 100%;
         max-width: 100%;
     }
+
+    .sponsor-item-wrapped {
+        overflow: hidden;
+    }
+
+    .sponsorship-grid-col {
+        margin-top: 2rem;
+    }
+
+    .colour-box-wrapped {
+        width: 100px;
+        height: 100px;
+    }
     /* contact us page */
+
+    /* footer */
+}
+
+@media (max-width: 420px) {
+    /* generic */
+    .container {
+        max-width: 83%;
+    }
+
+    .main-header {
+        font-size: 1.6rem;
+    }
+
+    .container-margin-y {
+        margin-top: 3rem;
+    }
+
+    /* header */
+
+    /* home - sponsorship */
+    .small-btn {
+        padding-left: 0 !important;
+    }
+
+    .image-wrapper {
+        overflow: hidden;
+    }
+
+    .image-wrapper img {
+        width: 150%;
+    }
+
+    .contact-btn {
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .colour-grid {
+        grid-template-columns: auto auto;
+    }
+    /* sponsorship page */
+
+
+    /* sponorsable item page */
+    .card-img-top img{
+        width: 100% !important;
+    }
+    
+    /* contact us page */
+
+    /* footer */
+    .avandor-logo {
+        width: 35%;
+    }
+
 }
