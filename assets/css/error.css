@@ -1,0 +1,79 @@
+/* error page */
+.error-container {
+    max-width: 95%;
+}
+
+.error-wrapped {
+    flex-direction: row;
+}
+
+.error-txt-image-wrapper {
+    max-width: 100%;
+}
+
+.error-txt-image-wrapper img {
+    width: 100%;
+}
+
+.error-image-wrapper {
+    max-width: 100%;
+}
+
+.error-image-wrapper img {
+    width: 100%;
+}
+
+.error-txt-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 50%;
+}
+
+.error-img-col {
+    min-width: 50%;
+
+}
+
+/* responsiveness */
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1200px) {
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 992px) {
+    .error-container {
+        max-width: 90%;
+        margin: 5rem;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 768px) {
+
+    
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 576px) {
+    .error-wrapped {
+        flex-direction: column;
+    }
+
+    .error-txt-col {
+        margin-bottom: 5rem;
+    }
+
+    .error-txt-image-wrapper {
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .error-container {
+        margin: 2rem;
+    }
+}

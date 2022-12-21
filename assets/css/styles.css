@@ -411,10 +411,11 @@ footer {
     border: none;
 }
 
+
 /* responsiveness */
 
 /* Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) {
+@media (max-width: 1200px) {
     /* header */
     
     /* sponsorship page */
@@ -425,7 +426,7 @@ footer {
 }
 
 /* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {
+@media (max-width: 992px) {
     /* header */
     .navbar-collapse {
         width: 25%;
@@ -437,10 +438,21 @@ footer {
 
     /* contact us page */
 
+    /* footer */
+    .footer-bottom-row {
+        width: 50%;
+        padding-bottom: 20px;
+        margin: 0 auto !important;
+    }
+
+    .avandor-logo {
+        width: 15%;
+    }
+
 }
 
 /* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
     /* header */
     .navbar-nav {
         margin: 0 auto !important;
@@ -475,7 +487,7 @@ footer {
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
+@media (mam-width: 576px) {
     /* header */
     
     /* sponsorship page */
