@@ -427,6 +427,20 @@ footer {
 }
 
 
+/* main home page */
+
+/* main sponsor banner */
+.square{
+    width: 400px;
+    height: 250px;
+    background-color: #03C1D3;
+    position: relative;
+    padding: 15px;    
+}
+.sq{
+    text-align: center;
+}
+
 /* responsiveness */
 
 /* Large devices (desktops, less than 1200px) */
