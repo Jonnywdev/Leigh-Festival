@@ -1,70 +1,226 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    font-weight: 300;
     margin: 0;
     padding: 0;
     border: none;
 }
 
-
-body {
-    font-weight: 300;
-    font-family: 'Bai Jamjuree', sans-serif;
-    background: #000;
-    overflow-x: hidden;
-}
-
 /* generic */
+/* tag elements */
 a {
     text-decoration: none;
+    color: #000;
 }
+
+a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+/* direction elements */
+
+.flex {
+    display: flex;
+}
+
+.align-c {
+    align-items: center;
+}
+
+.flex-end {
+    align-items: flex-end;
+}
+
+.jc {
+    justify-content: center;
+}
+
+.container-margin-y {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+/* display elements */
 
 .hidden {
     display: none;
 }
 
-.hide {
-    display: block;
+.active {
+    color: #000;
 }
+
+/* image elements */
+
+.image-wrapper {
+    max-width: 100%;
+}
+
+.image-wrapper img {
+    width: 100%;
+}
+
+/* color elements */
+
+.bg-blue {
+    background: #00DAEE
+}
+
+.color-white {
+    color: #fff !important;
+}
+
 /* header */ 
-
-header {
-    width: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
+nav {
     background: #00DAEE;
+    max-width: 100%;
 }
 
-.header-is-wrapped {
-    padding: 5%;
-}
-
-.header-logo {
+nav img {
+    max-width: 160px;
     width: 100%;
-    
 }
 
-.header-is-wrapped img {
-    width: 15%;
-    margin: 0;
+.navbar {
+    align-items: flex-end;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.nav-link {
+    padding-bottom: 0 !important;
+    font-size: 20px;
+    font-weight: 400;
+    color: #989898;
+    transition: all .5s;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+
+.navl-left {
+    padding-right: 5px;
+}
+
+/* dropdown */
+.dropdown-menu {
+    padding: 0;
+    left: -15px;
+    top: 50px;
+    background: #00DAEE;
+    border: none;
+    border-radius: 5px;
+}
+
+.b-btm {
+    border-bottom: 1px solid #5b9cb4;
+}
+
+.dropdown-item {
+    transition: all .5s;
+}
+
+.dropdown-item:hover {
+    background: #03C1D3;
+
+}
+/* hero-img */
+
+
+/* information about LF */
+.info-section {
+    display: flex;
+    flex-direction: row;       
+}
+
+.about-text h3 {
+    font-weight: 600;
+}
+
+/* sponsorship */
+.small-btn {
+    color: #000;
+    transition: all .5s;
+}
+
+.small-btn:hover {
+    color: #5b9cb4;
+}
+
+.txt-btn {
+    text-decoration: none;
+    color: #000;
+}
+
+.swiper-controls {
+    margin: 20px 0;
+}
+
+.swiper-controls div i {
+    color: #000;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.swiper-controls div i:hover {
+    color: #5b9cb4;
+}
+
+/* contact us banner */
+.contact-banner {
+    position: relative;
+}
+
+.contact-us-b-btn {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    bottom: 25px;
 }
 
-/* placeholder */
-
-.new-placeholder {
-    width: 100%;
+.contact-btn {
+    align-items: center;
+    appearance: none;
+    background-color: #000;
+    border-radius: 4px;
+    border-width: 0;
+    box-sizing: border-box;
+    color: #fff !important;
+    cursor: pointer;
+    display: inline-flex;
+    height: 55px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 30px;
 }
-
-.new-placeholder img {
-    width: 100%;
+  
+.contact-btn:focus {
+    box-shadow: #000 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px inset;
+}
+  
+.contact-btn:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px inset;
+    transform: translateY(-2px);
 }
 
 /* footer */
-
 footer {
     width: 100%;
     background: #000;
@@ -74,23 +230,18 @@ footer {
 }
 
 .footer-wrapped {
-    padding: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    padding: 2% 5%;
 }
 
 .footer-logo {
-    width: 25%;
+    width: 50%;
 }
 
 .icons-wrapped {
-    margin: 2% 0;
+    margin: 0;
     display: flex;
-    width: 10%;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: flex-end;
     cursor: pointer;
 }
 
@@ -107,76 +258,431 @@ footer {
 }
 
 .footer-wrapped a {
-    font-size: 1.25rem;
     color: #989898;
     cursor: pointer;
 }
 
+.footer-wrapped a:hover {
+    color: #00DAEE;
+}
+
 .footer-wrapped a img {
-    width: 10%;
+    width: 20%;
     cursor: pointer;
 }
 
-/* media query */
+.footer-bottom-row {
+    max-width: 100%;
+    padding-bottom: 20px;
+}
 
-@media (max-width: 1000px) {
+.avandor-logo {
+    width: 5%;
+}
+
+.avandor-txt {
+    color: #989898;
+    transition: all .5s;
+}
+
+.avandor-txt:hover {
+    color: #00DAEE;
+}
+
+
+
+/* Contact us page */
+
+.contact-submit {
+    width: 100%;
+    color: #000;
+    background: #00DAEE;
+    border: none;
+    padding: 5px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+.contact-submit:hover {
+    background: #5b9cb4;
+}
+
+.contact-wrapped {
+    flex-direction: row;
+}
+
+.contact-text {
+    color: #000;
+    transition: all .5s;
+}
+
+.contact-text:hover {
+    color: #5b9cb4;
+}
+
+.contact-card {
+    box-shadow: 3px 6px 10px  #5b9cb4;
+}
+
+.contact-form {
+    margin-bottom: 0;
+}
+
+/* sponsorship grid */
+.sponsor-item-wrapped {
+    flex-direction: row;
+}
+
+.sponsorship-grid-col {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+  
+.sponsorship-grid-col img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.sponsor-txt-wrapped {
+    padding-left: 10px;
+}
+
+.get-in-touch {
+    padding: 10px 40px;
+    background: #000;
+    color: #fff;
+    margin-left: 4px;
+    transition: all .5s;
+    font-size: 20px;
+}
+
+.get-in-touch:hover {
+    color: #00DAEE;
+}
+
+.colour-grid {
+    display: grid;
+    align-content: end;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+.colours-wrapped {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.colour-box-wrapped {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+}
+
+/* colours */
+#orange {
+    background: #ffaa00;
+}
+
+#dark-green {
+    background: #008206;
+}
+
+#pink {
+    background: #ff66d0;
+}
+
+#dark-blue {
+    background: #1f1f91;
+}
+
+#red {
+    background: #ff0000;
+}
+
+#light-green {
+    background: #4bff00;
+}
+
+#light-blue {
+    background: #00ffff;
+}
+
+#purple {
+    background: #d300ff;
+}
+
+/* to be added when a colour is taken. */
+#white {
+    background: #fff;
+    border: none;
+}
+
+
+/* main home page */
+
+/* main sponsor banner */
+.square{
+    width: 400px;
+    height: 250px;
+    background-color: #03C1D3;
+    position: relative;
+    padding: 15px;    
+}
+.sq{
+    text-align: center;
+}
+
+/* responsiveness */
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1200px) {
     /* header */
+    
+    /* sponsorship page */
+
+    /* sponorsable item page */
+
+    /* contact us page */
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 992px) {
+    /* header */
+    .navbar-collapse {
+        width: 25%;
+    }
+
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    /* sponsorship page */
+
+    /* sponorsable item page */
+    .colour-box-wrapped {
+        width: 85px;
+        height: 85px;
+    }
+
+    /* contact us page */
 
     /* footer */
-    .icons-wrapped {
+    .footer-bottom-row {
+        width: 50%;
+        padding-bottom: 20px;
+        margin: 0 auto !important;
+    }
+
+    .avandor-logo {
         width: 15%;
     }
+
 }
 
-@media (max-width: 700px) {
-    /* header */
-
-    /* footer */
-    .icons-wrapped i {
-        font-size: 1.75rem;
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 768px) {
+    /* generic */
+    .container {
+        margin: 2rem auto !important;
     }
-}
 
-@media (max-width: 600px) {
     /* header */
+    .navbar-nav {
+        margin: 0 auto !important;
+        text-align: center;
+    }
+
+    .container {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        max-width: 90%;
+        padding: 0;
+    }
+
+    .navbar-brand {
+        width: fit-content;
+    }
+
+    .nav-item {
+        border-bottom: 1px solid #5b9cb4;
+        padding: 10px 0;
+    }
+
+    .dropdown-item {
+        padding: 6px;
+        text-align: center;
+    }
+
+    /* home - sponsorship */
+    .about-text {
+        padding-bottom: 3rem;
+    }
+
+    .contact-us-b-btn {
+        position: absolute;
+        bottom: 0;
+    }
+    
+    /* sponsorship page */
+
+    .info-section {
+        flex-direction: column-reverse;
+    }
+
+    .col {
+        flex-basis: content;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* sponorsable item page */
+    .sponsor-item-wrapped {
+        flex-direction: column-reverse;
+    }
+
+    .get-in-touch {
+        margin-left: 0px;
+    }
+
+    .sponsorship-grid-col {
+        margin-top: 5rem;
+    }    
+
+    .colour-grid {
+        grid-template-columns: auto auto auto auto;
+    }
+
+    /* contact us page */
+    .contact-wrapped {
+        flex-direction: column;
+    }
+    
+    .contact-card {
+        width: 100%; 
+    }
+
+    .contact-form {
+        margin-bottom: 5rem;
+    }
 
     /* footer */
+    .footer-wrapped .row .col {
+        justify-content: center !important;
+    }
+
     .footer-logo {
         width: 40%;
+        margin: 20px 0;
+    }
+
+    .text-right {
+        text-align: center !important;
     }
 
     .icons-wrapped {
-        width: 20%;
+        justify-content: center;
     }
 
-    .footer-wrapped a {
-        font-size: 1rem;
-    }
-
-    .footer-wrapped a img {
-        width: 15%;
-    }
 }
 
-@media (max-width: 500px) {
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 576px) {
+    /* generic */
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+    }
     /* header */
 
-    /* footer */
-    .hide {
-        display: none;
+    /* home - sponsorship */
+    
+    /* sponsorship page */
+
+
+    /* sponorsable item page */
+    .sponsorship-grid-col {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
     }
 
-    .hidden {
-        display: block;
+    .sponsor-item-wrapped {
+        overflow: hidden;
     }
+
+    .sponsorship-grid-col {
+        margin-top: 2rem;
+    }
+
+    .colour-box-wrapped {
+        width: 100px;
+        height: 100px;
+    }
+    /* contact us page */
+
+    /* footer */
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
+    /* generic */
+    .container {
+        max-width: 83%;
+    }
+
+    .main-header {
+        font-size: 1.6rem;
+    }
+
+    .container-margin-y {
+        margin-top: 3rem;
+    }
+
     /* header */
 
-    /* footer */
+    /* home - sponsorship */
+    .small-btn {
+        padding-left: 0 !important;
+    }
 
-    .icons-wrapped {
+    .image-wrapper {
+        overflow: hidden;
+    }
+
+    .image-wrapper img {
+        width: 150%;
+    }
+
+    .contact-btn {
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .colour-grid {
+        grid-template-columns: auto auto;
+    }
+    /* sponsorship page */
+
+
+    /* sponorsable item page */
+    .card-img-top img{
+        width: 100% !important;
+    }
+    
+    /* contact us page */
+
+    /* footer */
+    .avandor-logo {
         width: 35%;
     }
+
 }
