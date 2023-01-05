@@ -474,6 +474,11 @@ footer {
         height: 85px;
     }
 
+    /* glassware */
+    .colour-grid {
+        grid-template-columns: auto auto auto auto;
+    }
+
     /* contact us page */
 
     /* footer */
@@ -557,10 +562,6 @@ footer {
     .sponsorship-grid-col {
         margin-top: 5rem;
     }    
-
-    .colour-grid {
-        grid-template-columns: auto auto auto auto;
-    }
 
     /* contact us page */
     .contact-wrapped {
@@ -678,6 +679,10 @@ footer {
         width: 100% !important;
     }
     
+    /* glassware */
+    #cup-img {
+        width: 100% !important;
+    }
     /* contact us page */
 
     /* footer */
