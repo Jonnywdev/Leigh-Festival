@@ -73,7 +73,7 @@ a:hover {
     color: #fff !important;
 }
 
-/* header */ 
+/* header */
 nav {
     background: #00DAEE;
     max-width: 100%;
@@ -136,7 +136,7 @@ nav img {
 /* information about LF */
 .info-section {
     display: flex;
-    flex-direction: row;       
+    flex-direction: row;
 }
 
 .about-text h3 {
@@ -210,11 +210,11 @@ nav img {
     will-change: box-shadow,transform;
     font-size: 30px;
 }
-  
+
 .contact-btn:focus {
     box-shadow: #000 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px inset;
 }
-  
+
 .contact-btn:hover {
     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px inset;
     transform: translateY(-2px);
@@ -340,7 +340,7 @@ footer {
     max-width: 50%;
     padding: 0 4px;
 }
-  
+
 .sponsorship-grid-col img {
     margin-top: 8px;
     vertical-align: middle;
@@ -429,16 +429,43 @@ footer {
 
 /* main home page */
 
+/* hero image */
+
 /* main sponsor banner */
-.square{
-    width: 400px;
-    height: 250px;
+
+.main-sponsors-wrapped {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.main-sponsors-logo {
+    width: 100%;
+
     background-color: #03C1D3;
     position: relative;
-    padding: 15px;    
+    padding: 15px;
+    overflow: hidden;
 }
 .sq{
     text-align: center;
+}
+
+/* the plan */
+
+/* day swiper */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* responsiveness */
@@ -446,7 +473,7 @@ footer {
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1200px) {
     /* header */
-    
+
     /* sponsorship page */
 
     /* sponorsable item page */
@@ -537,7 +564,7 @@ footer {
         position: absolute;
         bottom: 0;
     }
-    
+
     /* sponsorship page */
 
     .info-section {
@@ -561,15 +588,15 @@ footer {
 
     .sponsorship-grid-col {
         margin-top: 5rem;
-    }    
+    }
 
     /* contact us page */
     .contact-wrapped {
         flex-direction: column;
     }
-    
+
     .contact-card {
-        width: 100%; 
+        width: 100%;
     }
 
     .contact-form {
@@ -606,7 +633,7 @@ footer {
     /* header */
 
     /* home - sponsorship */
-    
+
     /* sponsorship page */
 
 
@@ -678,7 +705,7 @@ footer {
     .card-img-top img{
         width: 100% !important;
     }
-    
+
     /* glassware */
     #cup-img {
         width: 100% !important;
