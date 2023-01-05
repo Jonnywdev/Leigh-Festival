@@ -1,6 +1,7 @@
 <?php
 
-if (isset($_POST['submit'])) {
+if ( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
+    echo'<script>console.log("posted");</script>';
     $fullName = $_POST['name'];
     $emailAddress = $_POST['mail'];
     $emailSubject = $_POST['subject'];
