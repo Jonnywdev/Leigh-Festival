@@ -86,10 +86,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <form action="/contact.php" method="post" class="contact-form"> 
                 <!-- I want the emails to go to trav - chris@collinsanddarwell.co.uk -->
                 <div class="form-group">
-                  <input type="email" class="form-control" id="emailAddress" placeholder="Email Address" required>
+                    <input type="text" name="name" id="fullName" placeholder="Full Name" class="form-control mb-3" required>
+                    <input type="email" name="mail" class="form-control" id="emailAddress" placeholder="Email Address" required>
                 </div>
                 <div class="form-group">
-                  <select class="form-control" id="emailSubject" required>
+                  <select class="form-control" id="emailSubject" name="subject" required>
                     <option value="">-- Email Subject --</option>
                     <option value="beer">Beer Barrel Sponsorship</option>
                     <option value="glassware">Glassware Sponsorship</option>
@@ -100,12 +101,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <option value="token">Beer Token Sponsorship</option>
                     <option value="foodvan">I have a food van I want to bring</option>
                     <option value="stall">I want to set up a stall</option>
+                    <option value="other">Other Enquiry</option>
                   </select>
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" id="emailMessage" rows="3" placeholder="Type your message here..." required></textarea>
+                  <textarea class="form-control" id="emailMessage" name="message" rows="3" placeholder="Type your message here..." required></textarea>
                 </div>
-                <input type="submit" value="Submit" class="contact-submit">
+                <input type="submit" value="Submit" class="contact-submit" name="submit">
             </form>
             <div class="mt-5">
                 <a href="homepage.html" class="p-5 text-white">Go to home</a>
