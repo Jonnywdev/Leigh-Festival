@@ -792,6 +792,10 @@ footer {
     /* header */
 
     /* home - sponsorship */
+    #hero-image {
+        width: 100% !important;
+    }
+
     .small-btn {
         padding-left: 0 !important;
     }
