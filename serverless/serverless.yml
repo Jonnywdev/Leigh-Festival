@@ -1,0 +1,17 @@
+service: leighfest
+
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+  stage: ${opt:stage, "DEV"}
+  region: ${opt:region, "eu-west-2"}
+
+functions:
+  contactForm:
+    handler: contact.contactForm
+    events:
+      - httpApi:
+          method: POST
+          path: /contact-form
