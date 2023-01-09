@@ -21,6 +21,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/ab972f586c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.typekit.net/azh5fcf.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/styles.css" media="screen" type="text/css">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
@@ -178,6 +179,128 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <hr class="home-hr">
 
     <div class="map-container">
+        <!-- map text -->
+
+        <!-- toilet text -->
+        <div class="toilet-txt-outside hidden-map-txt">
+            <h5>Toilets</h5>
+            <p>There will be 6 male and 6 female toilets here</p>
+        </div>
+
+        <div class="toilet-txt hidden-map-txt">
+            <h5>Toilets</h5>
+            <p>There will be 6 male and 6 female toilets here</p>
+        </div>
+
+        <!-- cocktails text -->
+        <div class="cocktails-txt hidden-map-txt">
+            <h5>cocktails</h5>
+            <p>CASH AND CARD</p>
+        </div>
+
+        <!--  bar text -->
+        <div class="bar-txt-outside hidden-map-txt">
+            <h5>Bar</h5>
+            <p>Beer tokens only</p>
+        </div>
+
+        <div class="bar-txt-field hidden-map-txt">
+            <h5>Bar</h5>
+            <p>Beer tokens n/a</p>
+        </div>
+
+
+        <div class="bar-txt hidden-map-txt">
+            <h5>Bar</h5>
+            <p>Beer tokens not allowed</p>
+        </div>
+
+        <!-- hot-drinks text -->
+        <div class="hot-drinks-txt hidden-map-txt">
+            <h5>Hot drinks</h5>
+            <p>cash and card</p>
+        </div>
+
+        <!-- rugby text -->
+        <!-- pitch one -->
+        <div class="rugby-txt-one hidden-map-txt">
+            <h5>test</h5>
+            <p>test p</p>
+        </div>
+        <!-- pitch two -->
+        <div class="rugby-txt-two hidden-map-txt">
+            <h5>test</h5>
+            <p>test p</p>
+        </div>
+        <!-- pitch three -->
+        <div class="rugby-txt-three hidden-map-txt">
+            <h5>test</h5>
+            <p>test p</p>
+        </div>
+
+        <!-- food text -->
+        <div class="food-txt hidden-map-txt">
+            <h5>Food</h5>
+            <p>We will have a lot of food this year</p>
+        </div>
+
+        <div class="food-txt-field hidden-map-txt">
+            <h5>Food</h5>
+            <p>We will have food here on Saturday</p>
+        </div>
+
+        <!-- tokens text -->
+        <div class="tokens-txt hidden-map-txt">
+            <h5>Beer Tokens</h5>
+            <p>Beer</p>
+        </div>
+
+        <!-- seating text -->
+        <div class="seating-txt hidden-map-txt">
+            <h5>Seating</h5>
+            <p>You will find our main <br> seating area here</p>
+        </div>
+
+        <!-- first-aid text -->
+        <div class="first-aid-txt-bar hidden-map-txt">
+            <h5>First Aid</h5>
+            <p>We have first aid available
+                <br>
+                at 3 diferent locations, if you need help
+                <br>
+                please find a marshall.
+            </p>
+        </div>
+
+        <div class="first-aid-txt-token hidden-map-txt">
+            <h5>First Aid</h5>
+            <p>We have first aid available
+                <br>
+                at 3 diferent locations, if you need help
+                <br>
+                please find a marshall.
+            </p>
+        </div>
+
+        <div class="first-aid-txt-field hidden-map-txt">
+            <h5>First Aid</h5>
+            <p>We have first aid available
+                <br>
+                at 3 diferent locations, if you need help
+                <br>
+                please find a marshall.
+            </p>
+        </div>
+
+        <!-- music text -->
+        <div class="music-txt hidden-map-txt">
+            <h5>Live Music</h5>
+            <p>Click below to see the scheduled acts!</p>
+            <a href="#">See schedule</a>
+        </div>
+
+        <!-- svg of map -->
+
         <?xml version="1.0" encoding="UTF-8"?>
             <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1675.45 960.35">
                 <defs>
@@ -565,17 +688,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         <path class="cls-43" d="M1364.09,794.58l-26.67,53.86h26.67s-.21-53.65,0-53.86Z"/>
                                     </g>
                                     <!-- circle for seating -->
-                                    <g>
-                                        <circle class="cls-48" cx="436.26" cy="298.86" r="31.48"/>
+                                        <circle class="cls-48 seating-marker map-button" cx="436.26" cy="298.86" r="31.48"/>
                                         <g>
                                             <rect class="cls-30" x="422.23" y="286.18" width="28.6" height="5.32"/>
                                             <rect class="cls-30" x="414.34" y="299.79" width="43.84" height="2.75"/>
                                             <rect class="cls-30" x="431.58" y="299.55" width="21.98" height="2.75" transform="translate(539.65 -225.38) rotate(66.24)"/>
                                             <rect class="cls-30" x="419.39" y="299.55" width="21.98" height="2.75" transform="translate(879.22 28.3) rotate(113.76)"/>
                                         </g>
-                                    </g>
                                     <!-- circle for rugby - pitch 2 -->
-                                    <g>
                                         <circle class="cls-48" cx="1060.52" cy="707.04" r="31.55"/>
                                         <g>
                                             <g class="cls-6">
@@ -588,9 +708,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                 <line class="cls-5" x1="1061.21" y1="703.02" x2="1064.6" y2="706.89"/>
                                             </g>
                                         </g>
-                                    </g>
                                     <!-- circle for rugby - pitch 3 -->
-                                    <g>
+                                    <g class="map-button">
                                         <circle class="cls-48" cx="894.75" cy="286.18" r="31.55"/>
                                         <g>
                                             <g class="cls-51">
@@ -605,7 +724,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         </g>
                                     </g>
                                     <!-- circle for rugby - pitch 1 -->
-                                    <g>
+                                    <g class="map-button">
                                         <circle class="cls-48" cx="1414.1" cy="294.54" r="31.55"/>
                                         <g>
                                             <g class="cls-52">
@@ -620,7 +739,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         </g>
                                     </g>
                                     <!-- circle for first aid - at token stand -->
-                                    <g>
+                                    <g class="map-button">
                                         <circle class="cls-48" cx="263.6" cy="499.54" r="31.55"/>
                                         <g>
                                             <rect class="cls-33" x="260.64" y="478.73" width="5.93" height="41.61"/>
@@ -628,7 +747,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         </g>
                                     </g>
                                     <!-- circle for first aid - pitch 3 -->
-                                    <g>
+                                    <g class="map-button">
                                         <circle class="cls-48" cx="1034.05" cy="510.45" r="31.55"/>
                                         <g>
                                             <rect class="cls-33" x="1031.08" y="489.65" width="5.93" height="41.61"/>
@@ -636,7 +755,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         </g>
                                     </g>
                                     <!-- circle for first aid - club -->
-                                    <g>
+                                    <g class="map-button">
                                         <circle class="cls-48" cx="86.81" cy="847.48" r="31.55"/>
                                         <g>
                                             <rect class="cls-33" x="83.85" y="826.68" width="5.93" height="41.61"/>
@@ -644,7 +763,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         </g>
                                     </g>
                                     <!-- circle for beer - beer tent -->
-                                    <g>
+                                    <g class="map-button">
                                         <circle class="cls-48" cx="617.49" cy="465.8" r="31.55"/>
                                         <g>
                                             <path class="cls-14" d="M622.64,486.65h-9.9c-1.4,0-2.57-1.08-2.67-2.48l-2.48-33.01h19.82l-2.09,32.98c-.09,1.41-1.26,2.51-2.67,2.51Z"/>
@@ -652,7 +771,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         </g>
                                     </g>
                                     <!-- circle for beer - at club -->
-                                    <g>
+                                    <g class="map-button">
                                         <circle class="cls-48" cx="154.47" cy="844.39" r="31.55"/>
                                         <g>
                                             <path class="cls-14" d="M159.62,865.24h-9.9c-1.4,0-2.57-1.08-2.67-2.48l-2.48-33.01h19.82l-2.09,32.98c-.09,1.41-1.26,2.51-2.67,2.51Z"/>
@@ -660,7 +779,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         </g>
                                     </g>
                                     <!-- circle for music-->
-                                    <g>
+                                    <g class="map-button">
                                         <circle class="cls-48" cx="371.07" cy="51.7" r="31.56"/>
                                         <g>
                                             <path class="cls-34" d="M354.01,38.32c-.19,.2-.3,.43-.54,.26-.17-.12-.27-.31-.21-.53,.1-.35,.37-.2,.68-.18-.17-.16,.02-.64-.48-.31-.22,.14-.36-.08-.42-.29-.06-.21-.05-.47,.22-.46,.59,.03,.19-.32,.29-.56-.24,.16-.37,.46-.6,.21-.13-.13-.31-.32-.22-.53,.12-.29,.38-.21,.64-.13l-.12-.61c-.18,.14-.29,.46-.56,.26-.15-.11-.21-.3-.19-.49,.04-.25,.2-.24,.43-.27,.33-.04-.02-.29,.07-.46-.23,.09-.42,.37-.66,.07-.12-.15-.21-.31-.1-.5,.15-.25,.37-.16,.6-.09l-.12-.62c-.18,.2-.33,.43-.59,.22-.17-.13-.26-.36-.15-.54,.16-.26,.41-.2,.63-.05-.07-1.24,.27-1.79,1.16-1.87,.56-.05,.98,.17,1.28,.63,.3,.48,.4,1,.08,1.48-.37,.53-.21,.8,.29,1.1,.76,.46,1.46,1.01,1.96,1.77,.22,.33,.26,.56-.08,.87-.62,.55-.66,1.33-.23,2.02,.96,1.51,1.9,3.03,2.84,4.56,2.58,4.18,5.15,8.37,7.72,12.56,.21,.35,.48,.46,.87,.36,.96-.26,1.99-1.16,1.46-2.52-.07-.17-.1-.35-.17-.52-.15-.37-.18-.72,.15-.99,.35-.29,.74-.18,1.07,.04,.56,.38,.97,.91,1.26,1.53,.36,.76,.54,1.57,.63,2.4,.14,1.22,.67,2.16,1.72,2.84,1.3,.85,2.64,1.67,3.65,2.88,1.13,1.35,1.89,2.82,1.31,4.67-.4,1.26-1.33,2.09-2.34,2.84-.53,.4-1.13,.7-1.69,1.05-.13,.08-.37,.09-.14,.39,.11,.14-.35,.4-.41,.28-.2-.45-.4-.1-.54-.03-.91,.48-1.84,.95-2.83,1.22-3.19,.85-5.26-.41-6.26-3.78-.41-1.39-.55-2.82-.77-4.23-.21-1.34-.85-2.36-1.83-3.24-.79-.72-1.62-1.4-2.29-2.24-.5-.62-.91-1.29-1.11-2.06-.18-.66-.23-1.35,.34-1.86,.19-.17-.2-.57,.33-.57,.51,0,.05,.46,.39,.57,.34,.11,.44,.55,.64,.85,.62,.96,1.75,1.35,2.67,.92,.73-.34,.89-.86,.48-1.57-1.4-2.45-2.79-4.9-4.19-7.35-1.46-2.56-2.91-5.11-4.36-7.67-.25-.45-.51-.86-1.1-.91-.42-.04-.51-.4-.58-.82Z"/>
@@ -668,7 +787,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         </g>
                                     </g>
                                     <!-- circle for food at festival -->
-                                    <g>
+                                    <g class="map-button">
                                         <circle class="cls-48" cx="216.4" cy="257.4" r="31.59"/>
                                         <g>
                                             <path class="cls-42" d="M202.43,278.55c-1.7-.1-2.89-1.55-2.56-3.18,.24-1.21,.89-2.19,1.74-3.05,4.17-4.23,8.3-8.48,12.52-12.66,7.4-7.33,14.84-14.61,22.27-21.91,.19-.19,.47-.3,.7-.45,.15,.28,.42,.56,.43,.85,.02,.53-.06,1.07-.2,1.58-.6,2.13-1.71,4.03-2.87,5.9-2.66,4.29-5.68,8.31-8.97,12.14-1.02,1.19-2.18,1.93-3.77,2-.8,.04-1.44,.38-2.01,1.03-4.27,4.95-8.57,9.87-12.9,14.78-.73,.83-1.57,1.59-2.47,2.24-.53,.39-1.27,.49-1.91,.73Z"/>
@@ -677,7 +796,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         </g>
                                     </g>
                                     <!-- circle for food on the field -->
-                                    <g>
+                                    <g class="map-button">
                                         <circle class="cls-48" cx="750.36" cy="498.21" r="31.59"/>
                                         <g>
                                             <path class="cls-42" d="M736.39,519.36c-1.7-.1-2.89-1.55-2.56-3.18,.24-1.21,.89-2.19,1.74-3.05,4.17-4.23,8.3-8.48,12.52-12.66,7.4-7.33,14.84-14.61,22.27-21.91,.19-.19,.47-.3,.7-.45,.15,.28,.42,.56,.43,.85,.02,.53-.06,1.07-.2,1.58-.6,2.13-1.71,4.03-2.87,5.9-2.66,4.29-5.68,8.31-8.97,12.14-1.02,1.19-2.18,1.93-3.77,2-.8,.04-1.44,.38-2.01,1.03-4.27,4.95-8.57,9.87-12.9,14.78-.73,.83-1.57,1.59-2.47,2.24-.53,.39-1.27,.49-1.91,.73Z"/>
@@ -686,7 +805,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         </g>
                                     </g>
                                     <!-- circle for token stand -->
-                                    <g>
+                                    <g class="map-button">
                                         <circle class="cls-48" cx="309.95" cy="493.27" r="31.65"/>
                                         <g>
                                             <rect class="cls-49" x="280.76" y="487.1" width="30.21" height="13.87" transform="translate(-22.16 974.11) rotate(-115.56)"/>
@@ -695,7 +814,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         </g>
                                     </g>
                                     <!-- circle for cocktails -->
-                                    <g>
+                                    <g class="map-button">
                                         <circle class="cls-48" cx="222.13" cy="200.59" r="31.5"/>
                                         <g>
                                             <path class="cls-38" d="M207.18,177.71c.47-.1,11.88-.5,12.94-.52,4.36-.09,8.72-.03,13.07,.29,.83,.06,1.65,.13,2.47,.22s1.24-.07,1.33,.77c.17,1.49,.19,3.13-.39,4.54-1.08,2.64-3.96,3.94-6.47,5.28-.29,.15-.59,.32-.76,.6-.13,.22-.17,.48-.21,.74-.28,2.15-.33,4.4-1.28,6.35-.68,1.4-1.79,2.54-2.82,3.72-.4,.46-.81,.95-.98,1.54-.11,.36-.12,.74-.13,1.12-.1,3.55-.08,7.11,.05,10.67,.05,1.27,.11,2.56,.53,3.76s1.24,2.32,2.41,2.81c1.17,.49,2.5,.3,3.74,.53s2.56,1.27,2.29,2.5c-1.33,.71-2.85,.93-4.34,1.08-4.1,.42-8.25,.42-12.35-.01-1.55-.16-3.28-.5-4.33-1.57-.32-.33-.24-.87,.15-1.12,.61-.39,1.29-.67,2-.82,.82-.18,1.68-.18,2.48-.44,1.55-.5,2.67-1.9,3.23-3.43,.57-1.56,.64-3.26,.69-4.93,.08-2.83,.1-5.65,.03-8.48-.01-.57-.05-1.14-.22-1.68-.2-.62-.58-1.16-.96-1.69-1.76-2.45-3.65-5.03-3.87-8.03-.09-1.14,.03-2.41-.72-3.27-.66-.75-1.76-.88-2.69-1.23-1.74-.65-3.06-2.16-3.81-3.86s-.99-3.58-1.07-5.43c0,0,0,0,.01,0Z"/>
@@ -704,7 +823,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         </g>
                                     </g>
                                     <!-- circle for coffee -->
-                                    <g>
+                                    <g class="map-button">
                                         <circle class="cls-48" cx="221.39" cy="319.58" r="31.7"/>
                                         <g>
                                             <path class="cls-39" d="M201.34,307.3c-.02,8.68-.04,17.37-.05,26.05,0,.57,0,1.17,.3,1.65,.27,.45,.75,.73,1.21,.98,4.86,2.56,10.57,2.99,16.05,2.61,3.24-.23,6.51-.73,9.47-2.09,.87-.4,1.76-.93,2.13-1.82,.22-.52,.3-1.1,.3-1.66,0-5.87,0-11.7,0-17.57,0-1.47,.02-2.95,.02-4.42,0-.7,.01-1.43,0-2.14,0-.31,.1-1.48,.02-1.78-.17-.6-.06,.36-.67,.19-1.25-.35-3.11,0-4.42,0-1.47,0-2.94,0-4.41,0-6.65,0-13.3,0-19.95,0Z"/>
@@ -721,7 +840,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         </g>
                                     </g>
                                     <!-- circle for toilets at festival -->
-                                    <g>
+                                    <g class="map-button">
                                         <circle class="cls-48" cx="595.25" cy="102.61" r="31.51"/>
                                         <g>
                                             <g>
@@ -735,7 +854,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         </g>
                                     </g>
                                     <!-- circle for toilets at the club -->
-                                    <g>
+                                    <g class="map-button">
                                         <circle class="cls-48" cx="55.29" cy="908.71" r="31.51"/>
                                         <g>
                                             <g>
@@ -749,7 +868,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         </g>
                                     </g>
                                     <!-- circle for bar on field 2 -->
-                                    <g>
+                                    <g class="map-button">
                                         <circle class="cls-48" cx="708.45" cy="704.07" r="31.55"/>
                                         <g>
                                         <path class="cls-14" d="M713.6,724.92h-9.9c-1.4,0-2.57-1.08-2.67-2.48l-2.48-33.01h19.82l-2.09,32.98c-.09,1.41-1.26,2.51-2.67,2.51Z"/>
@@ -817,6 +936,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <script src="assets/js/swiper-script.js"></script>
 <script src="assets/js/script.js"></script>
+<!-- javascript for map -->
+<script src="assets/js/interactive-map.js"></script>
 <!-- javascript for bootstrap -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

@@ -712,6 +712,113 @@ footer {
 
 .cls-5{stroke:#010101;}
 
+.show-map-element {
+}
+
+.hidden-map-txt {
+    background-color: #00DAEE;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    max-width: 20%;
+}
+
+.toilet-txt-outside {
+    left: 27%;
+    top: 135rem;
+}
+
+.toilet-txt {
+    top: 168.5rem;
+}
+
+.cocktails-txt {
+    left: 10%;
+    top: 138rem;
+}
+
+.bar-txt {
+    left: 15%;
+    top: 163rem;
+}
+
+.bar-txt-field {
+    left: 39%;
+    top: 160rem;
+}
+
+.bar-txt-outside {
+    left: 33%;
+    top: 150rem;
+}
+
+.hot-drinks-txt {
+    left: 15%;
+    top: 142rem;
+}
+
+.rugby-txt-one {
+    left: 80%;
+    top: 142rem;
+}
+
+.rugby-txt-two {
+    left: 69%;
+    top: 155rem;
+}
+
+.rugby-txt-three {
+    left: 58%;
+    top: 137rem;
+}
+
+.food-txt {
+    left: 5%;
+    top: 128rem;
+}
+
+.food-txt-field {
+    left: 37%;
+    top: 140rem;
+}
+
+.tokens-txt {
+    left: 16%;
+    top: 152rem;
+}
+
+.seating-txt {
+    left: 22%;
+    top: 143rem;
+}
+
+.first-aid-txt-bar {
+    left: 3%;
+    top: 169rem;
+}
+
+.first-aid-txt-token {
+    left: 8%;
+    top: 152rem;
+}
+
+.first-aid-txt-field {
+    left: 51%;
+    top: 152rem;
+}
+
+.music-txt {
+    left: 18%;
+    top: 135rem;
+}
+
+.map-button {
+    cursor: pointer;
+}
+
+.map-button:hover, .map-button:focus {
+    box-shadow: 5px 10px 18px #888888
+}
 
 
 
