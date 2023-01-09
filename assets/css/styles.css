@@ -582,6 +582,25 @@ footer {
     background: #00DAEE;
 }
 
+/* map */
+.map-container {
+    width: 100%;
+}
+
+.map-container img {
+    position: relative;
+    max-width: 100%;
+}
+
+.map-points img{
+    width: 5%;
+}
+
+#toilets {
+    position: absolute;
+    
+}
+
 /* responsiveness */
 
 /* Large devices (desktops, less than 1200px) */
