@@ -15,15 +15,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v3
-        working-directory: serverless
         with:
           node-version: 16
           cache: "npm"
+          cache-dependency-path: serverless
       - name: Install Required NPM Dependencies
         working-directory: serverless
         run: npm ci
       - name: Serverless Deploy
-        working-directory: serverless
         uses: serverless/github-action@master
         with:
-          args: deploy --stage adam-test
+          args: deploy --config serverless/serverless.yml --stage adam-test
