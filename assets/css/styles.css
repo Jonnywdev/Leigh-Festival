@@ -53,6 +53,10 @@ a:hover {
     color: #000;
 }
 
+.mobile-design {
+    display: none;
+}
+
 /* image elements */
 
 .image-wrapper {
@@ -712,19 +716,45 @@ footer {
 
 .cls-5{stroke:#010101;}
 
-.show-map-element {
-}
-
 .hidden-map-txt {
-    background-color: #00DAEE;
+    background-color: #000;
     text-align: center;
     border-radius: 5px;
     position: absolute;
-    max-width: 20%;
+    max-width: 12.5%;
+    padding: 10px;
+}
+
+.hidden-map-txt h5 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 0 !important;
+}
+
+.hidden-map-txt p {
+    color: #888888;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.hidden-map-txt a {
+    color: #989898;
+    font-weight: 400;
+    transition: all .5s;
+    text-transform: capitalize;
+    padding: 5px 0;
+}
+
+.hidden-map-txt a:hover {
+    color: #00ffff;
 }
 
 .toilet-txt-outside {
-    left: 27%;
+    left: 30%;
     top: 135rem;
 }
 
