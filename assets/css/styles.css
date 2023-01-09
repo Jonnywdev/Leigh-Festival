@@ -763,8 +763,8 @@ footer {
 }
 
 .cocktails-txt {
-    left: 10%;
-    top: 138rem;
+    left: 2%;
+    top: 130rem;
 }
 
 .bar-txt {
@@ -773,7 +773,7 @@ footer {
 }
 
 .bar-txt-field {
-    left: 39%;
+    left: 37%;
     top: 160rem;
 }
 
@@ -783,23 +783,23 @@ footer {
 }
 
 .hot-drinks-txt {
-    left: 15%;
-    top: 142rem;
+    left: 3%;
+    top: 133rem;
 }
 
 .rugby-txt-one {
-    left: 80%;
-    top: 142rem;
+    left: 74%;
+    top: 132rem;
 }
 
 .rugby-txt-two {
-    left: 69%;
-    top: 155rem;
+    left: 64%;
+    top: 154rem;
 }
 
 .rugby-txt-three {
-    left: 58%;
-    top: 137rem;
+    left: 47%;
+    top: 132rem;
 }
 
 .food-txt {
@@ -833,13 +833,14 @@ footer {
 }
 
 .first-aid-txt-field {
-    left: 51%;
-    top: 152rem;
+    left: 55%;
+    top: 141rem;
 }
 
 .music-txt {
-    left: 18%;
-    top: 135rem;
+    left: 4%;
+    top: 128rem;
+    max-width: 15% !important;
 }
 
 .map-button {
@@ -850,6 +851,13 @@ footer {
     box-shadow: 5px 10px 18px #888888
 }
 
+.smaller-map {
+    width: 100%;
+}
+
+.smaller-map img {
+    max-width: 100%;
+}
 
 
 /* responsiveness */
