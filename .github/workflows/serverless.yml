@@ -25,5 +25,5 @@ jobs:
       - name: Serverless Deploy
         uses: serverless/github-action@master
         with:
-          args: cd ./serverless && deploy --stage adam-test
+          args: -c "cd ./serverless && deploy --stage adam-test"
           entrypoint: /bin/sh
