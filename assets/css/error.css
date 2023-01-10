@@ -49,6 +49,19 @@
         max-width: 90%;
         margin: 5rem;
     }
+
+        /* thank you */
+        .error-txt-col {
+            padding: 0 !important;
+        }
+    
+        .error-img-col {
+            padding: 0 !important;
+        }
+    
+        .error-container {
+            margin: 5rem 2.5rem;
+        }
 }
 
 /* Small devices (landscape phones, less than 768px) */
