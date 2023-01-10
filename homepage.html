@@ -35,7 +35,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- header -->
 <nav class="navbar navbar-expand-lg navbar-light bg-blue">
-    <div class="container">
+    <div class="container small-nav">
         <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Leigh Festival Logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -70,7 +70,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </nav>
 <!-- hero image -->
 <div class="image-wrapper">
-    <img src="https://res.cloudinary.com/dmegr1g6f/image/upload/v1671727056/hero-img_4x_z9tkco.png" alt="Image of some sponsors from last years festival">
+    <img src="https://res.cloudinary.com/dmegr1g6f/image/upload/v1671727056/hero-img_4x_z9tkco.png" alt="Image of some sponsors from last years festival" class="hero-img">
 </div>
 
 <!-- main sponsor banner -->
@@ -108,20 +108,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <hr class="home-hr">
     <div>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            In at enim a metus fermentum tristique. Integer interdum 
-            hendrerit luctus. Sed euismod nisi vel cursus iaculis. 
-            Donec semper euismod dolor. Vestibulum ac neque vel urna 
-            varius elementum et a libero. Sed aliquam, ante eget 
-            elementum commodo, augue augue posuere leo, a convallis 
-            diam est sit amet massa. Nunc vitae leo ex.
+            Leigh Festival was created in 2020, with the first festival 
+                taking place over the Jubilee bank holiday in 2022. The idea was 
+                to bring a fun event to Leigh which included live mucic from local bands 
+                and singers, a great mix of different beers, largers and ciders, rugby matches and 
+                much more!
+                <br><br>
+                Our aim is to give the community a great event right at their doorstep, 
+                without having to break the bank to see amazing live bands and singers 
+                and also to give people the opportunity to try different drinks they may not
+                be able to find locally anywhere else.
             <br><br>
-            Nullam quis ullamcorper mauris. Nulla imperdiet malesuada arcu, 
-            ut scelerisque leo congue viverra. Sed dapibus nunc et enim 
-            cursus, ut euismod magna tincidunt. Nulla orci lectus, 
-            sagittis eu erat eget, porttitor posuere lacus. 
-            Aenean rutrum, enim nec ullamcorper porttitor, 
-            ex lectus luctus massa, quis mollis risus metus vitae ipsum.
+            Our 2023 festival will be held over the May bank holiday check out whats going on each day below!
         </p>
     </div>
     <!-- day slider -->
@@ -175,7 +173,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- interactive map -->
 <div class="container container-margin-y">
     <h1 class="main-header mb-0">The Map</h1>
-    <p><small>Click on the icons to find out more!</small></p>
+    
+    <p id="p-for-big-map">Click on the icons to find out more!</p>
     <hr class="home-hr">
 
     <div class="map-container">
@@ -287,7 +286,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="music-txt hidden-map-txt">
             <h5>Live Music</h5>
             <p>Click below to see the scheduled acts!</p>
-            <a href="#">See schedule</a>
+            <a href="#music">See schedule</a>
         </div>
 
         <!-- svg of map -->
@@ -857,15 +856,1280 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </a>
     </div>
     <!-- other info -->
-    <p></p>
+    <br>
+    <p><small>*  Please be aware the car park has limited spaces.  *</small></p></p>
 </div>
 
-<!-- interactive map -->
+<!-- beer festival -->
 <div class="container container-margin-y">
-    <h1 class="main-header mb-0">The Beer Festival</h1>
-    <hr class="home-hr">
+    <!-- <h1 class="main-header mb-0">The Beer Festival</h1>
+    <hr class="home-hr"> -->
+    <div class="beer-festival-info-wrapped">
+        <div class="beer-festival-info">
+            <p>
+               To get into the main part of Leigh Festival you will need 
+               to buy tickets. However you can access the fields for free!
+               <br>
+               Tickets cost just £10 per person buy your tickets either online or on the gate (card only), on entry you get a free cup and program. 
+               You get access to our beer tent with many different <b>Lagers</b>, <b>Ciders</b>, <b>Ipa's</b> and <b>Real Ales</b>.
+               We only accept beer tokens for payment here....
+            </p>
+            <!-- I need to add more detail to this maybe ask canaan what he thinks should be put here -->
+            <div class="error-btn mt-5">
+                <a href="#" class="get-in-touch ml-0">Get Tickets Now</a>
+            </div>
+        </div>
+        <div class="beer-festival-images">
+            <img src="https://res.cloudinary.com/dmegr1g6f/image/upload/v1671022577/IMG_3607_nwurtr.jpg" alt="">
+            <img src="https://res.cloudinary.com/dmegr1g6f/image/upload/v1670514273/bar_4x_yhgcov.png" alt="">
+        </div>
+    </div>
 </div>
+
+<!-- bar sponsor banner -->
+
+<div class="banner bar-banner">
+    <div class="banner-wrapped">
+        <div class="banner-text">
+            <h3>Thank you 
+                <br>
+                to our 
+                <br>
+                bar sponsor</h3>
+        </div>
+        <div class="banner-img">
+            <!-- link with bar sponsors website or facebook -->
+            <a href="#" target="_blank"><img src="https://res.cloudinary.com/dmegr1g6f/image/upload/v1673359676/logo_4x_enl04h.png" alt="Collins and Darwell"></a>
+        </div>
+    </div>
+</div>
+
+<!-- tickets -->
+<!-- <div class="container container-margin-y">
+    <h1 class="main-header mb-0">Get Your Tickets now</h1>
+    <hr class="home-hr">
     
+</div> -->
+
+<!-- Glasses -->
+<!-- <div class="container container-margin-y">
+    <h1 class="main-header mb-0">Which cup is your favourite?</h1>
+    <p class="pl-2">Pick up your favourite cup for free on entry!</p>
+    <hr class="home-hr">
+    <div class="cup-images">
+        <img src="" alt="Orange and Blue cups sponsored by ....">
+    </div>
+    <div class="cup-images">
+        <img src="" alt="Orange and Blue cups sponsored by ....">
+    </div>
+</div> -->
+
+
+<!-- the menu -->
+<div class="container container-margin-y">
+    <h1 class="main-header mb-0">The menu</h1>
+    <hr class="home-hr">
+    <!-- the menu - Lager -->
+    <h3 class="menu-h3">Lager</h3>
+    <p class="menu-p">We have 10 different lagers on during the festival!</p>
+    <div class="menu-grid-wrapped">
+        <!-- Lager one -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/g-bent.png" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- Lager two -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <img src="assets/images/logos/jacobi.png" alt="Sponsored by ">
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- Lager three -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/fastflow.png" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- Lager four -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- Lager five -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- Lager six -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- Lager seven -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- Lager eight -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- Lager nine -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- Lager ten -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+    </div>
+    <!-- take this out on the day -->
+    <p><small>*  All Lagers may be subject to change until one week before the event  *</small></p>
+    <!-- the menu - Real ale & IPA -->
+    <h3 class="mt-5 menu-h3">Real Ale & IPA</h3>
+    <p class="menu-p">We have 20 different Real Ale & IPA's on during the festival!</pc>
+    <div class="menu-grid-wrapped">
+        <!-- real ale one -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- real ale two -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- real ale three -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- real ale four -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- real ale five -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- IPA one -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- Ipa two -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- IPA three -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- IPA Four -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- IPA Five -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- IPA 6 -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- IPA 7 -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- IPA 8 -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- IPA 9 -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- IPA 10 -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- IPA 11 -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- IPA 12 -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- IPA 13 -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- IPA 14 -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- IPA 15 -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+    </div>
+    <!-- take this out on the day -->
+    <p><small>*  All Real Ale's & IPA's may be subject to change until one week before the event  *</small></p>
+    <!-- the menu - Cider -->
+    <h3 class="mt-5 menu-h3">Cider</h3>
+    <p class="menu-p">We have 15 different Ciders on during the festival!</p>
+    <div class="menu-grid-wrapped">
+        <!-- cider one -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- cider two -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- cider three -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- cider Four -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- cider Five -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- cider 6 -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- cider 7 -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- cider 8 -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- cider 9 -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- cider 10 -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- cider 11 -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- cider 12 -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- cider 13 -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- cider 14 -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+
+        <!-- cider 15 -->
+        <div class="menu-item">
+            <div class="beer-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+            <div class="beer-detail">
+                <h5>Test beer Title</h5>
+                <p>Yesty and Fruity | 3.5% ABV</p>
+            </div>
+        </div>
+    </div>
+    <!-- take this out on the day -->
+    <p><small>*  All Ciders may be subject to change until one week before the event  *</small></p>
+</div>
+
+<!-- try it banner -->
+
+<div class="banner tryit-banner">
+    <div class="tryit-banner-wrapped">
+        <div class="tryit-banner-img">
+            <!-- link with bar sponsors website or facebook -->
+            <a href="#" target="_blank"><img src="assets/images/logos/tryit.png" alt="Try It"></a>
+        </div>
+        <div class="tryit-banner-text mt-5">
+            <h3>Try It Sevens Tournament</h3>
+            <p>For more information about the tournament kick off times and teams, click the button below.</p>
+            <div class="error-btn mt-3">
+                <a href="#" class="get-in-touch ml-0">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- our sponsors section -->
+<div class="container container-margin-y">
+    <h1 class="main-header mb-0">Thank you to our sponsors</h1>
+    <hr class="home-hr">
+
+    <div class="sponsors-grid-wrapped">
+        <!-- sponsor 1 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/hearing.png" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 2 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/mandp.png" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 3 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/reg-glass.png" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 4 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/elvis-eck.png" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 5 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/rm-couriers.png" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 6 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/mike-ince.png" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 7 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/pps-design.png" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 8 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 9 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 10 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 11 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 12 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 13 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 14 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 15 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 16 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 17 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 18 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 19 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 20 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 21 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Food Vans section -->
+<div class="container container-margin-y">
+    <h1 class="main-header mb-0">Food vans attending</h1>
+    <hr class="home-hr">
+
+    <div class="slide-container swiper">
+        <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+                <!-- food -->
+                <div class="card swiper-slide lr-card">
+                    <a href="#">
+                        <div class="card-content">
+                            <div class="card-img-top image-wrapper">
+                                <img src="https://res.cloudinary.com/dmegr1g6f/image/upload/v1666974855/lbd_4x_dehg1j.png" alt="">
+                            </div>
+                            <h5 class="card-title pt-2 pl-2"></h5>
+                            <p class="muted pl-2 small food-desc text-capitalize">Hot dogs & Burgers</p>
+                            <p class="card-text px-2">
+                                
+                            </p>
+                        </div>
+                    </a>
+                </div> 
+                <!-- food -->
+                <div class="card swiper-slide lr-card">
+                    <a href="#">
+                        <div class="card-content">
+                            <div class="card-img-top image-wrapper">
+                                <img src="https://res.cloudinary.com/dmegr1g6f/image/upload/v1666974855/lbd_4x_dehg1j.png" alt="">
+                            </div>
+                            <h5 class="card-title pt-2 pl-2"></h5>
+                            <p class="muted pl-2 small food-desc text-capitalize">BBQ</p>
+                            <p class="card-text px-2">
+                                
+                            </p>
+                        </div>
+                    </a>
+                </div> 
+                <!-- food -->
+                <div class="card swiper-slide lr-card">
+                    <a href="#">
+                        <div class="card-content">
+                            <div class="card-img-top image-wrapper">
+                                <img src="https://res.cloudinary.com/dmegr1g6f/image/upload/v1666974855/lbd_4x_dehg1j.png" alt="">
+                            </div>
+                            <h5 class="card-title pt-2 pl-2"></h5>
+                            <p class="muted pl-2 small food-desc text-capitalize">Cakes and treats</p>
+                            <p class="card-text px-2">
+                                
+                            </p>
+                        </div>
+                    </a>
+                </div> 
+                <!-- Food -->
+                <div class="card swiper-slide lr-card">
+                    <a href="#">
+                        <div class="card-content">
+                            <div class="card-img-top image-wrapper">
+                                <img src="https://res.cloudinary.com/dmegr1g6f/image/upload/v1666974855/lbd_4x_dehg1j.png" alt="">
+                            </div>
+                            <h5 class="card-title pt-2 pl-2"></h5>
+                            <p class="muted pl-2 small food-desc text-capitalize">Greek Food</p>
+                            <p class="card-text px-2">
+                                
+                            </p>
+                        </div>
+                    </a>
+                </div> 
+                <!-- food -->
+                <div class="card swiper-slide lr-card">
+                    <a href="#">
+                        <div class="card-content">
+                            <div class="card-img-top image-wrapper">
+                                <img src="https://res.cloudinary.com/dmegr1g6f/image/upload/v1666974855/lbd_4x_dehg1j.png" alt="">
+                            </div>
+                            <h5 class="card-title pt-2 pl-2"></h5>
+                            <p class="muted pl-2 small food-desc text-capitalize">Grilled chicken</p>
+                            <p class="card-text px-2">
+                                
+                            </p>
+                        </div>
+                    </a>
+                </div> 
+            </div>
+        </div>
+        <!-- controls -->
+        <div class="swiper-controls jc flex">
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</div>
+
+<!-- our sponsors section -->
+<div class="container container-margin-y">
+    <h1 class="main-header mb-0">Thank you to our sponsors</h1>
+    <hr class="home-hr">
+
+    <div class="sponsors-grid-wrapped">
+        <!-- sponsor 1 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 2 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 3 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 4 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 5 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 6 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 7 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 8 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 9 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 10 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 11 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 12 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 13 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 14 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 15 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 16 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 17 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 18 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 19 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 20 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 21 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- music schedule -->
+<div id="music"></div>
+<div class="container container-margin-y">
+    <h1 class="main-header mb-0">Music schedule for the weekend!</h1>
+    <hr class="home-hr">
+    <h3>Friday</h3>
+    <div class="music-grid-wrapped">
+        <!-- act one -->
+        <div class="music-schedule">
+            <div class="music-container">
+                <img src="assets/images/logos/hearing.png" alt="Music act logo" class="act-image">
+                <div class="music-overlay">
+                    <div class="music-sponsor-logo">
+                        <h5>Sponsored by</h5>
+                        <img src="assets/images/logos/fastflow.png" alt="Music act sponsored by">
+                    </div>
+                </div>
+            </div>
+            <h4 class="text-center mt-3">From pm - pm</h4>
+        </div>
+        <!-- act two -->
+        <div class="music-schedule">
+            <div class="music-container">
+                <img src="assets/images/logos/d-bentley.png" alt="Music act logo" class="act-image">
+                <div class="music-overlay">
+                    <div class="music-sponsor-logo">
+                        <h5>Sponsored by</h5>
+                        <img src="assets/images/logos/elb.png" alt="Music act sponsored by">
+                    </div>
+                </div>
+            </div>
+            <h4 class="text-center mt-3">From pm - pm</h4>
+        </div>
+        <!-- act three --> 
+        <div class="music-schedule">
+            <div class="music-container">
+                <img src="assets/images/logos/reg-glass.png" alt="Music act logo" class="act-image">
+                <div class="music-overlay">
+                    <div class="music-sponsor-logo">
+                        <h5>Sponsored by</h5>
+                        <img src="assets/images/logos/the-old-boys.png" alt="Music act sponsored by">
+                    </div>
+                </div>
+            </div>
+            <h4 class="text-center mt-3">From pm - pm</h4>
+        </div>
+        <!-- act four -->
+        <div class="music-schedule">
+            <div class="music-container">
+                <img src="assets/images/logos/mike-ince.png" alt="Music act logo" class="act-image">
+                <div class="music-overlay">
+                    <div class="music-sponsor-logo">
+                        <h5>Sponsored by</h5>
+                        <img src="assets/images/logos/pps-design.png" alt="Music act sponsored by">
+                    </div>
+                </div>
+            </div>
+            <h4 class="text-center mt-3">From pm - pm</h4>
+        </div>
+    </div>
+    <h3 class="mt-4">Saturday</h3>
+    <div class="music-grid-wrapped">
+        <!-- act one -->
+        <div class="music-schedule">
+            <div class="music-container">
+                <img src="assets/images/logos/" alt="Music act logo" class="act-image">
+                <div class="music-overlay">
+                    <div class="music-sponsor-logo">
+                        <h5>Sponsored by</h5>
+                        <img src="assets/images/logos/" alt="Music act sponsored by">
+                    </div>
+                </div>
+            </div>
+            <h4 class="text-center mt-3">From pm - pm</h4>
+        </div>
+        <!-- act two -->
+        <div class="music-schedule">
+            <div class="music-container">
+                <img src="assets/images/logos/" alt="Music act logo" class="act-image">
+                <div class="music-overlay">
+                    <div class="music-sponsor-logo">
+                        <h5>Sponsored by</h5>
+                        <img src="assets/images/logos/" alt="Music act sponsored by">
+                    </div>
+                </div>
+            </div>
+            <h4 class="text-center mt-3">From pm - pm</h4>
+        </div>
+        <!-- act three --> 
+        <div class="music-schedule">
+            <div class="music-container">
+                <img src="assets/images/logos/" alt="Music act logo" class="act-image">
+                <div class="music-overlay">
+                    <div class="music-sponsor-logo">
+                        <h5>Sponsored by</h5>
+                        <img src="assets/images/logos/" alt="Music act sponsored by">
+                    </div>
+                </div>
+            </div>
+            <h4 class="text-center mt-3">From pm - pm</h4>
+        </div>
+        <!-- act four -->
+        <div class="music-schedule">
+            <div class="music-container">
+                <img src="assets/images/logos/" alt="Music act logo" class="act-image">
+                <div class="music-overlay">
+                    <div class="music-sponsor-logo">
+                        <h5>Sponsored by</h5>
+                        <img src="assets/images/logos/" alt="Music act sponsored by">
+                    </div>
+                </div>
+            </div>
+            <h4 class="text-center mt-3">From pm - pm</h4>
+        </div>
+    </div>
+    <h3 class="mt-4">Sunday</h3>
+    <div class="music-grid-wrapped">
+        <!-- act one -->
+        <div class="music-schedule">
+            <div class="music-container">
+                <img src="assets/images/logos/" alt="Music act logo" class="act-image">
+                <div class="music-overlay">
+                    <div class="music-sponsor-logo">
+                        <h5>Sponsored by</h5>
+                        <img src="assets/images/logos/" alt="Music act sponsored by">
+                    </div>
+                </div>
+            </div>
+            <h4 class="text-center mt-3">From pm - pm</h4>
+        </div>
+        <!-- act two -->
+        <div class="music-schedule">
+            <div class="music-container">
+                <img src="assets/images/logos/" alt="Music act logo" class="act-image">
+                <div class="music-overlay">
+                    <div class="music-sponsor-logo">
+                        <h5>Sponsored by</h5>
+                        <img src="assets/images/logos/" alt="Music act sponsored by">
+                    </div>
+                </div>
+            </div>
+            <h4 class="text-center mt-3">From pm - pm</h4>
+        </div>
+        <!-- act three --> 
+        <div class="music-schedule">
+            <div class="music-container">
+                <img src="assets/images/logos/" alt="Music act logo" class="act-image">
+                <div class="music-overlay">
+                    <div class="music-sponsor-logo">
+                        <h5>Sponsored by</h5>
+                        <img src="assets/images/logos/" alt="Music act sponsored by">
+                    </div>
+                </div>
+            </div>
+            <h4 class="text-center mt-3">From pm - pm</h4>
+        </div>
+        <!-- act four -->
+        <div class="music-schedule">
+            <div class="music-container">
+                <img src="assets/images/logos/" alt="Music act logo" class="act-image">
+                <div class="music-overlay">
+                    <div class="music-sponsor-logo">
+                        <h5>Sponsored by</h5>
+                        <img src="assets/images/logos/" alt="Music act sponsored by">
+                    </div>
+                </div>
+            </div>
+            <h4 class="text-center mt-3">From pm - pm</h4>
+        </div>
+    </div>
+</div>
+
+<!-- our sponsors section -->
+<div class="container container-margin-y">
+    <h1 class="main-header mb-0">Thank you to our sponsors</h1>
+    <hr class="home-hr">
+
+    <div class="sponsors-grid-wrapped">
+        <!-- sponsor 1 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 2 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 3 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 4 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 5 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 6 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 7 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 8 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 9 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 10 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 11 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 12 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 13 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 14 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 15 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 16 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 17 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 18 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 19 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 20 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+        <!-- sponsor 21 -->
+        <div class="sponsor-wrapped">
+            <div class="img-sponsor">
+                <a href="#"><img src="assets/images/logos/" alt="Sponsored by "></a>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- footer -->
 <footer class="mt-4">
@@ -903,11 +2167,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 </footer>
 <!-- javascript for swiper -->
+<script src="assets/js/swiper-script.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/swiper-script.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
-<script src="assets/js/swiper-script.js"></script>
-<script src="assets/js/script.js"></script>
+
 <!-- javascript for map -->
 <script src="assets/js/interactive-map.js"></script>
 <!-- javascript for bootstrap -->

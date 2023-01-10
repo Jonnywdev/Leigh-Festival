@@ -57,6 +57,10 @@ a:hover {
     display: none;
 }
 
+.main-header {
+    text-transform: capitalize;
+}
+
 /* image elements */
 
 .image-wrapper {
@@ -859,19 +863,226 @@ footer {
     max-width: 100%;
 }
 
+/* beer festival */
 
-/* responsiveness */
-
-/* Large devices (desktops, less than 1200px) */
-@media (max-width: 1200px) {
-    /* header */
-
-    /* sponsorship page */
-
-    /* sponorsable item page */
-
-    /* contact us page */
+.beer-festival-info-wrapped {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
+.beer-festival-info {
+    width: 55%;
+}
+
+.beer-festival-images {
+    flex: 30%;
+    max-width: 30%;
+    padding: 0 4px;
+}
+
+.beer-festival-images img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* bar banner */
+.banner {
+    width: 100%;
+    margin: 5rem 0;
+}
+
+.bar-banner {
+    background-color: #000;
+}
+
+.banner-wrapped {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+
+.banner-text {
+    width: 30%;
+}
+
+.banner-text h3 {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.banner-img {
+    width: 50%;
+}
+
+.banner-img img {
+    width: 100%;
+}
+
+/* tickets */
+
+/* cups */
+.cup-images {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.cup-images img {
+    max-width: 100%;
+}
+
+/* menu */
+.menu-grid-wrapped {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+    row-gap: 3rem;
+    margin: 3rem 0;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 100%;
+}
+
+.beer-sponsor {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.beer-sponsor a img {
+    max-width: 100%;
+}
+
+.beer-sponsor img {
+    max-width: 100%;
+}
+
+.beer-detail {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+/* try it banner */
+.tryit-banner {
+    background: #a4d4f3;
+}
+
+.tryit-banner-wrapped {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.tryit-banner-img {
+    width: 15%;
+}
+
+.tryit-banner-img img{
+    max-width: 100%;
+}
+
+.tryit-banner-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* our sponsors */
+.sponsors-grid-wrapped {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    column-gap: 30px;
+    row-gap: 3rem;
+    margin: 3rem 0;
+}
+
+.img-sponsor {
+    width: 100%;
+}
+
+.img-sponsor a img {
+    max-width: 100%;
+}
+
+.img-sponsor img {
+    max-width: 100%;
+}
+
+/* food vans */
+.food-desc {
+    text-align: center !important;
+}
+
+/* Music schedule */
+.music-grid-wrapped {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 30px;
+    row-gap: 3rem;
+    margin: 3rem 0;
+}
+
+.music-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.act-image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.music-container img {
+    width: 100%;
+}
+
+.music-overlay {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+
+.music-container:hover .act-image {
+    opacity: 0.3;
+}
+  
+.music-container:hover .music-overlay {
+    opacity: 1;
+}
+  
+.music-sponsor-logo {
+    color: #000;
+    font-size: 16px;
+    padding: 16px 32px;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.music-sponsor-logo img {
+    width: 100%;
+}
+/* responsiveness */
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 992px) {
@@ -879,7 +1090,6 @@ footer {
     .navbar-collapse {
         width: 25%;
     }
-
 
     .navbar-nav {
         text-align: center;
@@ -898,6 +1108,10 @@ footer {
         grid-template-columns: auto auto auto auto;
     }
 
+    .container {
+        max-width: 900px;
+    } 
+
     /* contact us page */
 
     /* footer */
@@ -911,6 +1125,34 @@ footer {
         width: 15%;
     }
 
+    /* main homepage */
+    .day-carousel-container {
+        height: 320px;
+    }
+
+    .day-caption {
+        margin-bottom: 5rem;
+    }
+
+    .day-caption h6 {
+        margin-bottom: 2rem;
+    }
+
+    .map-container {
+        display: none;
+    }
+
+    .mobile-design {
+        display: block;
+    }
+
+    #p-for-big-map {
+        display: none;
+    }
+
+    .music-sponsor-logo h5 {
+        font-size: 1rem;
+    }
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -1013,6 +1255,50 @@ footer {
         justify-content: center;
     }
 
+    /* main homepage */
+    .day-carousel-container {
+        height: 270px;
+    }
+
+    .find-out {
+        font-size: 12px;
+    }
+
+    .day-caption {
+        margin-bottom: 10rem;
+    }
+
+    .beer-festival-images {
+        flex: 40%;
+        max-width: 40%;
+    }
+
+    .banner-text h3 {
+        font-size: 1.25rem;
+    }
+
+    .beer-detail h5 {
+        font-size: 1rem;
+    }
+
+    .beer-detail p {
+        font-size: 10px;
+    }
+
+    .tryit-banner-img {
+        width: 17%;
+    }
+
+    .sponsors-grid-wrapped {
+        grid-template-columns: auto auto auto auto auto auto;
+        column-gap: 15px;
+    }
+
+    .music-schedule h4 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -1050,7 +1336,89 @@ footer {
     }
     /* contact us page */
 
-    /* footer */
+    /* main homepage */
+    .main-header {
+        font-size: 2rem;
+        margin-bottom: 1.5rem !important;
+    }
+
+    .sq img {
+        max-width: 80%;
+    }
+
+    .home-hr {
+        margin-bottom: 2.5rem;
+    }
+
+    .day-carousel-container {
+        height: 200px;
+    }
+
+    .day-caption h1 {
+        font-size: 35px;
+    }
+
+    .day-caption h5 {
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .day-caption h6 {
+        margin-bottom: 10px;
+    }
+
+    .find-out {
+        font-size: 12px;
+        padding: 5px 40px;
+    }
+
+    .day-caption {
+        margin-bottom: 15rem;
+    }
+
+    .beer-festival-info-wrapped {
+        flex-direction: column;
+    }
+
+    .beer-festival-info {
+        width: 100%;
+    }
+
+    .beer-festival-images {
+        display: none;
+    }
+
+    .banner-img {
+        width: 65%;
+    }
+    
+    .bar-banner {
+        margin-bottom: 3rem !important;
+    }
+
+    .menu-grid-wrapped {
+        grid-template-columns: auto auto;
+        row-gap: 1rem;
+    }
+
+    small {
+        font-size: 50%;
+    }
+
+    .tryit-banner-text {
+        margin-top: 1rem !important;
+    }
+
+    .sponsors-grid-wrapped {
+        grid-template-columns: auto auto auto auto auto;
+        column-gap: 10px;
+        row-gap: 1rem;
+    }
+
+    .music-grid-wrapped {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
 }
 
 @media (max-width: 420px) {
@@ -1113,4 +1481,107 @@ footer {
         width: 35%;
     }
 
+    /* main homepage */
+    .hero-img {
+        width: 100% !important;
+    }
+
+    .small-nav {
+        margin: auto !important;
+    }
+
+    .main-header {
+        font-size: 1.3rem;
+        margin-bottom: 10px !important;
+    }
+
+    .home-hr {
+        margin-bottom: 2rem;
+    }
+
+    .day-carousel-container {
+        height: 135px;
+    }
+
+    .day-navigation .day-nav-btn {
+        font-size: 10px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .day-caption h1 {
+        font-size: 25px;
+    }
+
+    .day-caption h5 {
+        font-size: 10px;
+        margin-bottom: 0;
+    }
+
+    .day-caption h6 {
+        margin-bottom: 5px;
+    }
+
+    .find-out {
+        font-size: 8px;
+        padding: 2px 40px;
+    }
+
+    .day-caption {
+        margin-bottom: 20rem;
+    }
+
+    .day-btm {
+        margin-bottom: 10px !important;
+    }
+
+    .banner-text h3 {
+        font-size: 1rem;
+    }
+
+    .banner-img {
+        width: 75%;
+    }
+
+    .banner-img {
+        width: 75%;
+    }
+
+    .beer-detail h5 {
+        font-size: 10px;
+    }
+
+    .beer-detail p {
+        font-size: 8px;
+    }
+
+    .beer-sponsor {
+        padding-right: 5px;
+    }
+
+    .menu-grid-wrapped {
+        margin-bottom: 1rem;
+    }
+
+    .menu-h3 {
+        font-size: 20px;
+    }
+
+    .menu-p {
+        font-size: 15px;
+    }
+
+    .sponsors-grid-wrapped {
+        grid-template-columns: auto auto auto auto;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
+    .music-sponsor-logo h5 {
+        font-size: 10px;
+    }
+
+    .music-schedule h4 {
+        font-size: 15px;
+    }
 }
