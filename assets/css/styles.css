@@ -57,6 +57,10 @@ a:hover {
     display: none;
 }
 
+.main-header {
+    text-transform: capitalize;
+}
+
 /* image elements */
 
 .image-wrapper {
@@ -881,6 +885,90 @@ footer {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
+}
+
+/* bar banner */
+.banner {
+    width: 100%;
+    margin: 5rem 0;
+}
+
+.bar-banner {
+    background-color: #000;
+}
+
+.banner-wrapped {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+
+.banner-text {
+    width: 30%;
+}
+
+.banner-text h3 {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.banner-img {
+    width: 50%;
+}
+
+.banner-img img {
+    width: 100%;
+}
+
+/* tickets */
+
+/* cups */
+.cup-images {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.cup-images img {
+    max-width: 100%;
+}
+
+/* menu */
+.menu-grid-wrapped {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+    row-gap: 3rem;
+    margin: 3rem 0;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 100%;
+}
+
+.beer-sponsor {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.beer-sponsor a img {
+    max-width: 100%;
+}
+
+.beer-sponsor img {
+    max-width: 100%;
+}
+
+.beer-detail {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }
 
 /* responsiveness */
