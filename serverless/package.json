@@ -1,0 +1,14 @@
+{
+  "name": "leighfest-contact",
+  "version": "1.0.0",
+  "description": "Handle Contact form for Leigh Festival Website using Serverless/Lambda and AWS Simple Notification Service (SNS)",
+  "main": "contact.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-sns": "^3.245.0"
+  }
+}
