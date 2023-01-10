@@ -971,6 +971,32 @@ footer {
     text-align: left;
 }
 
+/* try it banner */
+.tryit-banner {
+    background: #a4d4f3;
+}
+
+.tryit-banner-wrapped {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.tryit-banner-img {
+    width: 15%;
+}
+
+.tryit-banner-img img{
+    max-width: 100%;
+}
+
+.tryit-banner-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 /* responsiveness */
 
 /* Large devices (desktops, less than 1200px) */
