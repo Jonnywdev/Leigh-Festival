@@ -1256,7 +1256,49 @@ footer {
     }
 
     /* main homepage */
+    .day-carousel-container {
+        height: 270px;
+    }
 
+    .find-out {
+        font-size: 12px;
+    }
+
+    .day-caption {
+        margin-bottom: 10rem;
+    }
+
+    .beer-festival-images {
+        flex: 40%;
+        max-width: 40%;
+    }
+
+    .banner-text h3 {
+        font-size: 1.25rem;
+    }
+
+    .beer-detail h5 {
+        font-size: 1rem;
+    }
+
+    .beer-detail p {
+        font-size: 10px;
+    }
+
+    .tryit-banner-img {
+        width: 17%;
+    }
+
+    .sponsors-grid-wrapped {
+        grid-template-columns: auto auto auto auto auto auto;
+        column-gap: 15px;
+    }
+
+    .music-schedule h4 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
