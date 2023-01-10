@@ -997,18 +997,92 @@ footer {
     flex-direction: column;
     text-align: center;
 }
-/* responsiveness */
 
-/* Large devices (desktops, less than 1200px) */
-@media (max-width: 1200px) {
-    /* header */
-
-    /* sponsorship page */
-
-    /* sponorsable item page */
-
-    /* contact us page */
+/* our sponsors */
+.sponsors-grid-wrapped {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    column-gap: 30px;
+    row-gap: 3rem;
+    margin: 3rem 0;
 }
+
+.img-sponsor {
+    width: 100%;
+}
+
+.img-sponsor a img {
+    max-width: 100%;
+}
+
+.img-sponsor img {
+    max-width: 100%;
+}
+
+/* food vans */
+.food-desc {
+    text-align: center !important;
+}
+
+/* Music schedule */
+.music-grid-wrapped {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 30px;
+    row-gap: 3rem;
+    margin: 3rem 0;
+}
+
+.music-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.act-image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.music-container img {
+    width: 100%;
+}
+
+.music-overlay {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+
+.music-container:hover .act-image {
+    opacity: 0.3;
+}
+  
+.music-container:hover .music-overlay {
+    opacity: 1;
+}
+  
+.music-sponsor-logo {
+    color: #000;
+    font-size: 16px;
+    padding: 16px 32px;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.music-sponsor-logo img {
+    width: 100%;
+}
+/* responsiveness */
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 992px) {
@@ -1016,7 +1090,6 @@ footer {
     .navbar-collapse {
         width: 25%;
     }
-
 
     .navbar-nav {
         text-align: center;
@@ -1035,6 +1108,10 @@ footer {
         grid-template-columns: auto auto auto auto;
     }
 
+    .container {
+        max-width: 900px;
+    } 
+
     /* contact us page */
 
     /* footer */
@@ -1048,6 +1125,34 @@ footer {
         width: 15%;
     }
 
+    /* main homepage */
+    .day-carousel-container {
+        height: 320px;
+    }
+
+    .day-caption {
+        margin-bottom: 5rem;
+    }
+
+    .day-caption h6 {
+        margin-bottom: 2rem;
+    }
+
+    .map-container {
+        display: none;
+    }
+
+    .mobile-design {
+        display: block;
+    }
+
+    #p-for-big-map {
+        display: none;
+    }
+
+    .music-sponsor-logo h5 {
+        font-size: 1rem;
+    }
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -1150,6 +1255,8 @@ footer {
         justify-content: center;
     }
 
+    /* main homepage */
+
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -1187,7 +1294,7 @@ footer {
     }
     /* contact us page */
 
-    /* footer */
+    /* main homepage */
 }
 
 @media (max-width: 420px) {
@@ -1249,5 +1356,7 @@ footer {
     .avandor-logo {
         width: 35%;
     }
+
+    /* main homepage */
 
 }
