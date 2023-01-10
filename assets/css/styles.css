@@ -859,6 +859,29 @@ footer {
     max-width: 100%;
 }
 
+/* beer festival */
+
+.beer-festival-info-wrapped {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.beer-festival-info {
+    width: 55%;
+}
+
+.beer-festival-images {
+    flex: 30%;
+    max-width: 30%;
+    padding: 0 4px;
+}
+
+.beer-festival-images img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
 
 /* responsiveness */
 
