@@ -1337,6 +1337,90 @@ footer {
     /* contact us page */
 
     /* main homepage */
+    .main-header {
+        font-size: 2rem;
+        margin-bottom: 1.5rem !important;
+    }
+
+    .sq img {
+        max-width: 80%;
+    }
+
+    .home-hr {
+        margin-bottom: 2.5rem;
+    }
+
+    .day-carousel-container {
+        height: 200px;
+    }
+
+    .day-caption h1 {
+        font-size: 35px;
+    }
+
+    .day-caption h5 {
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .day-caption h6 {
+        margin-bottom: 10px;
+    }
+
+    .find-out {
+        font-size: 12px;
+        padding: 5px 40px;
+    }
+
+    .day-caption {
+        margin-bottom: 15rem;
+    }
+
+    .beer-festival-info-wrapped {
+        flex-direction: column;
+    }
+
+    .beer-festival-info {
+        width: 100%;
+    }
+
+    .beer-festival-images {
+        display: none;
+    }
+
+    .banner-img {
+        width: 65%;
+    }
+    
+    .bar-banner {
+        margin-bottom: 3rem !important;
+    }
+
+    .menu-grid-wrapped {
+        grid-template-columns: auto auto;
+        row-gap: 1rem;
+    }
+
+    small {
+        font-size: 50%;
+    }
+
+    .tryit-banner-text {
+        margin-top: 1rem !important;
+    }
+
+    .sponsors-grid-wrapped {
+        grid-template-columns: auto auto auto auto auto;
+        column-gap: 10px;
+        row-gap: 1rem;
+    }
+
+    .music-grid-wrapped {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    
 }
 
 @media (max-width: 420px) {
