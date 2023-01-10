@@ -53,6 +53,10 @@ a:hover {
     color: #000;
 }
 
+.mobile-design {
+    display: none;
+}
+
 /* image elements */
 
 .image-wrapper {
@@ -73,7 +77,7 @@ a:hover {
     color: #fff !important;
 }
 
-/* header */ 
+/* header */
 nav {
     background: #00DAEE;
     max-width: 100%;
@@ -136,7 +140,7 @@ nav img {
 /* information about LF */
 .info-section {
     display: flex;
-    flex-direction: row;       
+    flex-direction: row;
 }
 
 .about-text h3 {
@@ -210,11 +214,11 @@ nav img {
     will-change: box-shadow,transform;
     font-size: 30px;
 }
-  
+
 .contact-btn:focus {
     box-shadow: #000 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px inset;
 }
-  
+
 .contact-btn:hover {
     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px inset;
     transform: translateY(-2px);
@@ -340,7 +344,7 @@ footer {
     max-width: 50%;
     padding: 0 4px;
 }
-  
+
 .sponsorship-grid-col img {
     margin-top: 8px;
     vertical-align: middle;
@@ -429,24 +433,439 @@ footer {
 
 /* main home page */
 
-/* main sponsor banner */
-.square{
-    width: 400px;
-    height: 250px;
-    background-color: #03C1D3;
-    position: relative;
-    padding: 15px;    
+.home-hr {
+    border-bottom: 2px solid #000;
+    margin-top: 0;
+    margin-bottom: 3.5rem;
 }
-.sq{
+
+/* hero image */
+
+/* main sponsor banner */
+
+.main-sponsors-wrapped {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.main-sponsors-logo {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.main-sponsors-logo:hover {
+    box-shadow: 5px 10px 18px #888888;
+}
+
+
+.sq {
     text-align: center;
 }
+
+.sq img{
+    max-width: 100%;
+    max-height: 175px;
+}
+
+/* the plan */
+
+/* day swiper */
+
+.day-carousel-container {
+    width: 100%;
+    height: 430px;
+    position: relative;
+}
+
+.day-navigation .prev {
+    position: absolute;
+    z-index: 10;
+    font-size: 25px;
+    top: 50%;
+    left: 20px;
+    font-weight: 700;
+}
+
+.day-navigation .next {
+    right: 20px;
+    position: absolute;
+    font-size: 25px;
+    z-index: 10;
+    top: 50%;
+}
+
+.day-navigation .day-nav-btn {
+    background: rgba(255, 255, 255, 0.55);
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.day-navigation .day-nav-btn:hover {
+    background: white;
+}
+
+
+.day-carousel {
+    margin-top: 20px;
+    transition: all 0.3s ease;
+  
+}
+
+.day-carousel img {
+    width: 100%;
+    transition: all 0.3s ease;
+}
+  
+.day {
+    position: absolute;
+    display: none;
+}
+  
+.day-main {
+    display: block;
+}
+
+.day-caption-wrapped {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 430px;
+}
+
+.day-caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.day-caption h1{
+    font-size: 50px;
+}
+
+.day-caption h5{
+    font-size: 25px;
+}
+
+.day-caption h6{
+    margin-bottom: 7rem;
+}
+
+.day-btm {
+    margin-bottom: 4rem;
+}
+
+.find-out {
+    padding: 10px 40px;
+    background: #fff;
+    color: #000;
+    transition: all .5s;
+    font-size: 20px;
+}
+
+.day-hr {
+    border-bottom: 2px solid #fff;
+    width: 100%;
+}
+
+.find-out:hover {
+    background: #00DAEE;
+}
+
+/* map */
+.map-container {
+    width: 100%;
+}
+
+.map-container img {
+    position: relative;
+    max-width: 100%;
+}
+
+.map-points img{
+    width: 5%;
+}
+
+#toilets {
+    position: absolute;
+    
+}
+
+
+/* svg map styles */
+
+.cls-1,.cls-2,.cls-3,.cls-4,.cls-5 {fill:none;}
+
+.cls-6 {clip-path:url(#clippath);}
+
+.cls-7{fill:#f6e820;}
+
+.cls-8{fill:#010202;}
+
+.cls-9{fill:#020303;}
+
+.cls-10{fill:#efcd20;}
+
+.cls-11{fill:#ed695f;}
+
+.cls-12{fill:#f0eb82;}
+
+.cls-13{fill:#f28f7d;}
+
+.cls-14{fill:#fbbd17;}
+
+.cls-15{fill:#fdd002;}
+
+.cls-16{fill:#e7a070;}
+
+.cls-17{fill:#e3e362;}
+
+.cls-18{fill:#eed600;}
+
+.cls-19{fill:#e6412f;}
+
+.cls-20,.cls-21{fill:#fff;}
+
+.cls-22{fill:#ea6345;}
+
+.cls-23{fill:#f39038;}
+
+.cls-24{fill:#fce4d7;}
+
+.cls-25{fill:#80c8c2;}
+
+.cls-26{fill:#6c5c19;}
+
+.cls-27{fill:#92474b;}
+
+.cls-28{fill:#743089;}
+
+.cls-29{fill:#333a5a;}
+
+.cls-30{fill:#86563f;}
+
+.cls-31{fill:#b1cd4e;}
+
+.cls-32{fill:#d94b24;}
+
+.cls-33{fill:#be1823;}
+
+.cls-34{fill:#bf8d77;}
+
+.cls-35{fill:#cede8a;}
+
+.cls-36{fill:#de4c3c;}
+
+.cls-37{fill:#1e1e1c;}
+
+.cls-38{fill:#231e21;}
+
+.cls-39{fill:#1d1b26;}
+
+.cls-40{fill:#269438;}
+
+.cls-41{fill:#5bb464;}
+
+.cls-42{fill:#585857;}
+
+.cls-43{fill:#5da131;}
+
+.cls-44{fill:#4ea55c;}
+
+.cls-45{fill:#80be60;}
+
+.cls-46{fill:#80bf71;}
+
+.cls-47{fill:#515351;}
+
+.cls-21{stroke:#fbbd17;stroke-width:.2px;}
+
+.cls-21,.cls-48,.cls-49,.cls-2,.cls-3,.cls-4,.cls-5{stroke-miterlimit:10;}
+
+.cls-50{fill:#613a8f;font-family:BigNoodleTitling, BigNoodleTitling;font-size:24.32px;}
+
+.cls-51{clip-path:url(#clippath-1);}
+
+.cls-52{clip-path:url(#clippath-2);}
+
+.cls-48{fill:#f5f5f5;stroke-width:.5px;}
+
+.cls-48,.cls-49,.cls-4{stroke:#1e1e1c;}
+
+.cls-49{fill:#51c1ed;}
+
+.cls-49,.cls-4,.cls-5{stroke-width:.25px;}
+
+.cls-2{stroke:#1d1d1b;}
+
+.cls-3{stroke:#fff;}
+
+.cls-5{stroke:#010101;}
+
+.hidden-map-txt {
+    background-color: #000;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    max-width: 12.5%;
+    padding: 10px;
+}
+
+.hidden-map-txt h5 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 0 !important;
+}
+
+.hidden-map-txt p {
+    color: #888888;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.hidden-map-txt a {
+    color: #989898;
+    font-weight: 400;
+    transition: all .5s;
+    text-transform: capitalize;
+    padding: 5px 0;
+}
+
+.hidden-map-txt a:hover {
+    color: #00ffff;
+}
+
+.toilet-txt-outside {
+    left: 30%;
+    top: 135rem;
+}
+
+.toilet-txt {
+    top: 168.5rem;
+}
+
+.cocktails-txt {
+    left: 2%;
+    top: 130rem;
+}
+
+.bar-txt {
+    left: 15%;
+    top: 163rem;
+}
+
+.bar-txt-field {
+    left: 37%;
+    top: 160rem;
+}
+
+.bar-txt-outside {
+    left: 33%;
+    top: 150rem;
+}
+
+.hot-drinks-txt {
+    left: 3%;
+    top: 133rem;
+}
+
+.rugby-txt-one {
+    left: 74%;
+    top: 132rem;
+}
+
+.rugby-txt-two {
+    left: 64%;
+    top: 154rem;
+}
+
+.rugby-txt-three {
+    left: 47%;
+    top: 132rem;
+}
+
+.food-txt {
+    left: 5%;
+    top: 128rem;
+}
+
+.food-txt-field {
+    left: 37%;
+    top: 140rem;
+}
+
+.tokens-txt {
+    left: 16%;
+    top: 152rem;
+}
+
+.seating-txt {
+    left: 22%;
+    top: 143rem;
+}
+
+.first-aid-txt-bar {
+    left: 3%;
+    top: 169rem;
+}
+
+.first-aid-txt-token {
+    left: 8%;
+    top: 152rem;
+}
+
+.first-aid-txt-field {
+    left: 55%;
+    top: 141rem;
+}
+
+.music-txt {
+    left: 4%;
+    top: 128rem;
+    max-width: 15% !important;
+}
+
+.map-button {
+    cursor: pointer;
+}
+
+.map-button:hover, .map-button:focus {
+    box-shadow: 5px 10px 18px #888888
+}
+
+.smaller-map {
+    width: 100%;
+}
+
+.smaller-map img {
+    max-width: 100%;
+}
+
 
 /* responsiveness */
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1200px) {
     /* header */
-    
+
     /* sponsorship page */
 
     /* sponorsable item page */
@@ -537,7 +956,7 @@ footer {
         position: absolute;
         bottom: 0;
     }
-    
+
     /* sponsorship page */
 
     .info-section {
@@ -561,15 +980,15 @@ footer {
 
     .sponsorship-grid-col {
         margin-top: 5rem;
-    }    
+    }
 
     /* contact us page */
     .contact-wrapped {
         flex-direction: column;
     }
-    
+
     .contact-card {
-        width: 100%; 
+        width: 100%;
     }
 
     .contact-form {
@@ -606,7 +1025,7 @@ footer {
     /* header */
 
     /* home - sponsorship */
-    
+
     /* sponsorship page */
 
 
@@ -651,6 +1070,10 @@ footer {
     /* header */
 
     /* home - sponsorship */
+    #hero-image {
+        width: 100% !important;
+    }
+
     .small-btn {
         padding-left: 0 !important;
     }
@@ -678,7 +1101,7 @@ footer {
     .card-img-top img{
         width: 100% !important;
     }
-    
+
     /* glassware */
     #cup-img {
         width: 100% !important;
