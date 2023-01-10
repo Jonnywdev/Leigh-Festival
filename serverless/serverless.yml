@@ -19,6 +19,7 @@ provider:
 functions:
   contactForm:
     handler: contact.contactForm
+    memorySize: 256
     environment:
       TOPIC_ARN: ${env:TOPIC_ARN}
     events:
