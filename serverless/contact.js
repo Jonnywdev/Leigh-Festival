@@ -27,9 +27,18 @@ module.exports.contactForm = async (event, context) => {
     const frmDecoded = querystring.parse(b64Decoded);
 
     console.log(event, b64Decoded, frmDecoded);
-    /*const snsClient = new SNSClient({});
+    if (!vaildSubjects.hasOwnProperty(frmDecoded['subject'])) {
+        throw Error('Subject not Valid');
+    }
+    const snsClient = new SNSClient({});
     const publishCmd = new PublishCommand({
         TopicArn: TOPIC_ARN,
-        Subject: `Leigh Festival Contact - ${vaildSubjects[]}`
-    });*/
+        Subject: `Leigh Festival Contact - ${vaildSubjects[frmDecoded['subject']]}`,
+        Message: `Name: ${frmDecoded['name']}\nE-Mail: ${frmDecoded['mail']}\nMessage:\n${frmDecoded['message']}`
+    });
+    await snsClient.send(publishCmd);
+    return {
+        "headers": {"Location": "https://leighfestival.uk/contact-thanks.html"},
+        "statusCode": 302
+    };
 };

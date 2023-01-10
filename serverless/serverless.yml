@@ -7,10 +7,20 @@ provider:
   runtime: nodejs16.x
   stage: ${opt:stage, "DEV"}
   region: ${opt:region, "eu-west-2"}
+  iam:
+    role:
+      statements:
+        - Effect: Allow
+          Action:
+            - sns:Publish
+          Resource:
+            - ${env:TOPIC_ARN}
 
 functions:
   contactForm:
     handler: contact.contactForm
+    environment:
+      TOPIC_ARN: ${env:TOPIC_ARN}
     events:
       - httpApi:
           method: POST

@@ -27,3 +27,5 @@ jobs:
         with:
           args: -c "cd ./serverless && serverless deploy --stage adam-test"
           entrypoint: /bin/sh
+        env:
+          TOPIC_ARN: arn:aws:sns:eu-west-2:287047348324:LeighFestivalContact
