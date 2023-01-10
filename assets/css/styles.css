@@ -1419,8 +1419,6 @@ footer {
         display: grid;
         grid-template-columns: auto auto;
     }
-
-    
 }
 
 @media (max-width: 420px) {
@@ -1484,5 +1482,106 @@ footer {
     }
 
     /* main homepage */
+    .hero-img {
+        width: 100% !important;
+    }
 
+    .small-nav {
+        margin: auto !important;
+    }
+
+    .main-header {
+        font-size: 1.3rem;
+        margin-bottom: 10px !important;
+    }
+
+    .home-hr {
+        margin-bottom: 2rem;
+    }
+
+    .day-carousel-container {
+        height: 135px;
+    }
+
+    .day-navigation .day-nav-btn {
+        font-size: 10px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .day-caption h1 {
+        font-size: 25px;
+    }
+
+    .day-caption h5 {
+        font-size: 10px;
+        margin-bottom: 0;
+    }
+
+    .day-caption h6 {
+        margin-bottom: 5px;
+    }
+
+    .find-out {
+        font-size: 8px;
+        padding: 2px 40px;
+    }
+
+    .day-caption {
+        margin-bottom: 20rem;
+    }
+
+    .day-btm {
+        margin-bottom: 10px !important;
+    }
+
+    .banner-text h3 {
+        font-size: 1rem;
+    }
+
+    .banner-img {
+        width: 75%;
+    }
+
+    .banner-img {
+        width: 75%;
+    }
+
+    .beer-detail h5 {
+        font-size: 10px;
+    }
+
+    .beer-detail p {
+        font-size: 8px;
+    }
+
+    .beer-sponsor {
+        padding-right: 5px;
+    }
+
+    .menu-grid-wrapped {
+        margin-bottom: 1rem;
+    }
+
+    .menu-h3 {
+        font-size: 20px;
+    }
+
+    .menu-p {
+        font-size: 15px;
+    }
+
+    .sponsors-grid-wrapped {
+        grid-template-columns: auto auto auto auto;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
+    .music-sponsor-logo h5 {
+        font-size: 10px;
+    }
+
+    .music-schedule h4 {
+        font-size: 15px;
+    }
 }
