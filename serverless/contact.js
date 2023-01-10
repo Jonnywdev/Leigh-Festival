@@ -1,4 +1,5 @@
 const { SNSClient, PublishCommand } = require('@aws-sdk/client-sns');
+const querystring = require('node:querystring');
 
 /**
  * SNS Topic we're publishing to
@@ -21,7 +22,11 @@ module.exports.contactForm = async (event, context) => {
         'other': 'Other Enquiry'
     };
 
-    console.log(event);
+    const buffer = new Buffer(event.body, 'base64');
+    const b64Decoded = buffer.toString();
+    const frmDecoded = querystring.parse(b64Decoded);
+
+    console.log(event, b64Decoded, frmDecoded);
     /*const snsClient = new SNSClient({});
     const publishCmd = new PublishCommand({
         TopicArn: TOPIC_ARN,
