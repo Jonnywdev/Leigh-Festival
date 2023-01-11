@@ -90,4 +90,9 @@ $(document).ready(function(){
         $(".hidden-map-txt").hide();
         $(".toilet-txt").toggle();
     });
+    // map itself
+    $(".map-vector").click(function(){
+        $(".hidden-map-txt").hide();
+    })
+    
 });
