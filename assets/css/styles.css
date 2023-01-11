@@ -250,6 +250,20 @@ nav img {
     transform: translateY(-2px);
 }
 
+/* header titles */
+.title-img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.title-img img {
+    max-width: 100%;
+}
+
+.sub-heading {
+    max-width: 75% !important;
+}
+
 /* footer */
 footer {
     width: 100%;
@@ -1114,6 +1128,8 @@ footer {
 .music-sponsor-logo img {
     width: 100%;
 }
+
+/* Try it page */
 /* responsiveness */
 
 /* Medium devices (tablets, less than 992px) */

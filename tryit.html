@@ -12,609 +12,82 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Leigh RUFC are proud to bring back our annual festival as the Leigh Festival on the 2nd to the 5th June 2022. The aim for the event is to provide a great social experience for all attending to enjoy the jubilee weekend together through music, entertainment, sport and drink. 
-    All of us here at the club are looking forward and working hard to create a truly enjoyable experience for all. Entrance to the family fun day and sporting events are completely free. We are working in partnership with charitable causes throughout the event with the aim of leaving a lasting impact as well as an enjoyable memory for all.">
-    <meta name="keywords" content="Festival, Leigh, Live Music, Beer festival, Queens jubilee, Leigh Festival, 
-    Funfair, Fun day, Family, North West, Community,  Sevens Rugby, Tryit Rugby, Rugby, Sports, Leigh RUFC, Leigh Works, 
-    DJ, Summer bank holiday, Brass band, beer, wine, cocktails, cider, camera, Charities, Andy's man club, food trucks, great weekend, spirits, fun for all">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <meta name="description" content="Leigh Festival was created in 2020, with the first festival 
+    taking place over the Jubilee bank holiday in 2022. The idea was 
+    to bring a fun event to Leigh which included live mucic from local bands 
+    and singers, a great mix of different beers, largers and ciders, rugby matches and 
+    much more!
+    Our aim is to give the community a great event right at their doorstep, 
+    without having to break the bank to see amazing live bands and singers 
+    and also to give people the opportunity to try different drinks they may not
+    be able to find locally anywhere else.">
+    <meta name="keywords" content="Festival, Leigh, Live Music, Beer festival, Leigh Festival, 
+    North West, Community, Sevens Rugby, Tryit Rugby, Rugby, Sports, Leigh RUFC, Leigh Works, 
+    DJ, May bank holiday, beer, wine, cocktails, cider, camera, Charities, Andy's man club, food trucks, 
+    great weekend, spirits, fun for all, lager, wigan, wigan festival, event, wigan council, live music, 
+    local bands, local artists">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/ab972f586c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/style.css" media="screen" type="text/css">
+    <link rel="stylesheet" href="https://use.typekit.net/azh5fcf.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css" media="screen" type="text/css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
     <title>Try It</title>
 </head>
-<body id="try-it-body">
+<body>
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MLXXTR4"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-
-    <button onclick="topFunction()" class="bck-to-top" title="Go to top" id="myBtn"><i class="fa-solid fa-arrow-up"></i></button>
-
-    <section class="tryit-section">
-        <div class="description-wrapped">
-            <a href="index.html"><img src="assets/images/logos/tryit.png" alt="Leigh Rufc Logo" class="logo-header-try"></a>
-            <h1>Welcome to tryit's 7's tournament!</h1>
+<!-- header -->
+<nav class="navbar navbar-expand-lg navbar-light bg-blue">
+    <div class="container small-nav">
+        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Leigh Festival Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link navl-left" href="homepage.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navl-left active" href="tryit.html">Try It</a>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                    <a class="btn dropdown-toggle nav-link navl-left" type="button" data-toggle="dropdown" aria-expanded="false">
+                        Sponsorship    
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item b-btm" href="beer-sponsor.html">Beer Barrel</a>
+                        <a class="dropdown-item b-btm" href="glassware-sponsor.html">Glassware</a>
+                        <a class="dropdown-item b-btm" href="music-sponsor.html">Music</a>
+                        <a class="dropdown-item b-btm" href="main-event-sponsor.html">Main Event</a>
+                        <a class="dropdown-item b-btm" href="bar-sponsor.html">Bar</a>
+                        <a class="dropdown-item b-btm" href="rugby-sponsor.html">Rugby</a>
+                        <a class="dropdown-item" href="beer-token-sponsor.html">Beer Token</a>
+                    </div>
+                  </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
         </div>
-        <p></p>
-    </section>
+    </div>
+</nav>
+<!-- hero image -->
+<div class="image-wrapper">
+    <img src="https://res.cloudinary.com/dmegr1g6f/image/upload/v1673456679/hero-img-try-it_4x_tcenow.png" alt="Try its 7's team lifting the 2022 trophy" class="hero-img">
+</div>
+
+<button onclick="topFunction()" class="bck-to-top" title="Go to top" id="myBtn"><i class="fa-solid fa-arrow-up"></i></button>
 
 
 
-    <section class="tryit-section">
-        <div class="groups-wrapped">
-            <div class="groups-wrapped">
-                <div class="group-card">
-                    <div class="group-card-wrapped">
-                        <div class="group-title">
-                            <h1>Congratulations to our winners, Try It</h1>
-                        </div>
-                        <hr class="table-hr">
-                        <br>
-                        <div class="group-title">
-                            <h1>Score Board</h1>
-                        </div>
-                        <hr class="table-hr">
-                        <table style="width:100%">
-                            <tr>
-                                <th><b>Team</b></th>
-                                <th><b>Wins</b></th>
-                                <th><b>Losses</b></th>
-                                <th><b>Draws</b></th>
-                                <th><b>Points</b></th>
-                            </tr>
-
-                            <tr>
-                                <td>TryIt</td>
-                                <td>5</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td><b>15</b></td>
-                            </tr>
-           
-                            <tr>
-                                <td>Aspull</td>
-                                <td>5</td>
-                                <td>1</td>
-                                <td>0</td>
-                                <td><b>16</b></td>
-                            </tr>
-
-                            <tr>
-                                <td>Leigh Tofts</td>
-                                <td>3</td>
-                                <td>2</td>
-                                <td>0</td>
-                                <td><b>11</b></td>
-                            </tr>
-                            
-                            <tr>
-                                <td>Uclan</td>
-                                <td>1</td>
-                                <td>5</td>
-                                <td>0</td>
-                                <td><b>8</b></td>
-                            </tr> 
-
-                            <tr>
-                                <td>JXE</td>
-                                <td>3</td>
-                                <td>3</td>
-                                <td>0</td>
-                                <td><b>12</b></td>
-                            </tr>
-                            <tr>
-                                <td>Leigh 1st</td>
-                                <td>2</td>
-                                <td>4</td>
-                                <td>0</td>
-                                <td><b>10</b></td>
-                            </tr>
-                            
-                            <tr>
-                                <td>Orrell</td>
-                                <td>0</td>
-                                <td>6</td>
-                                <td>0</td>
-                                <td><b>6</b></td>
-                            </tr>
-
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr>
-    </section>
-
-    <section class="tryit-section">
-        <div class="match-schedule">
-            <h1 class="rounds">Round One</h1>
-            <br>
-            <!-- first game -->
-            <div class="games-are-wrapped">
-                <div class="match-wrapped top">
-                    <div class="match-card">
-                        <div class="time-wrapped">
-                            <h2 class="timeandpitch">Kick off: 12:00</h2>
-                            <h3 class="timeandpitch">1st team pitch</h3>
-                        </div>
-                        <div class="team-wrapped">
-                            <h4 class="teams-text">Leigh 1st 28</h4>
-                            <h5>vs</h5>
-                            <h6 class="teams-text">7 Uclan</h6>
-                        </div>
-                    </div>
-                </div>
-                <!-- second game -->
-                <div class="match-wrapped">
-                    <div class="match-card">
-                        <div class="time-wrapped">
-                            <h2 class="timeandpitch">Kick off: 12:00</h2>
-                            <h3 class="timeandpitch">2nd team pitch</h3>
-                        </div>
-                        <div class="team-wrapped">
-                            <h4 class="teams-text">Leigh Tofts 26</h4>
-                            <h5>vs</h5>
-                            <h6 class="teams-text">7 Orrell</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>    
-            
-                <!-- 3rd game -->
-            <div class="games-are-wrapped">
-                <div class="match-wrapped top">
-                    <div class="match-card">
-                        <div class="time-wrapped">
-                            <h2 class="timeandpitch">Kick off: 12:20</h2>
-                            <h3 class="timeandpitch">1st team pitch</h3>
-                        </div>
-                        <div class="team-wrapped">
-                            <h4 class="teams-text">TryIt 33</h4>
-                            <h5>vs</h5>
-                            <h6 class="teams-text">5 Aspull</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr>
-    </section>
-
-    <section class="tryit-section">
-        <div class="match-schedule">
-            <h1 class="rounds">Round Two</h1>
-            <br>
-           <!-- first game -->
-           <div class="games-are-wrapped">
-            <div class="match-wrapped top">
-                <div class="match-card">
-                    <div class="time-wrapped">
-                        <h2 class="timeandpitch">Kick off: 12:50</h2>
-                        <h3 class="timeandpitch">2nd team pitch</h3>
-                    </div>
-                    <div class="team-wrapped">
-                        <h4 class="teams-text">Aspull 31</h4>
-                        <h5>vs</h5>
-                        <h6 class="teams-text">14 Leigh Tofts</h6>
-                    </div>
-                </div>
-            </div>
-            <!-- second game -->
-            <div class="match-wrapped">
-                <div class="match-card">
-                    <div class="time-wrapped">
-                        <h2 class="timeandpitch">Kick off: 12:50</h2>
-                        <h3 class="timeandpitch">1st team pitch</h3>
-                    </div>
-                    <div class="team-wrapped">
-                        <h4 class="teams-text">Orrell 10</h4>
-                        <h5>vs</h5>
-                        <h6 class="teams-text">34 Leigh 1st</h6>
-                    </div>
-                </div>
-            </div>
-        </div>    
-        
-            <!-- 3rd game -->
-        <div class="games-are-wrapped">
-            <div class="match-wrapped top">
-                <div class="match-card">
-                    <div class="time-wrapped">
-                        <h2 class="timeandpitch">Kick off: 13:10</h2>
-                        <h3 class="timeandpitch">2nd team pitch</h3>
-                    </div>
-                    <div class="team-wrapped">
-                        <h4 class="teams-text">Uclan 12</h4>
-                        <h5>vs</h5>
-                        <h6 class="teams-text">45 JXE</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-        <hr>
-    </section>
-
-    <section class="tryit-section">
-        <div class="match-schedule">
-            <h1 class="rounds">Round Three</h1>
-            <br>
-            <!-- first game -->
-            <div class="games-are-wrapped">
-                <div class="match-wrapped top">
-                    <div class="match-card">
-                        <div class="time-wrapped">
-                            <h2 class="timeandpitch">Kick off: 13:40</h2>
-                            <h3 class="timeandpitch">1st team pitch</h3>
-                        </div>
-                        <div class="team-wrapped">
-                            <h4 class="teams-text">Leigh Tofts 0</h4>
-                            <h5>vs</h5>
-                            <h6 class="teams-text">20 JXE</h6>
-                        </div>
-                    </div>
-                </div>
-                <!-- second game -->
-                <div class="match-wrapped">
-                    <div class="match-card">
-                        <div class="time-wrapped">
-                            <h2 class="timeandpitch">Kick off: 13:40</h2>
-                            <h3 class="timeandpitch">2nd team pitch</h3>
-                        </div>
-                        <div class="team-wrapped">
-                            <h4 class="teams-text">Tryit 38</h4>
-                            <h5>vs</h5>
-                            <h6 class="teams-text">7 Uclan</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>    
-            
-                <!-- 3rd game -->
-            <div class="games-are-wrapped">
-                <div class="match-wrapped top">
-                    <div class="match-card">
-                        <div class="time-wrapped">
-                            <h2 class="timeandpitch">Kick off: 14:00</h2>
-                            <h3 class="timeandpitch">2nd team pitch</h3>
-                        </div>
-                        <div class="team-wrapped">
-                            <h4 class="teams-text">Aspull 44</h4>
-                            <h5>vs</h5>
-                            <h6 class="teams-text">0 Orrell</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr>
-    </section>
-
-    <section class="tryit-section">
-        <div class="match-schedule">
-            <h1 class="rounds">Round Four</h1>
-            <br>
-            <!-- first game -->
-            <div class="games-are-wrapped">
-                <div class="match-wrapped top">
-                    <div class="match-card">
-                        <div class="time-wrapped">
-                            <h2 class="timeandpitch">Kick off: 14:30</h2>
-                            <h3 class="timeandpitch">2nd team pitch</h3>
-                        </div>
-                        <div class="team-wrapped">
-                            <h4 class="teams-text">Orrell 0</h4>
-                            <h5>vs</h5>
-                            <h6 class="teams-text">52 TryIt</h6>
-                        </div>
-                    </div>
-                </div>
-                <!-- second game -->
-                <div class="match-wrapped">
-                    <div class="match-card">
-                        <div class="time-wrapped">
-                            <h2 class="timeandpitch">Kick off: 14:30</h2>
-                            <h3 class="timeandpitch">1st team pitch</h3>
-                        </div>
-                        <div class="team-wrapped">
-                            <h4 class="teams-text">Uclan 7</h4>
-                            <h5>vs</h5>
-                            <h6 class="teams-text">31 Leigh Tofts</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>    
-            
-                <!-- 3rd game -->
-            <div class="games-are-wrapped">
-                <div class="match-wrapped top">
-                    <div class="match-card">
-                        <div class="time-wrapped">
-                            <h2 class="timeandpitch">Kick off: 14:50</h2>
-                            <h3 class="timeandpitch">2nd team pitch</h3>
-                        </div>
-                        <div class="team-wrapped">
-                            <h4 class="teams-text">JXE 24</h4>
-                            <h5>vs</h5>
-                            <h6 class="teams-text">7 Leigh 1st</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr>
-    </section>
-
-    <section class="tryit-section">
-        <div class="match-schedule">
-            <h1 class="rounds">Round Five</h1>
-            <br>
-            <!-- first game -->
-            <div class="games-are-wrapped">
-                <div class="match-wrapped top">
-                    <div class="match-card">
-                        <div class="time-wrapped">
-                            <h2 class="timeandpitch">Kick off: 15:20</h2>
-                            <h3 class="timeandpitch">1st team pitch</h3>
-                        </div>
-                        <div class="team-wrapped">
-                            <h4 class="teams-text">Tryit 45</h4>
-                            <h5>vs</h5>
-                            <h6 class="teams-text">7 Leigh 1st</h6>
-                        </div>
-                    </div>
-                </div>
-                <!-- second game -->
-                <div class="match-wrapped">
-                    <div class="match-card">
-                        <div class="time-wrapped">
-                            <h2 class="timeandpitch">Kick off: 15:20</h2>
-                            <h3 class="timeandpitch">2nd team pitch</h3>
-                        </div>
-                        <div class="team-wrapped">
-                            <h4 class="teams-text">Aspull 15</h4>
-                            <h5>vs</h5>
-                            <h6 class="teams-text">7 JXE</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>    
-            
-                <!-- 3rd game -->
-            <div class="games-are-wrapped">
-                <div class="match-wrapped top">
-                    <div class="match-card">
-                        <div class="time-wrapped">
-                            <h2 class="timeandpitch">Kick off: 15:40</h2>
-                            <h3 class="timeandpitch">1st team pitch</h3>
-                        </div>
-                        <div class="team-wrapped">
-                            <h4 class="teams-text">Orrell 15</h4>
-                            <h5>vs</h5>
-                            <h6 class="teams-text">24 Uclan</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr>
-    </section>
-
-    <section class="tryit-section">
-        <div class="match-schedule">
-            <h1 class="rounds">Round Six</h1>
-            <br>
-            <!-- first game -->
-            <div class="games-are-wrapped">
-                <div class="match-wrapped top">
-                    <div class="match-card">
-                        <div class="time-wrapped">
-                            <h2 class="timeandpitch">Kick off: 16:00</h2>
-                            <h3 class="timeandpitch">2nd team pitch</h3>
-                        </div>
-                        <div class="team-wrapped">
-                            <h4 class="teams-text">Uclan 17</h4>
-                            <h5>vs</h5>
-                            <h6 class="teams-text">35 Aspull</h6>
-                        </div>
-                    </div>
-                </div>
-                <!-- second game -->
-                <div class="match-wrapped">
-                    <div class="match-card">
-                        <div class="time-wrapped">
-                            <h2 class="timeandpitch">Kick off: 16:00</h2>
-                            <h3 class="timeandpitch">1st team pitch</h3>
-                        </div>
-                        <div class="team-wrapped">
-                            <h4 class="teams-text">JXE 5</h4>
-                            <h5>vs</h5>
-                            <h6 class="teams-text">32 Tryit</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>    
-            
-                <!-- 3rd game -->
-            <div class="games-are-wrapped">
-                <div class="match-wrapped top">
-                    <div class="match-card">
-                        <div class="time-wrapped">
-                            <h2 class="timeandpitch">Kick off: 16:20</h2>
-                            <h3 class="timeandpitch">2nd team pitch</h3>
-                        </div>
-                        <div class="team-wrapped">
-                            <h4 class="teams-text">Leigh 1st 14</h4>
-                            <h5>vs</h5>
-                            <h6 class="teams-text">15 Leigh Tofts</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr>
-    </section>
-
-    <section class="tryit-section">
-        <div class="match-schedule">
-            <h1 class="rounds">Round Seven</h1>
-            <br>
-                <!-- second game -->
-                <div class="match-wrapped top">
-                    <div class="match-card">
-                        <div class="time-wrapped">
-                            <h2 class="timeandpitch">Kick off: 16:50</h2>
-                            <h3 class="timeandpitch">2nd team pitch</h3>
-                        </div>
-                        <div class="team-wrapped">
-                            <h4 class="teams-text">Leigh 1st 0</h4>
-                            <h5>vs</h5>
-                            <h6 class="teams-text">20 Aspull</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>    
-            
-                <!-- 3rd game -->
-            <div class="games-are-wrapped">
-                <div class="match-wrapped top">
-                    <div class="match-card">
-                        <div class="time-wrapped">
-                            <h2 class="timeandpitch">Kick off: 17:10</h2>
-                            <h3 class="timeandpitch">1st team pitch</h3>
-                        </div>
-                        <div class="team-wrapped">
-                            <h4 class="teams-text">Leigh Tofts</h4>
-                            <h5>vs</h5>
-                            <h6 class="teams-text">Tryit</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr>
-    </section>
-
-
-    <section class="tryit-section">
-        <div class="match-schedule">
-            <h1 class="rounds">Entertainment</h1>
-            <br>
-            <!-- first game -->
-            <div class="games-are-wrapped">
-                <div class="match-wrapped top">
-                    <div class="match-card">
-                        <h1>Under 13's</h1>
-                        <hr>
-                        <div class="time-wrapped">
-                            <h2 class="timeandpitch">Kick off: 17:30</h2>
-                            <h3 class="timeandpitch">1st team pitch</h3>
-                        </div>
-
-                    </div>
-                </div>
-                <!-- second game -->
-                <div class="match-wrapped">
-                    <div class="match-card">
-                        <h1>Dancers</h1>
-                        <hr>
-                        <div class="time-wrapped">
-                            <h2 class="timeandpitch">Kick off: 18:10</h2>
-                            <h3 class="timeandpitch">1st team pitch</h3>
-                        </div>
-                        <!-- <div class="team-wrapped">
-                            <h4 class="teams-text update">*Update to come*</h4>
-                            <h5>vs</h5>
-                            <h6 class="teams-text update">*Update to come*</h6>
-                        </div> -->
-                    </div>
-                </div>
-            </div>    
-        </div>
-        <hr>
-    </section>
-
-
-    <section class="tryit-section">
-        <div class="match-schedule">
-            <h1 class="rounds">Final</h1>
-            <br>
-            <!-- first game -->
-            <div class="games-are-wrapped">
-                <div class="match-wrapped top">
-                    <div class="match-card">
-                        <h1>To win the Vernel Cup</h1>
-                        <hr>
-                        <div class="time-wrapped">
-                            <h2 class="timeandpitch">Kick off: 18:15</h2>
-                            <h3 class="timeandpitch">1st team pitch</h3>
-                        </div>
-                        <div class="team-wrapped">
-                            <h4 class="teams-tex">Tryit 20</h4>
-                            <h5>vs</h5>
-                            <h6 class="teams-text">Aspull 14</h6>
-                        </div>
-                    </div> 
-                </div>
-
-                <div class="match-wrapped">
-                    <div class="match-card">
-                        <h1 class="final-pic">Thank you Emma Vernel for sponsoring our final!</h1>
-                        <hr>
-                        <div class="final-image-wrapped">
-                            <img src="assets/images/tryit/final.png" alt=""">
-                        </div>
-                    </div> 
-                </div>
-            </div>
-        </div>
-        <hr>
-    </section>
-  
-
-    <section class="tryit-section">
-        <div class="try-it-sponsors-wrapped">
-            <h1>Sponsored by</h1>
-            <div class="sponsors-wrapped-try">
-                <img src="assets/images/tryit/ab-sundecks.png" alt=""">
-                <img src="assets/images/tryit/ENDURING.png" alt=""">
-                <img src="assets/images/tryit/holiday-village.png" alt=""">
-                <img src="assets/images/logos/hsqe.png" alt=""">
-                <img src="assets/images/tryit/Louisa.jpeg" alt=""">
-                <img src="assets/images/tryit/mm.png" alt=""">
-                <img src="assets/images/tryit/ortus.png" alt=""">
-                <img src="assets/images/tryit/Tougher.png" alt=""">
-                <img src="assets/images/tryit/dance.png" alt=""">
-                <img src="assets/images/tryit/gerads.png" alt=""">
-                <img src="assets/images/tryit/snow.png" alt=""">
-                <img src="assets/images/tryit/reg.png" alt=""">
-            </div>
-        </div>
-    </section>
-
-    <script type="text/javascript">
-        (function() {
-            var el = document.createElement("script");
-            el.src = "https://www.ticketsource.co.uk/ticketshop/JIGDJ";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(el, s);
-        })();
-        </script>
-    
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-        AOS.init({
-            duration: 2000
-        });
-        </script>
-    
-    
-        <script src="assets/js/script.js"></script>
-        <script src="assets/js/script-color.js"></script>
 </body>
 </html>
