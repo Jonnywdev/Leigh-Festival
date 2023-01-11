@@ -615,6 +615,7 @@ footer {
 /* map */
 .map-container {
     width: 100%;
+    position: relative;
 }
 
 .map-container img {
@@ -749,6 +750,7 @@ footer {
     position: absolute;
     max-width: 12.5%;
     padding: 10px;
+    opacity: 0.8;
 }
 
 .hidden-map-txt h5 {
@@ -780,93 +782,101 @@ footer {
 }
 
 .toilet-txt-outside {
-    left: 30%;
-    top: 135rem;
+    left: 40%;
+    top: 5px;
 }
 
 .toilet-txt {
-    top: 168.5rem;
+    top: 60%;
+    left: 1%;
 }
 
 .cocktails-txt {
-    left: 2%;
-    top: 130rem;
+    left: 1%;
+    top: 1%;
+    min-width: 20% !important;
 }
 
 .bar-txt {
-    left: 15%;
-    top: 163rem;
+    top: 60%;
+    left: 1%;
 }
 
 .bar-txt-field {
-    left: 37%;
-    top: 160rem;
+    left: 27%;
+    top: 60%;
 }
 
 .bar-txt-outside {
-    left: 33%;
-    top: 150rem;
+    left: 22%;
+    top: 40%;
 }
 
 .hot-drinks-txt {
-    left: 3%;
-    top: 133rem;
+    left: 1%;
+    top: 33%;
 }
 
 .rugby-txt-one {
-    left: 74%;
-    top: 132rem;
+    left: 78%;
+    top: 7%;
 }
 
 .rugby-txt-two {
-    left: 64%;
-    top: 154rem;
+    left: 66%;
+    top: 65%;
+    min-width: 23% !important;
 }
 
 .rugby-txt-three {
-    left: 47%;
-    top: 132rem;
+    left: 45%;
+    top: 10%;
+    min-width: 17% !important;
 }
 
 .food-txt {
-    left: 5%;
-    top: 128rem;
+    left: 0.25%;
+    top: 16%;
 }
 
 .food-txt-field {
-    left: 37%;
-    top: 140rem;
+    left: 38%;
+    top: 28%;
 }
 
 .tokens-txt {
-    left: 16%;
-    top: 152rem;
+    left: 9%;
+    top: 57%;
+    min-width: 20% !important;
 }
 
 .seating-txt {
-    left: 22%;
-    top: 143rem;
+    left: 17%;
+    top: 35%;
+    min-width: 17.5% !important;
 }
 
 .first-aid-txt-bar {
-    left: 3%;
-    top: 169rem;
+    left: 1%;
+    top: 65%;
+    min-width: 25% !important;
 }
 
 .first-aid-txt-token {
-    left: 8%;
-    top: 152rem;
+    left: 1%;
+    top: 38%;
 }
 
 .first-aid-txt-field {
-    left: 55%;
-    top: 141rem;
+    left: 51%;
+    top: 33%;
+    min-width: 20% !important;
 }
 
 .music-txt {
-    left: 4%;
-    top: 128rem;
-    max-width: 15% !important;
+    left: 0.5%;
+    top: 0.5%;
+    min-width: 19% !important;
 }
 
 .map-button {
@@ -1639,5 +1649,9 @@ footer {
 
     .music-schedule h4 {
         font-size: 15px;
+    }
+
+    .bck-to-top {
+        padding: 13px 20px;
     }
 }
