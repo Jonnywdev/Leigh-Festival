@@ -53,7 +53,7 @@ a:hover {
     color: #000;
 }
 
-.mobile-design {
+.mobile-design, .mobile-design-days {
     display: none;
 }
 
@@ -1351,29 +1351,72 @@ footer {
     }
 
     .day-carousel-container {
-        height: 200px;
+        display: none;
     }
 
-    .day-caption h1 {
-        font-size: 35px;
+    .mobile-design-days {
+        display: flex;
+        flex-direction: column;
     }
 
-    .day-caption h5 {
-        font-size: 15px;
-        margin-top: 5px;
+    .sm-day-img-wrapped {
+        width: 100%;
+        position: relative;
     }
 
-    .day-caption h6 {
-        margin-bottom: 10px;
+    .sm-day-img-wrapped img {
+        max-width: 100%;
     }
 
-    .find-out {
-        font-size: 12px;
-        padding: 5px 40px;
+    .sm-day-caption-wrapped {
+        position: absolute;
+        top: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
     }
 
-    .day-caption {
-        margin-bottom: 15rem;
+    .sm-day-mt {
+        margin-top: 2rem;
+    }
+    
+    .sm-day-caption {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .sm-day-caption h1{
+        font-size: 50px;
+    }
+    
+    .sm-day-caption h5{
+        margin-bottom: 0 !important;
+        font-size: 25px;
+    }
+    
+    .sm-day-caption h6{
+        font-size: 25px !important;
+        margin-bottom: 2rem;
+    }
+    
+    .sm-day-btm {
+        margin-bottom: 4rem;
+    }
+    
+    .sm-find-out {
+        padding: 10px 40px;
+        background: #fff;
+        color: #000;
+        transition: all .5s;
+        font-size: 20px;
+    }
+    
+    .sm-day-hr {
+        border-bottom: 2px solid #fff;
+        width: 100%;
     }
 
     .beer-festival-info-wrapped {
@@ -1419,6 +1462,12 @@ footer {
         display: grid;
         grid-template-columns: auto auto;
     }
+
+    .banner-text h3 {
+        font-size: 1rem;
+    }
+
+
 }
 
 @media (max-width: 420px) {
@@ -1499,44 +1548,29 @@ footer {
         margin-bottom: 2rem;
     }
 
-    .day-carousel-container {
-        height: 135px;
+    .sm-day-caption-wrapped {
+        top: 30px;
     }
 
-    .day-navigation .day-nav-btn {
-        font-size: 10px;
-        width: 20px;
-        height: 20px;
+    .sm-day-caption h1 {
+        font-size: 40px;
     }
 
-    .day-caption h1 {
-        font-size: 25px;
+    .sm-day-caption h5 {
+        font-size: 15px;
     }
 
-    .day-caption h5 {
-        font-size: 10px;
-        margin-bottom: 0;
+    .sm-day-caption h6 {
+        font-size: 20px !important;
     }
 
-    .day-caption h6 {
-        margin-bottom: 5px;
-    }
-
-    .find-out {
-        font-size: 8px;
-        padding: 2px 40px;
-    }
-
-    .day-caption {
-        margin-bottom: 20rem;
-    }
-
-    .day-btm {
-        margin-bottom: 10px !important;
+    .sm-find-out {
+        padding: 5px 40px;
+        font-size: 12px;
     }
 
     .banner-text h3 {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .banner-img {
