@@ -1279,11 +1279,23 @@ footer {
 
     .contact-card {
         width: 100%;
+        margin-top: 0 !important;
+
     }
 
     .contact-form {
         margin-bottom: 5rem;
     }
+
+    .contact-cards-wrapped {
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 20px;
+        column-gap: 20px;
+        margin-bottom: 2rem;
+    }
+
+    
 
     /* footer */
     .footer-wrapped .row .col {
@@ -1383,6 +1395,14 @@ footer {
         height: 100px;
     }
     /* contact us page */
+
+    .contact-card h6 {
+        font-size: 1.5rem;
+    }
+
+    .contact-cards-wrapped {
+        grid-template-columns: auto;
+    }
 
     /* main homepage */
     .main-header {
