@@ -19,6 +19,7 @@ module.exports.contactForm = async (event, context) => {
         'token': 'Beer Token Sponsorship',
         'foodvan': 'I have a food van I want to bring',
         'stall': 'I want to set up a stall',
+        'tryit': 'I want to enter a team in Tryit Sevens',
         'other': 'Other Enquiry'
     };
 
