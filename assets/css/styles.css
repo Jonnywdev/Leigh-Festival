@@ -1130,6 +1130,37 @@ footer {
 }
 
 /* Try it page */
+.tryit-git {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 40px;
+}
+
+.other-d {
+    display: flex;
+    flex-direction: column;
+}
+
+.try-contact-info {
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+.c-circle {
+    width: 50px;
+    height: 50px;
+    background: #03C1D3;
+    border-radius: 50%;
+    position: relative;
+}
+
+.c-circle i {
+    color: #000;
+    font-size: 25px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
 /* responsiveness */
 
 /* Medium devices (tablets, less than 992px) */
