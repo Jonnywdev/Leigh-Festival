@@ -56,7 +56,7 @@ module.exports.contactForm = async (event, context) => {
 
     // Redirect to the Thank you page on success
     return {
-        "headers": {"Location": "https://leighfestival.uk/contact-thanks.html"},
+        "headers": {"Location": "https://leighfestival.uk/thankyou.html"},
         "statusCode": 302
     };
 };
