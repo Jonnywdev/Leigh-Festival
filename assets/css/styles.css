@@ -1494,6 +1494,21 @@ table {
         font-size: 20px;
         font-weight: 400;
     }
+
+    /* try it */
+    .tryit-git {
+        grid-template-columns: auto;
+        column-gap: 0;
+        row-gap: 60px;
+    }
+
+    .other-d {
+        text-align: left;
+    }
+    
+    .try-contact-list {
+        justify-content: flex-start;
+    }
     
 }
 
@@ -1671,7 +1686,14 @@ table {
         font-size: 1rem;
     }
 
+    /* try it */
+    .try-sponsors-img {
+        width: 75%;
+    }
 
+    .tryit-sponsors-banner .sub-heading {
+        max-width: 90% !important;
+    }
 }
 
 @media (max-width: 420px) {
