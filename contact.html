@@ -23,6 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/styles.css" media="screen" type="text/css">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     <title>Contact Us</title>
 </head>
 <body>
@@ -108,6 +109,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <textarea class="form-control" id="emailMessage" name="message" rows="3" placeholder="Type your message here..." required></textarea>
                 </div>
                 <input type="submit" value="Submit" class="contact-submit" name="submit">
+                <div class="cf-turnstile" data-sitekey="0x4AAAAAAAB9cDfqBi5HTr10"></div>
             </form>
             <div class="mt-5">
                 <a href="homepage.html" class="p-5 text-white">Go to home</a>

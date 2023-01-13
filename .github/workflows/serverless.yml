@@ -29,3 +29,4 @@ jobs:
           entrypoint: /bin/sh
         env:
           TOPIC_ARN: arn:aws:sns:eu-west-2:287047348324:LeighFestivalContact
+          TURNSTILE_SECRET: ${{ secrets.TURNSTILE_SECRET }}
