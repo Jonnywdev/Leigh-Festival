@@ -22,6 +22,7 @@ functions:
     memorySize: 256
     environment:
       TOPIC_ARN: ${env:TOPIC_ARN}
+      TURNSTILE_SECRET: ${env:TURNSTILE_SECRET}
     events:
       - httpApi:
           method: POST
