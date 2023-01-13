@@ -1224,19 +1224,48 @@ footer {
 .try-sponsors-grid {
     margin-top: 1rem;
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
 }
 
 .try-sponsors-img {
-    width: 35%;
+    width: 50%;
 }
 
 .try-sponsors-img img {
     max-width: 100%;
 }
 
+.rugby-team {
+    font-weight: 600;
+    font-size: 20px;
+}
 
+.rugby-grid-wrapped {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 30px;
+    row-gap: 3rem;
+    margin: 3rem 0;
+    align-items: end;
+}
 
+.rugby-sponsor-logo {
+    color: #000;
+    font-size: 10px;
+    padding: 12px 5px;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+/* scoreboard */
+table, td, th {
+    border: 1px solid;
+}
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
 /* responsiveness */
 
 /* Medium devices (tablets, less than 992px) */
