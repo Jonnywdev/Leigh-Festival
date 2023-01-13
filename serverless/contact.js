@@ -1,10 +1,12 @@
 const { SNSClient, PublishCommand } = require('@aws-sdk/client-sns');
+const axios = require('axios');
 const querystring = require('node:querystring');
 
 /**
  * SNS Topic we're publishing to
  */
 const TOPIC_ARN = process.env.TOPIC_ARN;
+const TURNSTILE_SECRET = process.env.TURNSTILE_SECRET;
 
 module.exports.contactForm = async (event, context) => {
 
@@ -32,7 +34,7 @@ module.exports.contactForm = async (event, context) => {
     // name=Adam+Prescott&mail=adam%40example.com&subject=glassware&message=This+is+a+test+message&submit=Submit
     const frmDecoded = querystring.parse(b64Decoded);
 
-    console.log(event, b64Decoded, frmDecoded);
+    console.log(event, b64Decoded, frmDecoded, context);
 
     // Validate the Subject passed from the user is a valid one
     if (!vaildSubjects.hasOwnProperty(frmDecoded['subject'])) {
@@ -40,7 +42,30 @@ module.exports.contactForm = async (event, context) => {
 
         // Tell's API Gateway to redirect to the Error page with a 302 Redirect
         return {
-            "headers": {"Location": "https://leighfestival.uk/error.html"},
+            "headers": {"Location": "https://leighfestival.uk/error.html?error_src=contact&reason=subject"},
+            "statusCode": 302
+        };
+    }
+
+    const turnstileParams = {
+        secret: TURNSTILE_SECRET,
+        response: frmDecoded['cf-turnstile-response'] // Turnstile adds this as a hidden input after validation
+    };
+
+    try {
+        const turnstileResult = await axios.post('https://challenges.cloudflare.com/turnstile/v0/siteverify', turnstileParams);
+        console.log(turnstileResult.data);
+        if (turnstileResult.data['success'] == false) {
+            const reasons = turnstileResult.data['error-codes'].join(',');
+            return {
+                "headers": {"Location": `https://leighfestival.uk/error.html?error_src=contact_turnstile&reason=${reasons}`},
+                "statusCode": 302
+            };
+        }
+    } catch (e) {
+        console.error(JSON.stringify(e));
+        return {
+            "headers": {"Location": "https://leighfestival.uk/error.html?error_src=contact&reason=turnstile_exception"},
             "statusCode": 302
         };
     }
