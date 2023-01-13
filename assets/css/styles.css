@@ -1139,6 +1139,7 @@ footer {
 .other-d {
     display: flex;
     flex-direction: column;
+    text-align: right;
 }
 
 .try-contact-info {
@@ -1146,21 +1147,96 @@ footer {
     margin-bottom: 1rem;
 }
 
-.c-circle {
-    width: 50px;
-    height: 50px;
-    background: #03C1D3;
-    border-radius: 50%;
+.try-contact-list {
     position: relative;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    padding-right: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+  
+.try-contact-list div a {
+    color: #fff;
+}
+  
+.try-contact-list div {
+    position: relative; 
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 10px 3px;
+    line-height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #c6c6c6;
+    cursor: pointer; 
+    transition: all .2s ease-in-out;
+}
+  
+.try-contact-list div:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 0 1px #a4d4f3;
+    transition: all .2s ease-in-out;
+}
+  
+.try-contact-list div:hover {
+    background-color: #a4d4f3; 
+}
+  
+.try-contact-list div:hover:after {
+    opacity: 1;  
+    transform: scale(1.12);
+    transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+}
+  
+.try-contact-list div:hover a {
+    color: #000;
 }
 
-.c-circle i {
-    color: #000;
-    font-size: 25px;
-    position: absolute;
-    top: 25px;
-    left: 25px;
+.contact-i{
+    color: #fff;
 }
+
+.tryit-sponsors-banner {
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #c6c6c6;
+}
+
+.tryit-sponsors-banner .sub-heading {
+    max-width: 50%;
+}
+
+.try-sponsors-grid {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+}
+
+.try-sponsors-img {
+    width: 35%;
+}
+
+.try-sponsors-img img {
+    max-width: 100%;
+}
+
+
+
 /* responsiveness */
 
 /* Medium devices (tablets, less than 992px) */
