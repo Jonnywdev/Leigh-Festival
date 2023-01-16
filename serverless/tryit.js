@@ -27,6 +27,9 @@ module.exports.getScores = async (event, context) => {
 
     return {
         "statusCode": 200,
+        "headers": {
+            "Content-type": "application/json"
+        },
         "body": JSON.stringify(scores, null, 2)
     }
 };
@@ -37,7 +40,10 @@ module.exports.updateScore = async (event, context) => {
     if (body['password'] != TRYIT_PASSWORD) {
         return {
             "statusCode": 401,
-            "reason": "login required"
+            "headers": {
+                "Content-type": "application/json"
+            },
+            "body": JSON.stringify({success: false, reason: "login required"})
         }
     }
 
@@ -54,6 +60,9 @@ module.exports.updateScore = async (event, context) => {
     if (!expectedKeys.every(r => Object.keys(body).includes(r))) {
         return {
             "statusCode": 400,
+            "headers": {
+                "Content-type": "application/json"
+            },
             "body": JSON.stringify({success: false, reason: "Missing Input"})
         }
     }
@@ -84,12 +93,18 @@ module.exports.updateScore = async (event, context) => {
         console.log(e);
         return {
             "statusCode": 500,
+            "headers": {
+                "Content-type": "application/json"
+            },
             "body": JSON.stringify({success: false, reason: e.message})
         }
     }
 
     return {
         "statusCode": 200,
+        "headers": {
+            "Content-type": "application/json"
+        },
         "body": JSON.stringify({success: true})
     }
 };
