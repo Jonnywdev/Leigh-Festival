@@ -2,6 +2,9 @@ service: leighfest
 
 frameworkVersion: "3"
 
+plugins:
+  - serverless-offline
+
 provider:
   name: aws
   runtime: nodejs16.x
@@ -15,8 +18,40 @@ provider:
             - sns:Publish
           Resource:
             - ${env:TOPIC_ARN}
+        - Effect: Allow
+          Action:
+            - dynamodb:PutItem
+            - dynamodb:DeleteItem
+            - dynamodb:GetItem
+            - dynamodb:Scan
+            - dynamodb:Query
+            - dynamodb:UpdateItem
+          Resource:
+            - arn:aws:dynamodb:*:*:table/${env:SCORES_TABLE}
+            - arn:aws:dynamodb:*:*:table/${env:SCORES_TABLE}/index/*
 
 functions:
+  tryItUpdateScore:
+    handler: tryit.updateScore
+    memorySize: 256
+    environment:
+      SCORES_TABLE: ${env:SCORES_TABLE}
+      TRYIT_PASSWORD: ${env:TRYIT_PASSWORD}
+    events:
+      - httpApi:
+          method: POST
+          path: /tryit
+
+  tryItGetScores:
+    handler: tryit.getScores
+    memorySize: 256
+    environment:
+      SCORES_TABLE: ${env:SCORES_TABLE}
+    events:
+      - httpApi:
+          method: GET
+          path: /tryit
+
   contactForm:
     handler: contact.contactForm
     memorySize: 256
