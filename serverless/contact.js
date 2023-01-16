@@ -20,7 +20,8 @@ module.exports.contactForm = async (event, context) => {
         'rugby': 'Mixed Ability Rugby Sponsorship',
         'token': 'Beer Token Sponsorship',
         'stall': 'I want to set up a stall',
-        'tryit': 'I want to enter a team in Tryit Sevens',
+        'tryit': 'I want to enter a team in Tryit Social Sevens',
+        'tryitelite': 'I want to enter a team in Tryit Elite Sevens',
         'other': 'Other Enquiry'
     };
 
