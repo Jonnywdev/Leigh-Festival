@@ -75,6 +75,10 @@ a:hover {
     color: #000;
 }
 
+.cursor-none {
+    cursor: default;    
+}
+
 .mobile-design, .mobile-design-days {
     display: none;
 }
