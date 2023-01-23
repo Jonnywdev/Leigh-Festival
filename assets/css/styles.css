@@ -23,7 +23,6 @@ a:hover {
 /* direction elements */
 /* back to top button */
 .bck-to-top {
-    display: none;
     position: fixed;
     bottom: 20px; 
     right: 30px; 
@@ -34,10 +33,18 @@ a:hover {
     opacity: 0.2;
     color:#fff; 
     cursor: pointer; 
-    padding: 20px 25px; 
+    padding: 18px 25px; 
     border-radius: 50%; 
     font-size: 18px; 
     transition: all .5s;
+}
+
+.bck-to-top::after {
+    border: none;
+}
+
+button:focus {
+    outline: none;
 }
 
 .bck-to-top:hover {
