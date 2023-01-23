@@ -1270,6 +1270,19 @@ table {
     width: 100%;
     border-collapse: collapse;
 }
+
+/* volunteers */
+.vol-img {
+    width: 100%;
+}
+
+.vol-img img {
+    max-width: 100%;
+}
+
+.collumn {
+    flex-direction: column;
+}
 /* responsiveness */
 
 /* Medium devices (tablets, less than 992px) */
