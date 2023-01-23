@@ -1534,6 +1534,10 @@ table {
         justify-content: flex-start;
     }
     
+    .google-form {
+        max-width: 100% !important;
+    }
+    
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
