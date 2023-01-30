@@ -445,14 +445,17 @@ footer {
 /* colours */
 #orange {
     background: #ffaa00;
+    opacity: 0.5;
 }
 
 #dark-green {
     background: #008206;
+    opacity: 0.5;
 }
 
 #pink {
     background: #ff66d0;
+    opacity: 0.5;
 }
 
 #dark-blue {
@@ -465,6 +468,7 @@ footer {
 
 #light-green {
     background: #4bff00;
+    opacity: 0.5;
 }
 
 #light-blue {
@@ -473,6 +477,7 @@ footer {
 
 #purple {
     background: #d300ff;
+    opacity: 0.5;
 }
 
 /* to be added when a colour is taken. */
