@@ -460,10 +460,13 @@ footer {
 
 #dark-blue {
     background: #1f1f91;
+    opacity: 0.5;
+
 }
 
 #red {
     background: #ff0000;
+    opacity: 0.5;
 }
 
 #light-green {
