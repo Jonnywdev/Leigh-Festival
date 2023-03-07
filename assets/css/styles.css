@@ -1037,6 +1037,14 @@ footer {
     text-align: left;
 }
 
+.beer-detail h5 {
+    text-transform: capitalize;
+}
+
+.beer-detail p {
+    text-transform: capitalize;
+}
+
 /* try it banner */
 .tryit-banner {
     background: #a4d4f3;
@@ -1851,12 +1859,10 @@ table {
 
     .beer-detail h5 {
         font-size: 10px;
-        text-transform: capitalize;
     }
     
     .beer-detail p {
         font-size: 8px;
-        text-transform: capitalize;
     }
 
     .beer-sponsor {
