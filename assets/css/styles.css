@@ -442,6 +442,18 @@ footer {
     border: 2px solid #000;
 }
 
+.mockup-grid {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-gap: 5%;
+    grid-row-gap: 10%;
+    padding: 0 15px;
+}
+
+.mockup-grid img {
+    max-width: 95%;
+}
+
 /* colours */
 #orange {
     background: #ffaa00;
@@ -1436,6 +1448,11 @@ table {
         padding-right: 0;
     }
 
+    /* cup grid */
+    .mockup-grid {
+        margin-bottom: 5rem;
+    }
+
     /* sponorsable item page */
     .sponsor-item-wrapped {
         flex-direction: column-reverse;
@@ -1570,6 +1587,18 @@ table {
 
     /* sponsorship page */
 
+    /* cup grid */
+    .mockup-grid {
+        grid-template-columns: auto;
+        grid-gap: 0;
+        grid-row-gap: 5%;
+        padding: 0;
+        margin-bottom: 10rem;
+    }
+
+    .mockup-grid img {
+        max-width: 100%;
+    }
 
     /* sponorsable item page */
     .sponsorship-grid-col {
