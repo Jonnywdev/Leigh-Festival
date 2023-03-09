@@ -1430,7 +1430,8 @@ table {
     width: 50%;
     background: #fff;
     padding: 5px;
-    margin: 5px 0;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
     color: #000;
     transition: all .5s;
 }
@@ -1470,8 +1471,37 @@ table {
 .avandor-banner {
     background: #000;
     width: 100%;
-    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.avandor-banner-img img {
+    max-width: 100%;
+}
+
+.avandor-banner-btn {
+    margin-bottom: 2rem;
+}
+
+.avandor-banner-btn a {
+    color: #000;
+    background: #ee7219;
+    padding: 10px;
+    transition: all .5s;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.avandor-banner-btn a:hover {
+    background: #000;
+    color: #ee7219;
+    font-size: 1.5rem;
+}
+
+/* stalls attending */
+
+
 
 /* responsiveness */
 
