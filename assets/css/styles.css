@@ -1047,6 +1047,7 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: left;
+    max-width: 45%;
 }
 
 .beer-detail h5 {
