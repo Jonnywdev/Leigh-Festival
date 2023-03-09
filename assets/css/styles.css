@@ -1061,7 +1061,9 @@ footer {
 /* try it banner */
 .tryit-banner {
     background: #a4d4f3;
-}
+} 
+
+
 
 .tryit-banner-wrapped {
     display: flex;
@@ -1112,6 +1114,17 @@ footer {
 }
 
 /* Music schedule */
+.music-schedule {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.music-schedule h4 {
+    font-size: 1.25rem;
+}
+
 .music-grid-wrapped {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -1320,6 +1333,98 @@ table {
 .collumn {
     flex-direction: column;
 }
+
+/* Andys Man Club */
+
+.andy-wrapped {
+    padding: 1rem 3rem 0 3rem;
+    color: #fff;
+    width: 100%;
+    background: #2B2A29;
+    overflow: hidden;
+}
+    
+.andy-wrapped {
+    padding: 1rem 3rem 0 3rem;
+    color: #fff;
+}
+
+.andy-wrapped h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.andys-content-wrapped {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.left-wrapped-a {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.andys-article-wrapped {
+    column-count: 2;
+    padding-top: 2rem;
+}
+
+.andys-image {
+    width: 25%;
+    position: relative;
+    bottom: -15px;
+}
+
+.andys-image img {
+    width: 100%;
+}
+
+#andy-times {
+    font-weight: 300;
+}
+
+.andy-wrapped h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.andys-content-wrapped {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.left-wrapped-a {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.andys-article-wrapped {
+    column-count: 2;
+    padding-top: 2rem;
+}
+
+.andys-image {
+    width: 25%;
+    position: relative;
+    bottom: -15px;
+}
+
+.andys-image img {
+    width: 100%;
+}
+
+#andy-times {
+    font-weight: 300;
+}
+
 /* responsiveness */
 
 /* Medium devices (tablets, less than 992px) */
