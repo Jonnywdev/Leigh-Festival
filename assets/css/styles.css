@@ -1422,7 +1422,55 @@ table {
 }
 
 #andy-times {
-    font-weight: 300;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.andys-get-in-touch {
+    width: 50%;
+    background: #fff;
+    padding: 5px;
+    margin: 5px 0;
+    color: #000;
+    transition: all .5s;
+}
+
+.andys-get-in-touch:hover {
+    background: #585857;
+    color: #fff;
+}
+
+/* Mixed Ability */
+.mixed-ability-wrapped {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mixed-desc {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mixed-desc ul {
+    padding-left: 20px;
+}
+
+.mixed-image {
+    max-width: 50%;
+}
+
+.mixed-image img {
+    max-width: 100%;
+}
+
+/* Avandor */
+.avandor-banner {
+    background: #000;
+    width: 100%;
+    height: 20vh;
 }
 
 /* responsiveness */
@@ -1495,6 +1543,11 @@ table {
 
     .music-sponsor-logo h5 {
         font-size: 1rem;
+    }
+
+    /* andys man club */
+    .andys-image {
+        bottom: -130px;
     }
 }
 
@@ -1677,7 +1730,35 @@ table {
     .google-form {
         max-width: 100% !important;
     }
-    
+
+    /* andys man club */
+    .andys-image {
+        bottom: 0;
+        margin: 0 auto;
+    }
+
+    .andys-content-wrapped {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .left-wrapped-a {
+        width: 100%;
+    }
+
+    #andy-times {
+        margin: 2rem 0;
+    }
+
+    .andys-get-in-touch {
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    .andy-wrapped h1 {
+        text-align: center;
+        margin-top: 2rem;
+    }
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -1880,6 +1961,16 @@ table {
     .tryit-sponsors-banner .sub-heading {
         max-width: 90% !important;
     }
+
+    /* andys man club */
+
+    .andys-article-wrapped {
+        font-size: 0.75rem;
+    }
+
+    #andy-times {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 420px) {
@@ -2034,4 +2125,15 @@ table {
     .bck-to-top {
         padding: 13px 20px;
     }
+
+    /* Andys Man Club */
+    .andy-wrapped h1 {
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+
+    .andys-article-wrapped {
+        column-count: 1;
+    }
+
 }
