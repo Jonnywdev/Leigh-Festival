@@ -20,6 +20,10 @@ a:hover {
     color: #000;
 }
 
+.text-white {
+    color: #fff !important;
+}
+
 /* direction elements */
 /* back to top button */
 .bck-to-top {
@@ -2159,7 +2163,7 @@ table {
     }
 
     .sm-day-caption h6 {
-        font-size: 12px !important;
+        font-size: 13px !important;
     }
 
     .sm-find-out {
