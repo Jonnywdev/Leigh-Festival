@@ -1501,7 +1501,20 @@ table {
 
 /* stalls attending */
 
+.stall-wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    row-gap: 10px;
+    column-gap: 10px;
+}
 
+.stall-card {
+    max-width: 100%;
+}
+
+.stall-card img {
+    max-width: 100%;
+}
 
 /* responsiveness */
 
