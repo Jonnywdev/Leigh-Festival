@@ -1334,6 +1334,10 @@ table {
     flex-direction: column;
 }
 
+
+.c-u-btn {
+    width: 50%;
+}
 /* Andys Man Club */
 
 .andy-wrapped {
@@ -1592,6 +1596,19 @@ table {
     .andys-image {
         bottom: -130px;
     }
+
+    /* homepage */
+
+    /* menu */
+    .beer-detail h5 {
+        font-size: 1rem;
+    }
+
+    .beer-detail p {
+        font-size: 15px;
+    }
+
+
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -1802,6 +1819,35 @@ table {
         text-align: center;
         margin-top: 2rem;
     }
+
+    /* homepage */
+
+    .mixed-ability-wrapped {
+        flex-direction: column;
+    }
+
+    .mixed-desc {
+        max-width: 100%;
+    }
+
+    .c-u-btn {
+        width: 50%;
+    }
+
+    .mixed-image {
+        margin: 2rem auto;
+        max-width: 100%;
+    }
+
+    .avandor-banner-btn {
+        margin-top: 1rem;
+    }
+
+    .music-sponsor-logo h5 {
+        font-size: 9px;
+    }
+
+
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -1898,7 +1944,7 @@ table {
 
     .sm-day-caption-wrapped {
         position: absolute;
-        top: 40px;
+        top: 0;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -1927,7 +1973,7 @@ table {
     
     .sm-day-caption h6{
         font-size: 25px !important;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
     
     .sm-day-btm {
@@ -1939,7 +1985,7 @@ table {
         background: #fff;
         color: #000;
         transition: all .5s;
-        font-size: 20px;
+        font-size: 12px;
     }
     
     .sm-day-hr {
@@ -1960,7 +2006,7 @@ table {
     }
 
     .banner-img {
-        width: 65%;
+        width: 30%;
     }
     
     .bar-banner {
@@ -2013,6 +2059,16 @@ table {
 
     #andy-times {
         font-size: 1rem;
+    }
+
+    /* homepage */
+    .music-sponsor-logo h5 {
+        font-size: 18px;
+    }
+
+    .stall-wrapper {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
     }
 }
 
@@ -2094,20 +2150,16 @@ table {
         margin-bottom: 2rem;
     }
 
-    .sm-day-caption-wrapped {
-        top: 30px;
-    }
-
     .sm-day-caption h1 {
         font-size: 40px;
     }
 
     .sm-day-caption h5 {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .sm-day-caption h6 {
-        font-size: 20px !important;
+        font-size: 12px !important;
     }
 
     .sm-find-out {
@@ -2117,14 +2169,6 @@ table {
 
     .banner-text h3 {
         font-size: 0.8rem;
-    }
-
-    .banner-img {
-        width: 75%;
-    }
-
-    .banner-img {
-        width: 75%;
     }
 
     .beer-detail h5 {
@@ -2178,5 +2222,20 @@ table {
     .andys-article-wrapped {
         column-count: 1;
     }
+
+    /* homepage */
+    .c-u-btn {
+        width: 100%;
+    }
+
+    .avandor-banner-btn a {
+        font-size: 1rem;
+    }
+
+    .avandor-banner-btn a:hover {
+        font-size: 1.25rem;
+    }
+
+    
 
 }
