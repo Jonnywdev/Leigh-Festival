@@ -1016,7 +1016,7 @@ footer {
 /* menu */
 .menu-grid-wrapped {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 33% 33% 33%;
     column-gap: 10px;
     row-gap: 3rem;
     margin: 3rem 0;
@@ -1047,6 +1047,7 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: left;
+    max-width: 45%;
 }
 
 .beer-detail h5 {
@@ -1060,7 +1061,9 @@ footer {
 /* try it banner */
 .tryit-banner {
     background: #a4d4f3;
-}
+} 
+
+
 
 .tryit-banner-wrapped {
     display: flex;
@@ -1111,6 +1114,17 @@ footer {
 }
 
 /* Music schedule */
+.music-schedule {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.music-schedule h4 {
+    font-size: 1.25rem;
+}
+
 .music-grid-wrapped {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -1319,6 +1333,193 @@ table {
 .collumn {
     flex-direction: column;
 }
+
+
+.c-u-btn {
+    width: 50%;
+}
+/* Andys Man Club */
+
+.andy-wrapped {
+    padding: 1rem 3rem 0 3rem;
+    color: #fff;
+    width: 100%;
+    background: #2B2A29;
+    overflow: hidden;
+}
+    
+.andy-wrapped {
+    padding: 1rem 3rem 0 3rem;
+    color: #fff;
+}
+
+.andy-wrapped h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.andys-content-wrapped {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.left-wrapped-a {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.andys-article-wrapped {
+    column-count: 2;
+    padding-top: 2rem;
+}
+
+.andys-image {
+    width: 25%;
+    position: relative;
+    bottom: -15px;
+}
+
+.andys-image img {
+    width: 100%;
+}
+
+#andy-times {
+    font-weight: 300;
+}
+
+.andy-wrapped h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.andys-content-wrapped {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.left-wrapped-a {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.andys-article-wrapped {
+    column-count: 2;
+    padding-top: 2rem;
+}
+
+.andys-image {
+    width: 25%;
+    position: relative;
+    bottom: -15px;
+}
+
+.andys-image img {
+    width: 100%;
+}
+
+#andy-times {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.andys-get-in-touch {
+    width: 50%;
+    background: #fff;
+    padding: 5px;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    color: #000;
+    transition: all .5s;
+}
+
+.andys-get-in-touch:hover {
+    background: #585857;
+    color: #fff;
+}
+
+/* Mixed Ability */
+.mixed-ability-wrapped {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mixed-desc {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mixed-desc ul {
+    padding-left: 20px;
+}
+
+.mixed-image {
+    max-width: 50%;
+}
+
+.mixed-image img {
+    max-width: 100%;
+}
+
+/* Avandor */
+.avandor-banner {
+    background: #000;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avandor-banner-img img {
+    max-width: 100%;
+}
+
+.avandor-banner-btn {
+    margin-bottom: 2rem;
+}
+
+.avandor-banner-btn a {
+    color: #000;
+    background: #ee7219;
+    padding: 10px;
+    transition: all .5s;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.avandor-banner-btn a:hover {
+    background: #000;
+    color: #ee7219;
+    font-size: 1.5rem;
+}
+
+/* stalls attending */
+
+.stall-wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.stall-card {
+    max-width: 100%;
+}
+
+.stall-card img {
+    max-width: 100%;
+}
+
 /* responsiveness */
 
 /* Medium devices (tablets, less than 992px) */
@@ -1390,6 +1591,24 @@ table {
     .music-sponsor-logo h5 {
         font-size: 1rem;
     }
+
+    /* andys man club */
+    .andys-image {
+        bottom: -130px;
+    }
+
+    /* homepage */
+
+    /* menu */
+    .beer-detail h5 {
+        font-size: 1rem;
+    }
+
+    .beer-detail p {
+        font-size: 15px;
+    }
+
+
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -1571,7 +1790,64 @@ table {
     .google-form {
         max-width: 100% !important;
     }
-    
+
+    /* andys man club */
+    .andys-image {
+        bottom: 0;
+        margin: 0 auto;
+    }
+
+    .andys-content-wrapped {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .left-wrapped-a {
+        width: 100%;
+    }
+
+    #andy-times {
+        margin: 2rem 0;
+    }
+
+    .andys-get-in-touch {
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    .andy-wrapped h1 {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    /* homepage */
+
+    .mixed-ability-wrapped {
+        flex-direction: column;
+    }
+
+    .mixed-desc {
+        max-width: 100%;
+    }
+
+    .c-u-btn {
+        width: 50%;
+    }
+
+    .mixed-image {
+        margin: 2rem auto;
+        max-width: 100%;
+    }
+
+    .avandor-banner-btn {
+        margin-top: 1rem;
+    }
+
+    .music-sponsor-logo h5 {
+        font-size: 9px;
+    }
+
+
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -1668,7 +1944,7 @@ table {
 
     .sm-day-caption-wrapped {
         position: absolute;
-        top: 40px;
+        top: 0;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -1697,7 +1973,7 @@ table {
     
     .sm-day-caption h6{
         font-size: 25px !important;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
     
     .sm-day-btm {
@@ -1709,7 +1985,7 @@ table {
         background: #fff;
         color: #000;
         transition: all .5s;
-        font-size: 20px;
+        font-size: 12px;
     }
     
     .sm-day-hr {
@@ -1730,7 +2006,7 @@ table {
     }
 
     .banner-img {
-        width: 65%;
+        width: 30%;
     }
     
     .bar-banner {
@@ -1738,7 +2014,8 @@ table {
     }
 
     .menu-grid-wrapped {
-        grid-template-columns: auto auto;
+        grid-template-columns: 48% 48%;
+        column-gap: 3%;
         row-gap: 1rem;
     }
 
@@ -1772,6 +2049,26 @@ table {
 
     .tryit-sponsors-banner .sub-heading {
         max-width: 90% !important;
+    }
+
+    /* andys man club */
+
+    .andys-article-wrapped {
+        font-size: 0.75rem;
+    }
+
+    #andy-times {
+        font-size: 1rem;
+    }
+
+    /* homepage */
+    .music-sponsor-logo h5 {
+        font-size: 18px;
+    }
+
+    .stall-wrapper {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
     }
 }
 
@@ -1853,20 +2150,16 @@ table {
         margin-bottom: 2rem;
     }
 
-    .sm-day-caption-wrapped {
-        top: 30px;
-    }
-
     .sm-day-caption h1 {
         font-size: 40px;
     }
 
     .sm-day-caption h5 {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .sm-day-caption h6 {
-        font-size: 20px !important;
+        font-size: 12px !important;
     }
 
     .sm-find-out {
@@ -1876,14 +2169,6 @@ table {
 
     .banner-text h3 {
         font-size: 0.8rem;
-    }
-
-    .banner-img {
-        width: 75%;
-    }
-
-    .banner-img {
-        width: 75%;
     }
 
     .beer-detail h5 {
@@ -1927,4 +2212,30 @@ table {
     .bck-to-top {
         padding: 13px 20px;
     }
+
+    /* Andys Man Club */
+    .andy-wrapped h1 {
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+
+    .andys-article-wrapped {
+        column-count: 1;
+    }
+
+    /* homepage */
+    .c-u-btn {
+        width: 100%;
+    }
+
+    .avandor-banner-btn a {
+        font-size: 1rem;
+    }
+
+    .avandor-banner-btn a:hover {
+        font-size: 1.25rem;
+    }
+
+    
+
 }
