@@ -2138,6 +2138,7 @@ table {
     /* countdown */
     .countdown {
         font-size: 1rem;
+        margin: 0 !important;
     }
 
     /* home - sponsorship */
