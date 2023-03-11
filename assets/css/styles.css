@@ -175,8 +175,27 @@ nav img {
     background: #03C1D3;
 
 }
-/* hero-img */
+/* countdown */
+.countdown-wrapped {
+    background: #000;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
 
+.countdown-wrapped h4 {
+    color: #fff;
+}
+
+.countdown {
+    margin-left: 1rem;
+    font-weight: 500;
+    color: #53c0da;
+    font-size: 2rem;
+}
 
 /* information about LF */
 .info-section {
@@ -1524,6 +1543,25 @@ table {
     max-width: 100%;
 }
 
+/* Day Pages */
+.day-wrapped {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.day-map {
+    max-width: 50%;
+}
+
+.day-map img {
+    width: 100%;
+}
+
+.day-info {
+    width: 45%;
+}
+
 /* responsiveness */
 
 /* Medium devices (tablets, less than 992px) */
@@ -1861,8 +1899,15 @@ table {
         margin-right: 0;
         margin-left: 0;
     }
-    /* header */
+    /* countdown */
+    .countdown-wrapped h4 {
+        font-size: 1rem;
+    }
 
+
+    .countdown {
+        font-size: 1.5rem;
+    }
     /* home - sponsorship */
 
     /* sponsorship page */
@@ -2090,7 +2135,10 @@ table {
         margin-top: 3rem;
     }
 
-    /* header */
+    /* countdown */
+    .countdown {
+        font-size: 1.25rem;
+    }
 
     /* home - sponsorship */
     #hero-image {
