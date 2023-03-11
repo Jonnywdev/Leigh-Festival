@@ -1524,6 +1524,25 @@ table {
     max-width: 100%;
 }
 
+/* Day Pages */
+.day-wrapped {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.day-map {
+    max-width: 50%;
+}
+
+.day-map img {
+    width: 100%;
+}
+
+.day-info {
+    width: 45%;
+}
+
 /* responsiveness */
 
 /* Medium devices (tablets, less than 992px) */
