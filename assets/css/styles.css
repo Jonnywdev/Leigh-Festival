@@ -1206,6 +1206,46 @@ footer {
     width: 100%;
 }
 
+/* Mab Section */
+.mab-wrapped {
+    width: 100%;
+    background: #eae4df;
+}
+
+.mab-content {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    color: #00154d;
+}
+
+.mab-text {
+    width: 100%;
+}
+
+.mab-text h1 {
+    color: #f26a2c !important;
+}
+
+.buildings {
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+.buildings img {
+    max-width: 100%;
+}
+
+.mab-link {
+    color: #00154d;
+    transition: all .5s;
+    text-decoration: underline;
+}
+
+.mab-link:hover {
+    color: #f26a2c;
+}
+
 /* Try it page */
 .tryit-git {
     display: grid;
@@ -1332,6 +1372,11 @@ footer {
     padding: 12px 5px;
     width: 100%;
     text-transform: uppercase;
+}
+
+/* swiper */
+.swiper-wrapper {
+    height: auto !important;
 }
 
 /* scoreboard */
