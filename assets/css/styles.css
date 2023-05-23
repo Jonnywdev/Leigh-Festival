@@ -1108,6 +1108,18 @@ footer {
 }
 
 /* scoreboard */
+.elite-background{
+    /* width: 100%;
+    position: relative; */
+    background-image: url("../images/tryit/elite-sevens.png");
+    background-size: cover;
+}
+
+.container-pad-y {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+}
+
 .scoreboard-wrapped {
     width: 50%;
     margin: 0 auto;
