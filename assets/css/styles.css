@@ -1109,9 +1109,12 @@ footer {
 
 /* scoreboard */
 .elite-background{
-    /* width: 100%;
-    position: relative; */
     background-image: url("../images/tryit/elite-sevens.png");
+    background-size: cover;
+}
+
+.social-background{
+    background-image: url("../images/tryit/social-sevens.png");
     background-size: cover;
 }
 
@@ -1424,10 +1427,6 @@ footer {
 
     .day-caption h6 {
         margin-bottom: 2rem;
-    }
-
-    .map-container {
-        display: none;
     }
 
     .mobile-design {
