@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap');
 
 body {
     font-weight: 300;
@@ -1108,13 +1108,20 @@ footer {
 }
 
 /* scoreboard */
-table, td, th {
-    border: 1px solid;
+.scoreboard-wrapped {
+    width: 50%;
+    margin: 0 auto;
+    height: 250px;
 }
-  
-table {
-    width: 100%;
-    border-collapse: collapse;
+
+.scoreboards {
+    display: flex;
+    justify-content: center;
+}
+
+#doc-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 40px;
 }
 
 /* volunteers */
