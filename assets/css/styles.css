@@ -1131,6 +1131,22 @@ footer {
     justify-content: center;
 }
 
+.teams-wrapped {
+    display: flex;
+    flex-direction: row;
+}
+
+.team-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.team-images img {
+    max-width: 15%;
+}
+
 #doc-title {
     font-family: 'Jost', sans-serif;
     font-size: 40px;
