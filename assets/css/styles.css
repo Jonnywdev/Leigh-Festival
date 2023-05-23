@@ -1108,6 +1108,21 @@ footer {
 }
 
 /* scoreboard */
+.elite-background{
+    background-image: url("../images/tryit/elite-sevens.png");
+    background-size: cover;
+}
+
+.social-background{
+    background-image: url("../images/tryit/social-sevens.png");
+    background-size: cover;
+}
+
+.container-pad-y {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+}
+
 .scoreboard-wrapped {
     width: 50%;
     margin: 0 auto;
@@ -1117,6 +1132,22 @@ footer {
 .scoreboards {
     display: flex;
     justify-content: center;
+}
+
+.teams-wrapped {
+    display: flex;
+    flex-direction: row;
+}
+
+.team-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.team-images img {
+    max-width: 15%;
 }
 
 #doc-title {
@@ -1396,10 +1427,6 @@ footer {
 
     .day-caption h6 {
         margin-bottom: 2rem;
-    }
-
-    .map-container {
-        display: none;
     }
 
     .mobile-design {
