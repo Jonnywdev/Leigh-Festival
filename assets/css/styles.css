@@ -98,6 +98,11 @@ button:focus {
     text-transform: capitalize;
 }
 
+.flex-jsb {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* image elements */
 
 .image-wrapper {
@@ -1059,7 +1064,7 @@ footer {
     padding: 1rem 3rem;
     display: flex;
     flex-direction: column;
-    background-color: #c6c6c6;
+    background-color: #A4D3F3;
 }
 
 .tryit-sponsors-banner .sub-heading {
@@ -1067,13 +1072,15 @@ footer {
 }
 
 .try-sponsors-grid {
-    margin-top: 1rem;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    margin-top: 1rem;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    row-gap: 5px;
+    column-gap: 5px;
 }
 
 .try-sponsors-img {
-    width: 50%;
+    width: 100%;
 }
 
 .try-sponsors-img img {
@@ -1711,6 +1718,18 @@ footer {
         margin-right: 0;
         margin-left: 0;
     }
+
+    .flex-jsb {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .flex-jsb p {
+        text-align: center;
+    }
     /* countdown */
     .countdown-wrapped h4 {
         font-size: 1rem;
@@ -1911,6 +1930,9 @@ footer {
     .tryit-sponsors-banner .sub-heading {
         max-width: 90% !important;
     }
+
+    /* schedules */
+
 
     /* andys man club */
 
