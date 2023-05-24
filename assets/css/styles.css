@@ -107,6 +107,10 @@ button:focus {
     justify-content: space-between;
 }
 
+.margin-auto {
+    margin: 0 auto;
+}
+
 /* image elements */
 
 .image-wrapper {
@@ -1134,6 +1138,11 @@ footer {
     background-size: cover;
 }
 
+.ladies-background{
+    background-image: url("../images/tryit/bg-ladies-sevens.png");
+    background-size: cover;
+}
+
 .container-pad-y {
     padding-top: 9rem;
     padding-bottom: 9rem;
@@ -1155,9 +1164,11 @@ footer {
 }
 
 .teams-wrapped {
+    background: #fff;
     display: flex;
-    flex-direction: row;
-    box-shadow: 5px 10px 18px #888888;
+    flex-direction: column;
+    box-shadow: 5px 10px 40px #000000;
+    position: relative;
 }
 
 .team-images {
