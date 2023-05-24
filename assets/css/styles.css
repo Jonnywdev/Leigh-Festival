@@ -15,6 +15,10 @@ a {
     color: #000;
 }
 
+b {
+    font-weight: 700;
+}
+
 a:hover {
     text-decoration: none;
     color: #000;
@@ -1116,12 +1120,17 @@ footer {
 
 /* scoreboard */
 .elite-background{
-    background-image: url("../images/tryit/elite-sevens.png");
+    background-image: url("../images/tryit/bg-elte-sevens.png");
     background-size: cover;
 }
 
 .social-background{
-    background-image: url("../images/tryit/social-sevens.png");
+    background-image: url("../images/tryit/bg-social-sevens.png");
+    background-size: cover;
+}
+
+.under-background{
+    background-image: url("../images/tryit/bg-under-sevens.png");
     background-size: cover;
 }
 
@@ -1141,9 +1150,14 @@ footer {
     justify-content: center;
 }
 
+.tryit-schedule-mobile {
+    display: none;
+}
+
 .teams-wrapped {
     display: flex;
     flex-direction: row;
+    box-shadow: 5px 10px 18px #888888;
 }
 
 .team-images {
@@ -1294,7 +1308,7 @@ footer {
 }
 
 .mixed-desc {
-    max-width: 50%;
+    max-width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1923,8 +1937,14 @@ footer {
     }
 
     /* try it */
+    .try-sponsors-grid {
+        grid-template-columns: auto auto auto auto auto;
+        row-gap: 5px;
+        column-gap: 5px;
+    }
+
     .try-sponsors-img {
-        width: 75%;
+        width: 100%;
     }
 
     .tryit-sponsors-banner .sub-heading {
@@ -2123,6 +2143,20 @@ footer {
         font-size: 1.25rem;
     }
 
-    
+    /* tryit */
+    .try-sponsors-grid {
+        display: grid;
+        margin-top: 0rem;
+        grid-template-columns: auto auto auto;
+        row-gap: 5px;
+        column-gap: 5px;
+    }
 
+    .tryit-schedule-mobile {
+        display: block;
+    }
+    
+    .tryit-schedule {
+        display: none;
+    }
 }
