@@ -1640,6 +1640,11 @@ footer {
         max-width: 100% !important;
     }
 
+    /* scoreboard */
+    .scoreboard-wrapped {
+        width: 85%;
+    }
+
     /* andys man club */
     .andys-image {
         bottom: 0;
