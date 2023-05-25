@@ -21,9 +21,12 @@ module.exports.contactForm = async (event, context) => {
         'token': 'Beer Token Sponsorship',
         'foodvan': 'I have a food van I want to bring',
         'stall': 'I want to set up a stall',
-        'tryit': 'I want to enter a team in Tryit Sevens',
+        'help': 'I want to help organising Leigh Festival 2024',
+        'tryit': 'I want to enter a team in Tryit Social Sevens 2024',
+        'tryitelite': 'I want to enter a team in Tryit Elite Sevens 2024',
         'other': 'Other Enquiry'
     };
+    
 
     // Annoyingly API Gateway sees form POSTs as binary data, so we need to base64 decode.
     const buffer = new Buffer(event.body, 'base64');
