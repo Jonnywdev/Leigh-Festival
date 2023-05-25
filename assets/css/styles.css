@@ -311,6 +311,28 @@ nav img {
     max-width: 75% !important;
 }
 
+/* dogs */
+.dogs-wrapped {
+    background: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:1rem 5rem;
+    align-items: center;
+}
+
+.dogs-text {
+    width: 45%;
+}
+
+.dog-img {
+    width: 25%;
+}
+
+.dog-img img {
+    max-width: 50%;
+}
+
 /* footer */
 footer {
     width: 100%;
@@ -1733,6 +1755,9 @@ footer {
         font-size: 9px;
     }
 
+    .dog-img img {
+        max-width: 80%;
+    }
 
 }
 
@@ -1984,6 +2009,15 @@ footer {
         display: grid;
         grid-template-columns: auto auto auto auto auto;
     }
+
+    .dogs-wrapped {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .dog-img {
+        padding-bottom: 1rem;
+    }
 }
 
 @media (max-width: 420px) {
@@ -2169,5 +2203,9 @@ footer {
     
     .tryit-schedule {
         display: none;
+    }
+
+    .dog-img {
+        width: 40%;
     }
 }
