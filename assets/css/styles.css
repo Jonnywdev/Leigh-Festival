@@ -1755,6 +1755,9 @@ footer {
         font-size: 9px;
     }
 
+    .dog-img img {
+        max-width: 80%;
+    }
 
 }
 
@@ -2006,6 +2009,15 @@ footer {
         display: grid;
         grid-template-columns: auto auto auto auto auto;
     }
+
+    .dogs-wrapped {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .dog-img {
+        padding-bottom: 1rem;
+    }
 }
 
 @media (max-width: 420px) {
@@ -2191,5 +2203,9 @@ footer {
     
     .tryit-schedule {
         display: none;
+    }
+
+    .dog-img {
+        width: 40%;
     }
 }
