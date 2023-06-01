@@ -2002,9 +2002,7 @@ footer {
     .dog-img {
         padding-bottom: 1rem;
     }
-}
 
-@media (max-width: 420px) {
     .lrg-hero {
         display: none;
     }
@@ -2012,6 +2010,10 @@ footer {
     .sm-hero {
         display: block;
     }
+}
+
+@media (max-width: 420px) {
+    
     /* generic */
     .container {
         max-width: 83%;
