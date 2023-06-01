@@ -9,23 +9,20 @@ body {
 }
 
 /* generic */
+.navbar>.container, .navbar>.container-fluid {
+    justify-content: center !important;
+}
 /* tag elements */
-a {
-    text-decoration: none;
-    color: #000;
-}
-
-b {
-    font-weight: 700;
-}
-
-a:hover {
-    text-decoration: none;
-    color: #000;
+.sm-hero {
+    display: none;
 }
 
 .text-white {
     color: #fff !important;
+}
+
+a:hover {
+    text-decoration: none !important;
 }
 
 /* direction elements */
@@ -59,10 +56,6 @@ button:focus {
     opacity: 1;
 }
 
-.flex {
-    display: flex;
-}
-
 .align-c {
     align-items: center;
 }
@@ -87,7 +80,7 @@ button:focus {
 }
 
 .active {
-    color: #000;
+    color: #2ABAFF; 
 }
 
 .cursor-none {
@@ -124,7 +117,11 @@ button:focus {
 /* color elements */
 
 .bg-blue {
-    background: #00DAEE
+    background: #2ABAFF;
+}
+
+.bg-black {
+    background: #000;
 }
 
 .color-white {
@@ -133,7 +130,7 @@ button:focus {
 
 /* header */
 nav {
-    background: #00DAEE;
+    background: #000;
     max-width: 100%;
 }
 
@@ -154,12 +151,12 @@ nav img {
     padding-bottom: 0 !important;
     font-size: 20px;
     font-weight: 400;
-    color: #989898;
+    color: #fff;
     transition: all .5s;
 }
 
 .nav-link:hover {
-    color: #000;
+    color: #2ABAFF;
 }
 
 .navl-left {
@@ -171,7 +168,7 @@ nav img {
     padding: 0;
     left: -15px;
     top: 50px;
-    background: #00DAEE;
+    background: #000;
     border: none;
     border-radius: 5px;
 }
@@ -185,7 +182,7 @@ nav img {
 }
 
 .dropdown-item:hover {
-    background: #03C1D3;
+    background: #2ABAFF;
 
 }
 /* countdown */
@@ -211,14 +208,7 @@ nav img {
 }
 
 /* information about LF */
-.info-section {
-    display: flex;
-    flex-direction: row;
-}
 
-.about-text h3 {
-    font-weight: 600;
-}
 
 /* sponsorship */
 .small-btn {
@@ -384,22 +374,11 @@ footer {
     cursor: pointer;
 }
 
-.footer-bottom-row {
-    max-width: 100%;
-    padding-bottom: 20px;
-}
-
-.avandor-logo {
-    width: 5%;
-}
-
-.avandor-txt {
-    color: #989898;
-    transition: all .5s;
-}
-
-.avandor-txt:hover {
-    color: #00DAEE;
+.btm-footer p{
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 1rem;
+    cursor: pointer;
 }
 
 
@@ -1791,6 +1770,11 @@ footer {
     }
     /* home - sponsorship */
 
+    /* new footer */
+    .small-flex {
+        display: flex;
+    }
+
     /* sponsorship page */
 
     /* cup grid */
@@ -2021,6 +2005,13 @@ footer {
 }
 
 @media (max-width: 420px) {
+    .lrg-hero {
+        display: none;
+    }
+
+    .sm-hero {
+        display: block;
+    }
     /* generic */
     .container {
         max-width: 83%;
