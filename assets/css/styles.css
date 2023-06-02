@@ -31,6 +31,11 @@ a:hover {
     text-decoration: none !important;
 }
 
+.generic-section {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
 /* direction elements */
 /* back to top button */
 .bck-to-top {
@@ -241,6 +246,14 @@ nav img {
 
 .dog-img img {
     max-width: 50%;
+}
+
+/* new home page wrapped */
+.info-wrapped h2 {
+    font-family: "swing-king", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #2ABAFF !important;
 }
 
 /* footer */
