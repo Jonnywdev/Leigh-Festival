@@ -198,7 +198,7 @@ nav img {
     background: #000;
     color: #fff;
     text-align: center;
-    padding: 15px 20px;
+    padding: 10px 20px;
     font-family: "swing-king", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -249,11 +249,29 @@ nav img {
 }
 
 /* new home page wrapped */
+.g-text-image-wrapped {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info-wrapped {
+    width: 50%;
+}
+
 .info-wrapped h2 {
     font-family: "swing-king", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: #2ABAFF !important;
+}
+
+.info-image-wrapped {
+    max-width: 40%;
+}
+
+.info-image-wrapped img {
+    width: 100%;
 }
 
 /* footer */
