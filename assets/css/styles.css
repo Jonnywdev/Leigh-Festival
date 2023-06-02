@@ -188,8 +188,23 @@ nav img {
     font-size: 2rem;
 }
 
-/* information about LF */
+/* Hero image */
+.basic-btn {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 15px 20px;
+    font-family: "swing-king", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+}
 
+.basic-btn:hover {
+    color: #000;
+    background: #2ABAFF;
+    transition: all .5s;
+}
 
 
 /* header titles */
