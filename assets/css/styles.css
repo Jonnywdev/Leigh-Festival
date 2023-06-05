@@ -274,6 +274,12 @@ nav img {
     width: 100%;
 }
 
+.tryit-contact {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
 /* footer */
 footer {
     width: 100%;
