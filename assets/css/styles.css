@@ -203,6 +203,7 @@ nav img {
     font-weight: 400;
     font-style: normal;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .basic-btn:hover {
@@ -710,6 +711,41 @@ footer {
     background: #585857;
     color: #fff;
 }
+
+
+/* Organising  -  Accordian */
+.accordion-wrapped {
+    margin: 2rem 0;
+}
+
+.accordion-item {
+    background-color: #f2f2f2;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #2ABAFF;
+    background-color: #000;
+}
+
+.accordion-button {
+    color: #fff;
+    background-color: #000;
+    font-family: "swing-king", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-top: 1px solid #f2f2f2;
+}
+
+.accordion-button-top {
+    border-top: 0 !important;
+}
+
+.accordion-button:focus {
+    border: none;
+    box-shadow: none;
+}
+
+
 
 
 /* responsiveness */
